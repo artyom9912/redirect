@@ -1,0 +1,230 @@
+@charset "utf-8";
+@font-face {
+	font-family: 'Basis Grotesque Pro';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Basis Grotesque Pro'), url('../font/BasisGrotesquePro-Regular-Web.ttf') format('truetype');
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: #000;
+	font-family: "Basis Grotesque Pro", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color : rgba(0,0,0,1.00);
+	font-size: 16px;
+	font-stretch: normal;
+	line-height: 1.3;
+	letter-spacing: normal;
+	min-height: 100vh;
+	min-width: 350px;
+}
+a {
+	color: rgba(255,79,18,1.00);
+}
+.logo_mod_1 {
+	text-align: center;
+	width: 100%
+}
+.rt_logo_1 {
+	margin-top: 30px;
+	width: 180px;
+}
+h1 {
+	font-size: 26px;
+	margin: 30px 0;
+	font-weight: 700;
+	color: rgba(0,0,0,1.00);
+}
+h2 {
+	font-size: 22px;
+	font-weight: 400;
+}
+.title-purple {
+	color: rgba(87,62,145,1.00);
+	font-weight: 900;
+	font-size: 22px;
+}
+.sh0
+{
+	font-size: 40px;
+}
+.sh1
+{
+	color: rgba(0,0,0,1.00);
+	font-weight: 400;
+}
+h3 {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.purple {
+	font-size: 18px;
+	color:  rgba(87,62,145,1.00);
+}
+h4 {
+	font-size: 26px;
+	font-weight: 700;
+	color:  rgba(87,62,145,1.00);
+}
+h5 {
+	font-size: 22px;
+	font-weight: 700;
+	color:  rgba(87,62,145,1.00);
+}
+.f-S {
+	font-size: 14px!important
+}
+.f-XS {
+	font-size: 12px!important
+}
+.grey {
+	color: rgba(151,151,153,1.00);
+}
+.icons {
+	background: rgba(245,245,245,1.00);
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: 100% auto;
+	background-position-y: center;
+	background-position-x: center;
+	height: 180px;
+	padding: 10px;
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-bottom: 20px;
+}
+.icon {
+	width: 33.3%;
+	float: left;
+	
+}
+.bg {
+	background: rgba(241, 243, 245, 1.00) url(../images/bg_pattern.svg) no-repeat fixed center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	min-height: 100vh
+}
+.content {
+	margin: 0;
+	text-align: left;
+	padding: 0%
+}
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0;
+	text-align: center;
+	width: 830px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	display: inline-block
+}
+.bg-transparent-white {
+	background-color: rgba(255,255,255,1.00)!important;
+}
+.border-radius {
+	border-radius: 3px
+}
+.a_button a {
+	border-radius: 3px;
+	background-color: rgba(112,208,74,1.00);
+	color: rgba(255,255,255,1.00);
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 400;
+	padding: .5em 1.2em;
+	text-decoration: none;
+	transition: all .24s ease 0
+}
+.c_button a {
+	border-radius: 3px;
+	background-color: rgba(112,116,126,1.00);
+	color: rgba(255,255,255,1.00);
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	padding: .5em 1.2em;
+	text-decoration: none;
+	transition: all .24s ease 0
+}
+.tel {
+	margin-bottom: 20px;
+	padding: 12px;
+	border: 0px;
+	outline: none;
+	-moz-appearance: none;
+	background: rgba(241,243,245,1.00);
+	border-radius: 3px;
+	width: 160px;
+	font-size: 18px;
+	text-align: center;
+}
+@media (max-width: 1200px) {
+.content {
+	margin: 0;
+	text-align: center;
+	padding: 0.5%;
+}
+.logo_mod_1 {
+	text-align: left;
+	margin-left: 10px;
+	width: 100%;
+	height: 365px;
+}
+.rt_logo_1 {
+	margin-top: 20px;
+	width: 160px;
+}
+	
+.container {
+	width: 640px;
+	background: url(../images/rt_bg_1.jpg) no-repeat;
+	-webkit-background-size: 670px auto;
+	-moz-background-size: 670px auto;
+	-o-background-size: 670px auto;
+	background-size: 670px auto;
+	background-position-y: top;
+	background-position-x: center;
+}
+
+.icons {
+
+	height: 180px;
+}
+.icon {
+	width: 33.3%;
+}
+
+}
+
+@media (min-width: 1201px) {
+.content {
+	margin: 0;
+	text-align: center;
+	padding: 0.5%;
+}
+.logo_mod_1 {
+	text-align: left;
+	margin-left: 20px;
+	width: 100%;
+	height: 455px;
+}
+.container {
+	width: 800px;
+	max-width: 100%;
+	background: url(../images/rt_bg_1.jpg) no-repeat;
+	-webkit-background-size: 830px auto;
+	-moz-background-size: 830px auto;
+	-o-background-size: 830px auto;
+	background-size: 830px auto;
+	background-position-y: top;
+	background-position-x: center;
+}
+}
