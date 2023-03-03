@@ -274,7 +274,7 @@ body {
     padding: 20px 6px 10px 78px;
     padding-bottom: 34%;
     color: whitesmoke;
-    cursor: pointer !important;
+    /*cursor: pointer !important;*/
 }
 .grid a:hover{
     background: #25232c;
