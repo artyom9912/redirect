@@ -222,6 +222,7 @@ body {
     -webkit-appearance: none;
     display: flex;
     justify-content: center;
+    margin-top: 10px !important;
     padding-top: 12px;
     padding-bottom: 12px;
     border-radius: 8px;
@@ -272,10 +273,10 @@ body {
 .grid a:hover{
     background: #25232c;
 }
-.grid a:hover .left_pic{
-    /*height: 12rem;*/
-    left: 0.9rem;
-}
+/*.grid a:hover .left_pic{*/
+/*    !*height: 12rem;*!*/
+/*    left: 0.9rem;*/
+/*}*/
 
 .grid a:last-child:nth-child(3n - 1) {
     grid-column: span 2;
