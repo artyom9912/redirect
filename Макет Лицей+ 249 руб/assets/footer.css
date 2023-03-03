@@ -1,0 +1,176 @@
+.main-wrapper:not(.basic) .rtk-footer {
+  background-color: #272e3d;
+  overflow-x: hidden;
+  margin-bottom: -5px;
+  /*padding-top: 25px;*/
+}
+
+.main-wrapper:not(.basic) .rtk-footer__menu-wrapper {
+  margin-right: -10px;
+  margin-left: -10px;
+  max-width: initial;
+  /*padding-bottom: 25px;*/
+}
+
+.main-wrapper:not(.basic) .rtk-footer__menu-item {
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.main-wrapper:not(.basic) .rtk-footer__menu-item .rt-annotation__title,
+.main-wrapper:not(.basic) .rtk-footer__menu-item .rt-annotation__content {
+  padding-left: 25px;
+}
+
+.main-wrapper:not(.basic) .rtk-footer__menu-item .rt-annotation__title {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.main-wrapper:not(.basic) .rtk-footer__menu-item .rt-annotation__arrow {
+  fill: #ffffff;
+}
+
+.main-wrapper:not(.basic) .rtk-footer__menu-link {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.57;
+  margin-bottom: 15px;
+  text-align: left;
+  text-decoration: none;
+  -webkit-transition: color .3s ease;
+  -moz-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  -ms-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.main-wrapper:not(.basic) .rtk-footer__menu-link:first-child {
+  padding-top: 8px;
+}
+
+.main-wrapper:not(.basic) .rtk-footer__menu-link:last-child {
+  padding-bottom: 4px;
+}
+
+.main-wrapper:not(.basic) .rtk-footer__menu-link:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.main-wrapper:not(.basic) .rtk-footer__phone {
+  text-align: left;
+}
+
+.main-wrapper:not(.basic) .rtk-footer__phone-number {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: left;
+  text-decoration: none;
+}
+
+.main-wrapper:not(.basic) .rtk-footer__copyright {
+  line-height: 20px;
+}
+
+.main-wrapper:not(.basic) .rtk-footer__social {
+  font-size: 0;
+  margin-bottom: -10px;
+  text-align: right;
+}
+
+.main-wrapper:not(.basic) .rtk-footer__social-icon {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin: 0 7.5px;
+}
+
+.main-wrapper:not(.basic) .rtk-footer__social-icon:first-child {
+  margin-left: 0;
+}
+
+.main-wrapper:not(.basic) .rtk-footer__social-icon:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: 767px) {
+  .main-wrapper:not(.basic) .rtk-footer {
+    /*padding-top: 40px;*/
+  }
+
+  .main-wrapper:not(.basic) .rtk-footer__menu-wrapper {
+    padding-bottom: 33px;
+  }
+
+  .main-wrapper:not(.basic) .rtk-footer__menu-item .rt-annotation__title,
+  .main-wrapper:not(.basic) .rtk-footer__menu-item .rt-annotation__content {
+    padding-left: 0;
+  }
+
+  .main-wrapper:not(.basic) .rtk-footer__menu-item .rt-annotation__arrow {
+    display: none;
+  }
+
+  .main-wrapper:not(.basic) .rtk-footer__menu-item .rt-annotation__title {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .main-wrapper:not(.basic) .rtk-footer__menu-item .rt-annotation__content {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .main-wrapper:not(.basic) .rtk-footer__menu-link {
+    margin-bottom: 10px;
+  }
+
+  .main-wrapper:not(.basic) .rtk-footer__phone,
+  .main-wrapper:not(.basic) .rtk-footer__phone-number {
+    text-align: right;
+  }
+
+  .main-wrapper:not(.basic) .rtk-footer__phone-number {
+    font-size: 36px;
+    line-height: 1.28;
+    margin-right: -3px;
+  }
+
+  .main-wrapper:not(.basic) .rtk-footer__social-icon {
+    margin: 0 5px;
+  }
+
+  .main-wrapper:not(.basic) .rtk-footer__social-icon:last-child {
+    margin-right: 0;
+  }
+
+  .main-wrapper:not(.basic) .rtk-footer .rt-annotation--is-open .rt-annotation__content {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-wrapper:not(.basic) .rtk-footer__phone-number {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-wrapper:not(.basic) .rtk-footer__copyright {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .main-wrapper:not(.basic) .rtk-footer__copyright-link {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}

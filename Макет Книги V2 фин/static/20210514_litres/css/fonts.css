@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Basis;
+    font-display: swap;
+    src: url(fonts/BasisGrotesquePro-Light.otf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Basis;
+    font-display: swap;
+    src: url(fonts/BasisGrotesquePro-Regular.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Basis;
+    font-display: swap;
+    src: url(fonts/BasisGrotesquePro-Medium.otf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Basis;
+    font-display: swap;
+    src: url(fonts/BasisGrotesquePro-Bold.otf);
+    font-weight: 700;
+    font-style: normal;
+}

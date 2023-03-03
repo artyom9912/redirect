@@ -1,0 +1,1800 @@
+﻿<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script src="./customScript.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elements = document.querySelectorAll('.rt-button');
+      for (var index = 0; index < elements.length; index++) {
+        var el = elements[index];
+        var elMeta = el.getAttribute("data-meta");
+        var buttonAction = clickHandlers.find(function (item) {
+          return item && item.meta === elMeta && typeof item.callback === 'function';
+        });
+        if (el && elMeta && buttonAction) {
+          el.addEventListener('click', buttonAction.callback);
+        }
+      }
+    });
+  </script>
+  <title>Лицей+ | Ростелеком</title>
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+
+  <meta name="yandex-verification" content="5585cabc3ea4d98a">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="shortcut icon" href="https://rt-static-cdn.rt.ru/themes/rt_ru/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="https://rt-static-cdn.rt.ru/themes/rt_ru/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://rt-static-cdn.rt.ru/themes/rt_ru/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://rt-static-cdn.rt.ru/themes/rt_ru/icons/apple-touch-icon.png">
+
+  <link rel="mask-icon" href="https://rt-static-cdn.rt.ru/themes/rt_ru/icons/safari-mask-icon.svg" color="#7700ff">
+
+  <link rel="stylesheet" media="all" href="./assets/css_XK0xw5LwZelOGGpmF_GxcIOzGFVl3tHHVOwmj2yxu4o.css">
+  <link rel="stylesheet" media="all" href="./assets/css_ejOizPsvHLwb9g9pWeOVH0e44i4EU4IUH25FZwF2120.css">
+
+  <style data-block="fonts">
+    @font-face {
+      font-family: "RT Fonts";
+      src: url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Light-Web.eot');
+      src: url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Light-Web.eot?#iefix') format("embedded-opentype"), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Light-Web.woff2') format("woff2"), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Light-Web.woff') format("woff"), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Light-Web.ttf') format("ttf");
+      font-style: normal;
+      font-weight: 200;
+    }
+
+    @font-face {
+      font-family: "RT Fonts";
+      src: url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Light-Web.eot');
+      src: url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Light-Web.eot?#iefix') format("embedded-opentype"), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Light-Web.woff2') format("woff2"), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Light-Web.woff') format("woff"), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Light-Web.ttf') format("ttf");
+      font-style: normal;
+      font-weight: 300;
+    }
+
+    @font-face {
+      font-family: "RT Fonts";
+      src: url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Regular-Web.eot');
+      src: url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Regular-Web.eot?#iefix') format("embedded-opentype"), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Regular-Web.woff2') format("woff2"), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Regular-Web.woff') format("woff"), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Regular-Web.ttf') format("ttf");
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: "RT Fonts";
+      src: url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Medium-Web.eot');
+      src: url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Medium-Web.eot?#iefix') format("embedded-opentype"), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Medium-Web.woff2') format("woff2"), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Medium-Web.woff') format("woff"), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Medium-Web.ttf') format("ttf");
+      font-style: normal;
+      font-weight: 500;
+    }
+
+    @font-face {
+      font-family: "RT Fonts";
+      src: url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Bold-Web.eot');
+      src: url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Bold-Web.eot?#iefix') format("embedded-opentype"), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Bold-Web.woff2') format("woff2"), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Bold-Web.woff') format("woff"), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Bold-Web.ttf') format("ttf");
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    @font-face {
+      font-family: "RT Fonts";
+      src: url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Bold-Web.eot');
+      src: url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Bold-Web.eot?#iefix') format("embedded-opentype"), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Bold-Web.woff2') format("woff2"), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Bold-Web.woff') format("woff"), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/BasisGrotesquePro-Bold-Web.ttf') format("ttf");
+      font-style: normal;
+      font-weight: 800;
+    }
+
+    .i__logo {
+      background: url("/themes/rt_ru__super/logo.svg") no-repeat 50%;
+      display: block;
+      margin-top: -4px;
+      width: 160px;
+      height: 40px;
+    }
+
+    .i__logo-only {
+      background: url("/themes/rt_ru__super/logo-only.svg") no-repeat 50%;
+      display: inline-block;
+      width: 51px;
+      height: 85px;
+      background-size: contain;
+    }
+
+    /**
+      * Icons
+      */
+    /* Material */
+    @font-face {
+      font-family: 'Material Icons';
+      font-style: normal;
+      font-weight: 400;
+      src: url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/MaterialIcons.woff2') format('woff2'), url('https://rt-static-cdn.rt.ru/themes/rt_ru/fonts/MaterialIcons.woff') format('woff');
+    }
+
+    .mdi {
+      color: inherit;
+      direction: ltr;
+      display: inline-block;
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: inherit;
+      letter-spacing: normal;
+      text-transform: none;
+      white-space: nowrap;
+      word-wrap: normal;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .mdi__account_circle:before {
+      content: "\E853";
+    }
+
+    .mdi__add:before {
+      content: "\E145";
+    }
+
+    .mdi__add_circle:before {
+      content: "\E147";
+    }
+
+    .mdi__block:before {
+      content: "\E14B";
+    }
+
+    .mdi__check:before {
+      content: "\E5CA";
+    }
+
+    .mdi__check_box:before {
+      content: "\E834";
+    }
+
+    .mdi__check_circle:before {
+      content: "\E86C";
+    }
+
+    .mdi__close:before {
+      content: "\E5CD";
+    }
+
+    .mdi__date_range:before {
+      content: "\E916";
+    }
+
+    .mdi__error_outline:before {
+      content: "\E001";
+    }
+
+    .mdi__insert_drive_file:before {
+      content: "\E24D";
+    }
+
+    .mdi__near_me:before {
+      content: "\E569";
+    }
+
+    .mdi__person:before {
+      content: "\E7FD";
+    }
+
+    .mdi__place:before {
+      content: "\E55F";
+    }
+
+    .mdi__remove:before {
+      content: "\E15B";
+    }
+
+    .mdi__remove_circle:before {
+      content: "\E15C";
+    }
+  </style>
+  <link rel="stylesheet" href="./assets/theme.css">
+
+  <!--[if lte IE 8]>
+    <script src="./assets/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+    <![endif]-->
+
+  <style type="text/css">
+    .i-svg {
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      position: relative
+    }
+
+    .i-svg svg {
+      width: 100%;
+      height: 100%
+    }
+
+    .i-svg__tag {
+      -webkit-transform-origin: center;
+      transform-origin: center
+    }
+
+    .i-svg__out {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto
+    }
+
+    .i-svg[size=small] {
+      width: 40px;
+      height: 40px
+    }
+
+    .i-svg[size=normal] {
+      width: 56px;
+      height: 56px
+    }
+
+    .i-svg[size=big] {
+      width: 80px;
+      height: 80px
+    }
+
+    .i-svg[theme=default] .i-svg__tag {
+      fill: #101828
+    }
+
+    .i-svg[theme=black] .i-svg__tag {
+      fill: #fff
+    }
+
+    .i-svg[theme=black] .i-svg__out circle {
+      fill: #101828
+    }
+
+    .i-svg[theme=color] .i-svg__tag {
+      fill: #fff
+    }
+
+    .i-svg[theme=color] .i-svg__out circle {
+      fill: #ff4f12
+    }
+
+    .i-svg[theme=white] .i-svg__tag {
+      fill: #000
+    }
+
+    .i-svg[theme=white] .i-svg__out circle {
+      fill: #fff
+    }
+
+    .i-svg__mc-enter-active,
+    .i-svg__mc-leave-active {
+      -webkit-transition: opacity 1s ease;
+      transition: opacity 1s ease
+    }
+
+    .i-svg__mc-enter,
+    .i-svg__mc-leave-to {
+      opacity: 0
+    }
+
+    .i-svg__mc-enter-to {
+      opacity: 1
+    }
+  </style>
+  <style type="text/css">
+    @charset "UTF-8";
+
+    .mx-datepicker {
+      position: relative;
+      display: inline-block;
+      width: 210px;
+      color: #73879c;
+      font: 14px/1.5 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', sans-serif;
+    }
+
+    .mx-datepicker * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .mx-datepicker.disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
+
+    .mx-datepicker-range {
+      width: 320px;
+    }
+
+    .mx-datepicker-popup {
+      position: absolute;
+      margin-top: 1px;
+      margin-bottom: 1px;
+      border: 1px solid #d9d9d9;
+      background-color: #fff;
+      -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+      z-index: 1000;
+    }
+
+    .mx-input-wrapper {
+      position: relative;
+    }
+
+    .mx-input-wrapper .mx-clear-wrapper {
+      display: none;
+    }
+
+    .mx-input-wrapper:hover .mx-clear-wrapper {
+      display: block;
+    }
+
+    .mx-input-wrapper:hover .mx-clear-wrapper+.mx-input-append {
+      display: none;
+    }
+
+    .mx-input {
+      display: inline-block;
+      width: 100%;
+      height: 34px;
+      padding: 6px 30px;
+      padding-left: 10px;
+      font-size: 14px;
+      line-height: 1.4;
+      color: #555;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    }
+
+    .mx-input:disabled,
+    .mx-input.disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
+
+    .mx-input:focus {
+      outline: none;
+    }
+
+    .mx-input::-ms-clear {
+      display: none;
+    }
+
+    .mx-input-append {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 100%;
+      padding: 6px;
+    }
+
+    .mx-input-icon {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      font-style: normal;
+      color: #555;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .mx-calendar-icon {
+      width: 100%;
+      height: 100%;
+      color: #555;
+      stroke-width: 8px;
+      stroke: currentColor;
+      fill: currentColor;
+    }
+
+    .mx-clear-icon::before {
+      display: inline-block;
+      content: '\2716';
+      vertical-align: middle;
+    }
+
+    .mx-clear-icon::after {
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 100%;
+      vertical-align: middle;
+    }
+
+    .mx-range-wrapper {
+      width: 496px;
+      overflow: hidden;
+    }
+
+    .mx-shortcuts-wrapper {
+      text-align: left;
+      padding: 0 12px;
+      line-height: 34px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .mx-shortcuts-wrapper .mx-shortcuts {
+      background: none;
+      outline: none;
+      border: 0;
+      color: #48576a;
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .mx-shortcuts-wrapper .mx-shortcuts:hover {
+      color: #419dec;
+    }
+
+    .mx-shortcuts-wrapper .mx-shortcuts:after {
+      content: '|';
+      margin: 0 10px;
+      color: #48576a;
+    }
+
+    .mx-shortcuts-wrapper .mx-shortcuts:last-child::after {
+      display: none;
+    }
+
+    .mx-datepicker-footer {
+      padding: 4px;
+      clear: both;
+      text-align: right;
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .mx-datepicker-btn {
+      font-size: 12px;
+      line-height: 1;
+      padding: 7px 15px;
+      margin: 0 5px;
+      cursor: pointer;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      border-radius: 3px;
+    }
+
+    .mx-datepicker-btn-confirm {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      color: #73879c;
+    }
+
+    .mx-datepicker-btn-confirm:hover {
+      color: #1284e7;
+      border-color: #1284e7;
+    }
+
+    /* 日历组件 */
+    .mx-calendar {
+      float: left;
+      color: #73879c;
+      padding: 6px 12px;
+      font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, sans-serif;
+    }
+
+    .mx-calendar * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .mx-calendar-header {
+      padding: 0 4px;
+      height: 34px;
+      line-height: 34px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .mx-calendar-header>a {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .mx-calendar-header>a:hover {
+      color: #419dec;
+    }
+
+    .mx-icon-last-month,
+    .mx-icon-last-year,
+    .mx-icon-next-month,
+    .mx-icon-next-year {
+      padding: 0 6px;
+      font-size: 20px;
+      line-height: 30px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .mx-icon-last-month,
+    .mx-icon-last-year {
+      float: left;
+    }
+
+    .mx-icon-next-month,
+    .mx-icon-next-year {
+      float: right;
+    }
+
+    .mx-calendar-content {
+      width: 224px;
+      height: 224px;
+    }
+
+    .mx-calendar-content .cell {
+      vertical-align: middle;
+      cursor: pointer;
+    }
+
+    .mx-calendar-content .cell:hover {
+      background-color: #eaf8fe;
+    }
+
+    .mx-calendar-content .cell.actived {
+      color: #fff;
+      background-color: #1284e7;
+    }
+
+    .mx-calendar-content .cell.inrange {
+      background-color: #eaf8fe;
+    }
+
+    .mx-calendar-content .cell.disabled {
+      cursor: not-allowed;
+      color: #ccc;
+      background-color: #f3f3f3;
+    }
+
+    .mx-panel {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+
+    .mx-panel-date {
+      table-layout: fixed;
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    .mx-panel-date td,
+    .mx-panel-date th {
+      font-size: 12px;
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .mx-panel-date td.today {
+      color: #2a90e9;
+    }
+
+    .mx-panel-date td.last-month,
+    .mx-panel-date td.next-month {
+      color: #ddd;
+    }
+
+    .mx-panel-year {
+      padding: 7px 0;
+    }
+
+    .mx-panel-year .cell {
+      display: inline-block;
+      width: 40%;
+      margin: 1px 5%;
+      line-height: 40px;
+    }
+
+    .mx-panel-month .cell {
+      display: inline-block;
+      width: 30%;
+      line-height: 40px;
+      margin: 8px 1.5%;
+    }
+
+    .mx-time-list {
+      position: relative;
+      float: left;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 100%;
+      height: 100%;
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+      border-left: 1px solid rgba(0, 0, 0, 0.05);
+      overflow-y: auto;
+      /* 滚动条滑块 */
+    }
+
+    .mx-time-list .mx-time-picker-item {
+      display: block;
+      text-align: left;
+      padding-left: 10px;
+    }
+
+    .mx-time-list:first-child {
+      border-left: 0;
+    }
+
+    .mx-time-list .cell {
+      width: 100%;
+      font-size: 12px;
+      height: 30px;
+      line-height: 30px;
+    }
+
+    .mx-time-list::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    .mx-time-list::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+      box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .mx-time-list:hover::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  </style>
+
+  <style type="text/css">
+    [data-v-3d4667ba] .tel--top0 {
+      top: -1px !important;
+      font-size: 14px !important
+    }
+
+    .notification[data-v-3d4667ba] {
+      width: 301px;
+      background-color: #273a64;
+      z-index: 100;
+      -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .15);
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .15)
+    }
+
+    .notification__wrapper[data-v-3d4667ba] {
+      position: relative;
+      height: 100%;
+      padding: 20px 0
+    }
+
+    .notification__container[data-v-3d4667ba] {
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-direction: column;
+      flex-direction: column
+    }
+
+    .notification__container[data-v-3d4667ba],
+    .notification__content[data-v-3d4667ba] {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-box-direction: normal
+    }
+
+    .notification__content[data-v-3d4667ba] {
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center
+    }
+
+    .notification__content_text[data-v-3d4667ba] {
+      margin-right: 33%;
+      -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=#{@val * 100})";
+      opacity: .6
+    }
+
+    .notification__content_region[data-v-3d4667ba] {
+      padding: 10px 0 20px
+    }
+
+    .notification__content_region .geo-name[data-v-3d4667ba] {
+      margin-left: 20px;
+      color: #fff;
+      font-size: 14px
+    }
+
+    .notification__content .region_icon[data-v-3d4667ba] {
+      position: relative
+    }
+
+    .notification__content .region_icon svg[data-v-3d4667ba] {
+      position: absolute;
+      top: -10px;
+      left: 0
+    }
+
+    .notification.is-popup .arrow[data-v-3d4667ba] {
+      position: absolute;
+      top: -12px;
+      right: 50px;
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 12px solid #273a64
+    }
+
+    .notification[data-v-3d4667ba]:not(.is-popup) {
+      width: 100%;
+      top: 0
+    }
+
+    .notification:not(.is-popup) .rt-button[data-v-3d4667ba] {
+      white-space: nowrap
+    }
+
+    .notification__close[data-v-3d4667ba] {
+      position: absolute;
+      right: 17px;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+      opacity: .6;
+      cursor: pointer
+    }
+
+    .notification__close[data-v-3d4667ba]:hover {
+      opacity: 1
+    }
+
+    .notification__close[data-v-3d4667ba]:after,
+    .notification__close[data-v-3d4667ba]:before {
+      position: absolute;
+      left: 10px;
+      content: " ";
+      height: 18px;
+      width: 2px;
+      background-color: #fff
+    }
+
+    .notification__close[data-v-3d4667ba]:before {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg)
+    }
+
+    .notification__close[data-v-3d4667ba]:after {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg)
+    }
+
+    .hide-enter-active[data-v-3d4667ba],
+    .hide-leave-active[data-v-3d4667ba] {
+      -webkit-transition: opacity .2s ease-in;
+      transition: opacity .2s ease-in
+    }
+
+    .hide-enter[data-v-3d4667ba],
+    .hide-leave-to[data-v-3d4667ba] {
+      -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=#{@val * 100})";
+      opacity: 0
+    }
+
+    .rt-button[data-v-3d4667ba] {
+      white-space: nowrap
+    }
+
+    .rt-button[data-v-3d4667ba]:focus:not(:hover) {
+      -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=#{@val * 100})";
+      opacity: 1
+    }
+  </style>
+  <style type="text/css">
+    .parent[data-v-1c4e895c] {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
+      padding: 0 !important
+    }
+
+    .parent__type[data-v-1c4e895c] {
+      padding: 15px 27px 32px 10px;
+      font-size: 12px
+    }
+
+    .parent__name[data-v-1c4e895c] {
+      padding-bottom: .5em;
+      font-weight: 500;
+      font-size: 14px
+    }
+
+    .parent__city[data-v-1c4e895c] {
+      font-size: 12px
+    }
+
+    .parent__child-wrap[data-v-1c4e895c] {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: 13px 0
+    }
+
+    .field-w-loader.is-pending input[data-v-1c4e895c] {
+      border-color: #cdcdcd !important
+    }
+  </style>
+  <style type="text/css">
+    .newLogo[data-v-288a3998] {
+      width: 140px;
+      height: 40px
+    }
+  </style>
+  <style type="text/css">
+    .mc-lk-popup-enter-active[data-v-7f8bcbba],
+    .mc-lk-popup-leave-active[data-v-7f8bcbba] {
+      opacity: 1;
+      -webkit-transition: all .2s ease-in;
+      transition: all .2s ease-in
+    }
+
+    .mc-lk-popup-enter[data-v-7f8bcbba],
+    .mc-lk-popup-leave-to[data-v-7f8bcbba] {
+      opacity: 0;
+      -webkit-transform: translateY(15px);
+      transform: translateY(15px);
+      -webkit-transition: all .2s ease-out;
+      transition: all .2s ease-out
+    }
+  </style>
+  <style type="text/css">
+    .lk-popup__link[data-v-45ddf95c] {
+      font-size: 14px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: .2px;
+      text-align: center;
+      color: rgba(16, 24, 40, .7)
+    }
+
+    .lk-popup__link__size[data-v-45ddf95c] {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding-right: 5px;
+      padding-left: 5px;
+      -webkit-box-flex: 33.333333%;
+      -ms-flex: 33.333333%;
+      flex: 33.333333%;
+      max-width: 33.333333%
+    }
+
+    @media (max-width:415px) {
+      .lk-popup__link[data-v-45ddf95c] {
+        min-width: 100px
+      }
+    }
+
+    .lk-popup__link p[data-v-45ddf95c] {
+      width: 100%
+    }
+  </style>
+  <style type="text/css">
+    .vue-modal-resizer {
+      display: block;
+      overflow: hidden;
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      right: 0;
+      bottom: 0;
+      z-index: 9999999;
+      background: transparent;
+      cursor: se-resize;
+    }
+
+    .vue-modal-resizer::after {
+      display: block;
+      position: absolute;
+      content: '';
+      background: transparent;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 10px solid #ddd;
+      border-left: 10px solid transparent;
+    }
+
+    .vue-modal-resizer.clicked::after {
+      border-bottom: 10px solid #369be9;
+    }
+  </style>
+  <style type="text/css">
+    .v--modal-block-scroll {
+      overflow: hidden;
+      width: 100vw;
+    }
+
+    .v--modal-overlay {
+      position: fixed;
+      box-sizing: border-box;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.2);
+      z-index: 999;
+      opacity: 1;
+    }
+
+    .v--modal-overlay.scrollable {
+      height: 100%;
+      min-height: 100vh;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .v--modal-overlay .v--modal-background-click {
+      width: 100%;
+      min-height: 100%;
+      height: auto;
+    }
+
+    .v--modal-overlay .v--modal-box {
+      position: relative;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .v--modal-overlay.scrollable .v--modal-box {
+      margin-bottom: 2px;
+    }
+
+    .v--modal {
+      background-color: white;
+      text-align: left;
+      border-radius: 3px;
+      box-shadow: 0 20px 60px -2px rgba(27, 33, 58, 0.4);
+      padding: 0;
+    }
+
+    .v--modal.v--modal-fullscreen {
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      left: 0;
+      top: 0;
+    }
+
+    .v--modal-top-right {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .overlay-fade-enter-active,
+    .overlay-fade-leave-active {
+      transition: all 0.2s;
+    }
+
+    .overlay-fade-enter,
+    .overlay-fade-leave-active {
+      opacity: 0;
+    }
+
+    .nice-modal-fade-enter-active,
+    .nice-modal-fade-leave-active {
+      transition: all 0.4s;
+    }
+
+    .nice-modal-fade-enter,
+    .nice-modal-fade-leave-active {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  </style>
+  <style type="text/css">
+    .vue-dialog div {
+      box-sizing: border-box;
+    }
+
+    .vue-dialog .dialog-flex {
+      width: 100%;
+      height: 100%;
+    }
+
+    .vue-dialog .dialog-content {
+      flex: 1 0 auto;
+      width: 100%;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    .vue-dialog .dialog-c-title {
+      font-weight: 600;
+      padding-bottom: 15px;
+    }
+
+    .vue-dialog .dialog-c-text {}
+
+    .vue-dialog .vue-dialog-buttons {
+      display: flex;
+      flex: 0 1 auto;
+      width: 100%;
+      border-top: 1px solid #eee;
+    }
+
+    .vue-dialog .vue-dialog-buttons-none {
+      width: 100%;
+      padding-bottom: 15px;
+    }
+
+    .vue-dialog-button {
+      font-size: 12px !important;
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      border: 0;
+      cursor: pointer;
+      box-sizing: border-box;
+      line-height: 40px;
+      height: 40px;
+      color: inherit;
+      font: inherit;
+      outline: none;
+    }
+
+    .vue-dialog-button:hover {
+      background: rgba(0, 0, 0, 0.01);
+    }
+
+    .vue-dialog-button:active {
+      background: rgba(0, 0, 0, 0.025);
+    }
+
+    .vue-dialog-button:not(:first-of-type) {
+      border-left: 1px solid #eee;
+    }
+  </style>
+
+  <style type="text/css">
+    .fullscreen-modal.app-dialog .v--modal {
+      padding: 0;
+      max-width: 100vw;
+      max-height: 100vh;
+      margin-bottom: 0 !important
+    }
+
+    @media (min-width:1025px) {
+      .windowed-form.app-dialog .v--modal {
+        max-width: 1400px;
+        width: 90%
+      }
+    }
+
+    .dark-overlay.v--modal-overlay {
+      background-color: rgba(16, 24, 40, .2) !important
+    }
+
+    .app-dialog {
+      background: transparent
+    }
+
+    .app-dialog_global {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      overflow: hidden;
+      z-index: 999
+    }
+
+    .app-dialog__content {
+      background: #fff;
+      -webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .3);
+      box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .3);
+      position: relative
+    }
+
+    .app-dialog .v--modal {
+      background-color: transparent;
+      border-radius: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      display: block;
+      width: auto;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      margin-right: auto;
+      margin-left: auto;
+      max-width: calc(100vw - 40px);
+      overflow: visible;
+      padding: 0 0 20px;
+      text-align: left
+    }
+
+    .app-dialog .v--modal-background-click {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+      flex-flow: row
+    }
+
+    .app-dialog.pos-top .v--modal-background-click {
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start
+    }
+
+    .app-dialog.pos-center .v--modal-background-click {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center
+    }
+
+    .app-dialog.pos-bottom .v--modal-background-click {
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end
+    }
+
+    .app-dialog .vue-dialog {
+      border: none
+    }
+
+    .app-dialog.v--modal-overlay.scrollable {
+      min-height: 100%
+    }
+
+    .app-dialog__close {
+      color: #101828;
+      display: block;
+      margin-top: 17px;
+      opacity: .5;
+      right: 17px;
+      position: absolute;
+      -webkit-transition: opacity .3s ease;
+      transition: opacity .3s ease;
+      z-index: 22
+    }
+
+    .app-dialog__close-icon {
+      fill: #101828
+    }
+
+    .app-dialog__close:hover {
+      opacity: 1
+    }
+
+    .mc-fade-enter-active,
+    .mc-fade-leave-active {
+      -webkit-transition-property: opacity;
+      transition-property: opacity;
+      -webkit-transition-timing-function: ease;
+      transition-timing-function: ease
+    }
+
+    .mc-fade-enter,
+    .mc-fade-leave-to {
+      opacity: 0
+    }
+
+    .mc-fade-enter-to {
+      opacity: 1
+    }
+
+    @media (max-width:767px) {
+      .mobile-full-window.app-dialog .v--modal {
+        width: 100vw !important;
+        height: 100vh !important;
+        max-width: none;
+        padding: 0;
+        margin: 0
+      }
+
+      .mobile-full-window.app-dialog .v--modal .app-dialog__content {
+        min-height: 100vh
+      }
+    }
+
+    @media (min-width:767px) and (max-width:1024px) {
+      .tablet-full-window.app-dialog .v--modal {
+        width: 100vw !important;
+        height: 100vh !important;
+        max-width: none;
+        padding: 0;
+        margin: 0
+      }
+
+      .tablet-full-window.app-dialog .v--modal .app-dialog__content {
+        min-height: 100vh
+      }
+    }
+  </style>
+  <style type="text/css">
+    [data-v-3a07ff78] .tel--top0 {
+      top: -1px !important;
+      font-size: 14px !important
+    }
+
+    .selectbox[data-v-3a07ff78] {
+      padding-top: 20px;
+      position: relative;
+      height: 55px;
+      max-width: 345px;
+      width: 100%
+    }
+
+    .selectbox__caption[data-v-3a07ff78] {
+      color: rgba(51, 51, 51, .5);
+      font-size: 14px;
+      position: absolute;
+      top: 7px;
+      max-width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden
+    }
+
+    .selectbox__wrap[data-v-3a07ff78] {
+      outline: none;
+      cursor: pointer;
+      padding-right: 20px;
+      position: absolute;
+      width: 100%;
+      height: 40px;
+      bottom: 0;
+      left: 0;
+      line-height: 40px;
+      z-index: 10
+    }
+
+    .selectbox__wrap[data-v-3a07ff78]:after {
+      content: "";
+      margin-top: -4px;
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      width: 0;
+      height: 0;
+      border: solid rgba(0, 0, 0, .5);
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 4px;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg)
+    }
+
+    .selectbox__label[data-v-3a07ff78] {
+      background: transparent;
+      color: #333;
+      cursor: pointer;
+      font-size: 16px;
+      max-width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none
+    }
+
+    .selectbox__select[data-v-3a07ff78] {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+      z-index: 0
+    }
+
+    .selectbox__list-options[data-v-3a07ff78] {
+      display: none;
+      position: absolute;
+      width: 100%;
+      top: 100%;
+      left: 0;
+      overflow-y: auto;
+      max-height: 350px
+    }
+
+    .selectbox__list-options ul[data-v-3a07ff78] {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background: #fff
+    }
+
+    .selectbox__list-options ul li[data-v-3a07ff78] {
+      cursor: default;
+      color: #000;
+      display: block;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: .2px;
+      padding: 8px 14px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none
+    }
+
+    .selectbox__list-options ul li.selected[data-v-3a07ff78] {
+      background-color: #70f;
+      color: #fff
+    }
+
+    .selectbox__list-options ul li[data-v-3a07ff78]:hover:not(.selected):not(.disabled) {
+      background-color: rgba(119, 0, 255, .8);
+      color: #fff
+    }
+
+    .selectbox__list-options ul li.disabled[data-v-3a07ff78] {
+      pointer-events: none;
+      -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=#{@val * 100})";
+      opacity: .3
+    }
+
+    .selectbox.open .selectbox__label[data-v-3a07ff78] {
+      border-bottom-color: #70f
+    }
+
+    .selectbox.open .selectbox__list-options[data-v-3a07ff78] {
+      -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+      display: block;
+      z-index: 100
+    }
+
+    .selectbox.disabled .selectbox__label[data-v-3a07ff78],
+    .selectbox.disabled .selectbox__wrap[data-v-3a07ff78] {
+      cursor: default
+    }
+
+    .selectbox.disabled *[data-v-3a07ff78] {
+      color: rgba(16, 24, 40, .5)
+    }
+
+    .selecbox_global .selectbox__list-options[data-v-3a07ff78] {
+      -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+      display: block;
+      z-index: 100
+    }
+  </style>
+  <style type="text/css">
+    .fileselect[data-v-2a69f824]:disabled {
+      pointer-events: none;
+      color: #fff
+    }
+
+    .inputFile[type=file][data-v-2a69f824] {
+      display: none
+    }
+
+    .List[data-v-2a69f824] {
+      list-style-type: none;
+      padding: 0;
+      padding-left: 1em
+    }
+
+    .List-Item[data-v-2a69f824] {
+      position: relative;
+      cursor: pointer;
+      padding: 7px 21px
+    }
+
+    .List-Item[data-v-2a69f824]:before {
+      content: "";
+      position: absolute;
+      vertical-align: middle;
+      height: 15px;
+      width: 15px;
+      left: 0;
+      background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath d='M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48z'/%3E%3C/svg%3E") 50% no-repeat
+    }
+
+    .List-Item[data-v-2a69f824]:not(:last-child) {
+      margin-bottom: .7em
+    }
+
+    .active[data-v-2a69f824] {
+      color: red
+    }
+
+    .active[data-v-2a69f824]:after {
+      content: "удалить"
+    }
+  </style>
+  <style type="text/css"></style>
+  <style type="text/css">
+    .app-dialog_global [data-modal=onlimeReturnsDialog] {
+      background: rgba(16, 24, 40, .3) !important
+    }
+
+    .app-dialog_global [data-modal=onlimeReturnsDialog] .app-dialog__content {
+      border-radius: 8px;
+      overflow: hidden
+    }
+
+    .app-dialog_global [data-modal=onlimeReturnsDialog] .app-dialog__content .onlime-dialog__head {
+      background: #f8f8f8
+    }
+
+    .app-dialog_global [data-modal=onlimeReturnsDialog] .app-dialog__content .onlime-dialog__body {
+      padding: 40px 20px 48px;
+      text-align: center
+    }
+
+    .app-dialog_global [data-modal=onlimeReturnsDialog] .app-dialog__content .onlime-dialog__btn {
+      font-weight: 300;
+      margin-top: 28px
+    }
+  </style>
+  <style type="text/css">
+    .popup-button[data-v-6d3ad114] {
+      width: 314px
+    }
+
+    @media (max-width:415px) {
+      .popup-button[data-v-6d3ad114] {
+        width: 80%
+      }
+    }
+  </style>
+</head>
+
+<body class="path-node page-node-type-geo-paragraphs browser-Chrome">
+
+  <link rel="stylesheet" href="./assets/header.css">
+  <link rel="stylesheet" href="./assets/footer.css">
+  <link rel="stylesheet" href="./assets/vue-rt-style-kit-atoms.css">
+  <link rel="stylesheet" href="./assets/vue-rt-style-kit-icons.css">
+  <link rel="stylesheet" href="./assets/vue-rt-style-kit-molecules.css">
+
+
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+    <div class="main-wrapper">
+      <div class="main-wrapper__inner">
+
+
+        <main id="pageContent" role="main">
+          <div class="rtk-page">
+            <div class="rtk-page__layout">
+              <div class="rtk-page__inner">
+                <div class="region region-content">
+                  <div data-drupal-messages-fallback="" class="hidden"></div>
+                  <div id="block-b2cformaobratnoysvyazi"
+                    class="settings-tray-editable block block-block-content block-block-contenta0c7a4a8-c4b8-4e17-a3fc-8b8f3229d48a"
+                    data-drupal-settingstray="editable">
+                    <div
+                      class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item">
+                      <style type="text/css">
+                        .btn.feedback_open_link {
+                          display: none;
+                        }
+                      </style>
+                      <div class="web-component web-component_inline">
+                        <span class="main-navigation__feedback fos">
+                          <!---->
+                          <!---->
+                          <!---->
+                        </span>
+                        <!---->
+                      </div>
+                    </div>
+                  </div>
+                  <div id="block-rt-ru-super-content" class="block block-system block-system-main-block">
+                    <article role="article" about="/capsula">
+                      <div>
+
+                        <div
+                          class="field field--name-field-geo-content field--type-entity-reference-revisions field--label-hidden field__items">
+                          <div class="field__item">
+                            <div class="paragraph paragraph--type--geo-paragraph paragraph--view-mode--default">
+
+                              <div
+                                class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item">
+                                <div class="web-component web-component_inline">
+                                  <div class="rt-jumbotron color-block--gray color-main">
+                                    <div class="row rt-jumbotron-image flex-fill">
+                                      <div class="md-d-none rt-col rt-col-lg-5 rt-col-6 rt-col-td-3"></div>
+                                      <div class="rt-col rt-col-lg-7 rt-col-6 rt-col-md-3 rt-col-td-3">
+                                        <div class="rt-jumbotron-gradient md-d-none d-block"></div>
+                                        <div class="rt-jumbotron-image-container">
+                                          <div class="rt-img-container">
+                                            <img alt="" class="rt-img d-block" src="./assets/back.png">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="rt-container d-flex flex-fill height-fill ">
+                                      <div
+                                        class="rt-col rt-col rt-col-6 rt-col-md-3 rt-col-td-4 d-flex flex-fill md-height-fill">
+                                        <div class="d-flex flex-start-center md-flex-start-top rt-jumbotron-inner">
+                                          <div
+                                            class="md-sp-t-1-2 md-sp-b-2 d-flex flex-column rt-jumbotron-inner-content">
+                                            <div class="md-flex-fill">
+                                              <div class="sp-b-0-4 td-sp-b-0-3 md-d-none">
+                                                <h1 class="color-main05 tagline">Ростелеком лицей</h1>
+                                              </div>
+                                              <div class="sp-b-0-4 td-sp-b-0-3 md-d-flex d-none">
+                                                <h1 class="color-main05 tagline">Ростелеком лицей</h1>
+                                              </div>
+                                              <div class="rt-font-h1">Школьная программа забыта за&nbsp;лето
+                                                и&nbsp;каникулы? </div>
+                                              <p class=" rt-font-paragraph sp-t-0-4 td-sp-t-0-3 color-main">Повторите
+                                                программу и&nbsp;получите дополнительные знания с&nbsp;онлайн-курсами
+                                                Лицея
+                                              </p>
+                                              <div class="sp-t-0-4 td-sp-t-0-3">
+                                                <div class="rt-price-v2">
+                                                  <div class="rt-price-v2__value d-inline-block rt-font-bold font-h1">
+                                                    249</div>
+                                                  <div class="d-inline-block flex-column sp-l-0-1 rt-price-n__info">
+                                                    <div class="rt-price-v2__info-item font-t-s m-font-t-xs">руб.*</div>
+                                                    <div class="rt-price-v2__info-item font-t-s m-font-t-xs">мес.</div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="sp-t-1-2 td-sp-t-1-1">
+                                                <button data-meta="Смена ТП"
+                                                  class="rt-button-md--is-block rt-button rt-button-with-ripple rt-button-orange rt-button-bright">
+                                                  <div class="ripple" style="pointer-events: none;">Начать учиться
+                                                  </div>
+                                                </button>
+                                                <button data-meta="Отказаться"
+                                                  class="rt-button-md--is-block rt-button rt-button-with-ripple rt-button-gray rt-button-bright ">
+                                                  <div class="ripple" style="pointer-events: none;">Отказаться
+                                                  </div>
+                                                </button>
+                                              </div>
+                                              <p class="font-t-xs sp-t-1-1 color-main05">*Нажимая кнопку "Начать
+                                                учиться", Вы
+                                                соглашаетесь на подключение тарифной опции «Лицей Плюс». Подробнее на <a
+                                                  class="rt-link color-main05 font-t-xs" target="_blank"
+                                                  href="http://rt.ru/lc">rt.ru/lc</a>
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!---->
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <div class="field__item">
+                            <div class="paragraph paragraph--type--geo-paragraph paragraph--view-mode--default">
+
+                              <div
+                                class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item">
+                                <div class="web-component web-component_inline">
+                                  <section class="color-block--white">
+                                    <div class="rt-container">
+                                      <div
+                                        class="rt-col rt-space-vertical3 rt-td-space-vertical2 rt-md-space-vertical1">
+                                        <h2 class="rt-font-h2 rt-font-bold rt-space-bottom">Новый уровень
+                                          онлайн-обучения</h2>
+                                        <div class="row">
+                                          <div
+                                            class="rt-col-3 rt-col-td-3 rt-col-md-3 rt-space-top rt-md-space-top2 md-sp-t-1-2">
+                                            <div class="sp-b-1-1 lg-sp-b-1-1">
+                                              <div name="120" theme="color" size="80" class="i-svg"
+                                                style="width: 80px; height: 80px;"><svg viewBox="0 0 80 80"
+                                                  class="i-svg__out">
+                                                  <g transform="translate(0 0)">
+                                                    <circle stroke-width="2" cx="40" cy="40" r="39"></circle>
+                                                  </g>
+                                                </svg><svg viewBox="0 0 56 56" class="i-svg__tag"
+                                                  style="transform: scale(0.7);">
+                                                  <path fill-rule="evenodd"
+                                                    d="M17.5 17.5C17.5 11.707 22.207 7 28 7c5.792 0 10.5 4.707 10.5 10.5S33.792 28 28 28c-5.793 0-10.5-4.707-10.5-10.5zm19.25 0c0-4.83-3.92-8.75-8.75-8.75s-8.75 3.92-8.75 8.75 3.92 8.75 8.75 8.75 8.75-3.92 8.75-8.75zM25.375 33.25h5.25l1.75 14h-8.75l1.75-14zm5.023 12.25L29.085 35h-2.152L25.62 45.5h4.777z"
+                                                    clip-rule="evenodd"></path>
+                                                  <path
+                                                    d="M28 35a2.621 2.621 0 01-2.625-2.625A2.621 2.621 0 0128 29.75a2.621 2.621 0 012.625 2.625A2.621 2.621 0 0128 35z">
+                                                  </path>
+                                                  <path fill-rule="evenodd"
+                                                    d="M27.125 29.75h1.75c.962 0 1.75.788 1.75 1.75v1.75c0 .962-.788 1.75-1.75 1.75h-1.75c-.962 0-1.75-.788-1.75-1.75V31.5c0-.962.788-1.75 1.75-1.75zm1.75 3.5V31.5h-1.75v1.75h1.75z"
+                                                    clip-rule="evenodd"></path>
+                                                  <path
+                                                    d="M12.25 49V38.5c0-2.888 2.363-5.25 5.25-5.25h21c2.888 0 5.25 2.362 5.25 5.25V49h1.75V38.5c0-3.867-3.133-7-7-7h-21c-3.867 0-7 3.133-7 7V49h1.75z">
+                                                  </path>
+                                                </svg></div>
+                                            </div>
+                                            <div class="sp-b-x3">
+                                              <h4 class="font-h4 sp-b-1-1">
+                                                Опытные преподаватели
+                                              </h4>
+                                            </div>
+                                            <p class="font-t-m">
+                                              Доступным языком объясним самые сложные темы учебной программы
+                                            </p>
+                                          </div>
+                                          <div
+                                            class="rt-col-3 rt-col-td-3 rt-col-md-3 rt-space-top rt-md-space-top2 md-sp-t-1-1">
+                                            <div class="sp-b-1-1 lg-sp-b-1-1">
+                                              <div name="115" theme="color" size="80" class="i-svg"
+                                                style="width: 80px; height: 80px;"><svg viewBox="0 0 80 80"
+                                                  class="i-svg__out">
+                                                  <g transform="translate(0 0)">
+                                                    <circle stroke-width="2" cx="40" cy="40" r="39"></circle>
+                                                  </g>
+                                                </svg><svg viewBox="0 0 56 56" class="i-svg__tag"
+                                                  style="transform: scale(0.7);">
+                                                  <path
+                                                    d="M42 17.5h-1.75v22.75H42V17.5zM18.375 7h26.25v1.75h-26.25zM14 17.5h1.75v21H14z">
+                                                  </path>
+                                                  <path fill-rule="evenodd"
+                                                    d="M40.25 11.375A4.377 4.377 0 0144.625 7 4.377 4.377 0 0149 11.375v4.428c0 .944-.752 1.697-1.697 1.697H40.25v-6.125zm7 0a2.621 2.621 0 00-2.625-2.625A2.621 2.621 0 0042 11.375v4.375h5.25v-4.375z"
+                                                    clip-rule="evenodd"></path>
+                                                  <path
+                                                    d="M11.375 47.25h26.25V49h-26.25zM18.375 7A4.377 4.377 0 0014 11.375V17.5h1.75v-6.125a2.621 2.621 0 012.625-2.625V7z">
+                                                  </path>
+                                                  <path fill-rule="evenodd"
+                                                    d="M22.75 14h10.5v1.313c0 1.295-.263 3.447-.788 4.637-.735 1.61-2.082 3.605-4.462 4.55-2.38-.945-3.727-2.94-4.462-4.55-.526-1.19-.788-3.342-.788-4.637V14zm8.102 5.215c.333-.735.578-2.275.63-3.465h-6.965c.053 1.172.298 2.712.63 3.465.49 1.102 1.383 2.503 2.853 3.343 1.47-.84 2.363-2.24 2.852-3.343z"
+                                                    clip-rule="evenodd"></path>
+                                                  <path
+                                                    d="M36.75 31.5h-17.5v1.75h17.5V31.5zM36.75 28h-17.5v1.75h17.5V28zM33.25 38.5H8.803A1.8 1.8 0 007 40.303v4.322A4.377 4.377 0 0011.375 49v-1.75a2.621 2.621 0 01-2.625-2.625V40.25H31.5c0-.962.788-1.75 1.75-1.75zM40.25 38.5v6.125a2.621 2.621 0 01-2.625 2.625A2.621 2.621 0 0135 44.625V40.25c0 .962-.788 1.75-1.75 1.75v2.625A4.377 4.377 0 0037.625 49 4.377 4.377 0 0042 44.625V38.5h-1.75z">
+                                                  </path>
+                                                  <path
+                                                    d="M35 40.25c0-.962-.788-1.75-1.75-1.75s-1.75.788-1.75 1.75h1.75V42c.962 0 1.75-.788 1.75-1.75z">
+                                                  </path>
+                                                </svg></div>
+                                            </div>
+                                            <div class="sp-b-x3">
+                                              <h4 class="font-h4 sp-b-1-1">
+                                                Все школьные предметы
+                                              </h4>
+                                            </div>
+                                            <p class="font-t-m">
+                                              Видеоуроки в&nbsp;увлекательной форме, тесты и&nbsp;конспекты
+                                              для&nbsp;учеников с&nbsp;1&nbsp;по&nbsp;11&nbsp;класс
+                                            </p>
+                                          </div>
+                                          <div
+                                            class="rt-col-3 rt-col-td-3 rt-col-md-3 rt-space-top rt-td-space-top2 md-sp-t-1-1">
+                                            <div class="sp-b-1-1 lg-sp-b-1-1">
+                                              <div name="134" theme="color" size="80" class="i-svg"
+                                                style="width: 80px; height: 80px;"><svg viewBox="0 0 80 80"
+                                                  class="i-svg__out">
+                                                  <g transform="translate(0 0)">
+                                                    <circle stroke-width="2" cx="40" cy="40" r="39"></circle>
+                                                  </g>
+                                                </svg><svg viewBox="0 0 56 56" class="i-svg__tag"
+                                                  style="transform: scale(0.7);">
+                                                  <path fill-rule="evenodd"
+                                                    d="M23.625 28a3.51 3.51 0 013.5-3.5 3.51 3.51 0 013.5 3.5 3.51 3.51 0 01-3.5 3.5 3.51 3.51 0 01-3.5-3.5zm5.25 0c0-.962-.788-1.75-1.75-1.75s-1.75.788-1.75 1.75.788 1.75 1.75 1.75 1.75-.788 1.75-1.75z"
+                                                    clip-rule="evenodd"></path>
+                                                  <path
+                                                    d="M25.375 28h-1.75v-5.04c.017-1.505.98-3.728 3.57-3.728.997 0 1.855.333 2.45.945 1.015 1.05 1.015 2.52.997 2.695l-1.75-.052.875.017-.875-.017c0-.018 0-.91-.507-1.435-.263-.263-.665-.385-1.19-.385-1.75 0-1.82 1.785-1.82 1.977V28zM18.375 24.5h1.75v1.75h-1.75z">
+                                                  </path>
+                                                  <path fill-rule="evenodd"
+                                                    d="M38.5 16.625A2.621 2.621 0 0141.125 14a2.621 2.621 0 012.625 2.625 2.621 2.621 0 01-2.625 2.625 2.621 2.621 0 01-2.625-2.625zm3.5 0a.867.867 0 00-.875-.875.867.867 0 00-.875.875c0 .49.385.875.875.875s.875-.385.875-.875zM31.5 23.625a4.377 4.377 0 014.375-4.375 4.377 4.377 0 014.375 4.375v3.5a4.377 4.377 0 01-4.375 4.375 4.377 4.377 0 01-4.375-4.375v-3.5zm7 0A2.621 2.621 0 0035.875 21a2.621 2.621 0 00-2.625 2.625v3.5a2.621 2.621 0 002.625 2.625 2.621 2.621 0 002.625-2.625v-3.5zM31.5 37.625L24.5 42v-8.75l7 4.375zm-3.308 0L26.25 36.4v2.433l1.942-1.208z"
+                                                    clip-rule="evenodd"></path>
+                                                  <path
+                                                    d="M8.75 31.5c0-.753 1.207-1.785 3.5-2.748V26.88C8.995 28.105 7 29.732 7 31.5c0 3.465 7.578 6.335 17.5 6.895v-1.75C14.28 36.067 8.75 33.11 8.75 31.5zM43.75 26.88v1.872c2.292.963 3.5 1.995 3.5 2.748 0 1.505-4.9 4.235-14 5.022V38.272C42.297 37.502 49 34.755 49 31.5c0-1.768-1.995-3.395-5.25-4.62z">
+                                                  </path>
+                                                  <path
+                                                    d="M21.543 25.375c.735-.648 1.207-1.575 1.207-2.625a3.51 3.51 0 00-3.5-3.5 3.51 3.51 0 00-3.5 3.5h1.75c0-.962.788-1.75 1.75-1.75s1.75.788 1.75 1.75-.788 1.75-1.75 1.75v1.75c.962 0 1.75.788 1.75 1.75s-.788 1.75-1.75 1.75-1.75-.788-1.75-1.75h-1.75a3.51 3.51 0 003.5 3.5 3.51 3.51 0 003.5-3.5c0-1.05-.473-1.977-1.207-2.625z">
+                                                  </path>
+                                                </svg></div>
+                                            </div>
+                                            <div class="sp-b-x3">
+                                              <h4 class="font-h4 sp-b-1-1">
+                                                Дополнительные знания
+                                              </h4>
+                                            </div>
+                                            <p class="font-t-m">
+                                              Английский язык, авторские курсы по&nbsp;современным цифровым
+                                              профессиям, финансовой грамотности и&nbsp;многое другое
+                                            </p>
+                                          </div>
+                                          <div
+                                            class="rt-col-3 rt-col-td-3 rt-col-md-3 rt-space-top rt-td-space-top2 md-sp-t-1-1">
+                                            <div class="sp-b-1-1 lg-sp-b-1-1">
+                                              <div name="126" theme="color" size="80" class="i-svg"
+                                                style="width: 80px; height: 80px;"><svg viewBox="0 0 80 80"
+                                                  class="i-svg__out">
+                                                  <g transform="translate(0 0)">
+                                                    <circle stroke-width="2" cx="40" cy="40" r="39"></circle>
+                                                  </g>
+                                                </svg><svg viewBox="0 0 56 56" class="i-svg__tag"
+                                                  style="transform: scale(0.7);">
+                                                  <path d="M22.75 24.5a1.75 1.75 0 100-3.5 1.75 1.75 0 000 3.5z">
+                                                  </path>
+                                                  <path d="M21.875 14h1.75v8.75h-1.75z"></path>
+                                                  <path
+                                                    d="M27.283 26.058l-3.92-3.92-1.243 1.242 4.165 4.165a15.72 15.72 0 01.998-1.487zM33.495 42.805C30.258 41.248 28 37.958 28 34.125c0-4.392 2.957-8.102 7-9.257v-1.803c-5.023 1.19-8.75 5.688-8.75 11.06 0 4.148 2.223 7.77 5.547 9.765l1.698-1.085zM43.453 24.378l-1.698 1.085c3.255 1.54 5.495 4.847 5.495 8.662 0 4.393-2.958 8.103-7 9.258v1.802c5.023-1.19 8.75-5.687 8.75-11.06a11.32 11.32 0 00-5.547-9.747z">
+                                                  </path>
+                                                  <path fill-rule="evenodd"
+                                                    d="M42 23.625L35 28v-8.75l7 4.375zm-3.307.017l-1.943-1.224v2.432l1.943-1.208zM33.25 44.625l7-4.375V49l-7-4.375zm5.25 1.225v-2.433l-1.943 1.208L38.5 45.85zM42 29.75h1.75V35h1.75v1.767l-1.75-.017v1.767L42 38.5v-1.767l-3.5.017v-1.767L42 29.75zm0 2.975L40.46 35H42v-2.275z"
+                                                    clip-rule="evenodd"></path>
+                                                  <path
+                                                    d="M35.438 35.21c.997-1.085 1.312-1.802 1.312-2.922 0-1.54-1.015-2.52-2.59-2.52-1.732 0-2.66 1.347-2.66 2.607 0 .263.017.525.07.788l.017.14 1.663-.14-.035-.175a2.478 2.478 0 01-.053-.543c0-.63.386-1.015.998-1.015.595 0 .98.403.98 1.033 0 .507-.193.892-.822 1.575L31.5 37.17v1.33h5.25v-1.75h-2.712l1.4-1.54zM24.745 36.61c-.648.087-1.313.14-1.995.14-7.717 0-14-6.282-14-14 0-7.717 6.283-14 14-14 6.09 0 11.27 3.92 13.195 9.363l2.222 1.417C36.68 12.372 30.345 7 22.75 7 14.053 7 7 14.053 7 22.75c0 8.698 7.053 15.75 15.75 15.75.84 0 1.645-.07 2.45-.193-.192-.56-.35-1.12-.455-1.697z">
+                                                  </path>
+                                                </svg></div>
+                                            </div>
+                                            <div class="sp-b-x3">
+                                              <h4 class="font-h4 sp-b-1-1">
+                                                Занятия в&nbsp;удобное время
+                                              </h4>
+                                            </div>
+                                            <p class="font-t-m">
+                                              Занимайтесь без привязки ко&nbsp;времени и&nbsp;месту&nbsp;—
+                                              потребуется только интернет
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </section>
+                                  <!---->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                  </div>
+                  </article>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+      </div>
+      </main>
+
+
+
+
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

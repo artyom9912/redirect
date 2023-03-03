@@ -1,0 +1,1508 @@
+.rt-icon {
+    opacity: 1;
+    position: relative;
+    visibility: visible;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: .4s;
+    -moz-transition-duration: .4s;
+    -o-transition-duration: .4s;
+    -ms-transition-duration: .4s;
+    transition-duration: .4s;
+    -webkit-transition-property: opacity, visibility;
+    -moz-transition-property: opacity, visibility;
+    -o-transition-property: opacity, visibility;
+    -ms-transition-property: opacity, visibility;
+    transition-property: opacity, visibility
+}
+
+.rt-icon__wrapper {
+    display: inline-block
+}
+
+.rt-icon.wc-icon {
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle
+}
+
+.rt-icon__value {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+.rt-icon .caption.top {
+    background: inherit;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 13px;
+    min-width: 21px;
+    height: 21px;
+    padding: 2px 4px;
+    position: absolute;
+    top: -8px;
+    right: -2px
+}
+
+.rt-icon .icon-speed__spinned-arrow,
+.rt-icon .icon-speed__spinned-arrow svg {
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+.rt-icon__INTERNET_ANTIVIRUS,
+.rt-icon__INTERNET_ANTIVIRUS_K,
+.rt-icon__INTERNET_GAMES,
+.rt-icon__INTERNET_GAMES_FIFA,
+.rt-icon__INTERNET_GAMES_WOT,
+.rt-icon__INTERNET_GAMES_WOW,
+.rt-icon__INTERNET_IP,
+.rt-icon__INTERNET_MAIN,
+.rt-icon__INTERNET_OFICE_365,
+.rt-icon__INTERNET_PARENT_CONTROL,
+.rt-icon__INTERNET_ROUTER,
+.rt-icon__INTERNET_SPEED_0,
+.rt-icon__INTERNET_SPEED_2,
+.rt-icon__INTERNET_SPEED_3,
+.rt-icon__INTERNET_SPEED_20,
+.rt-icon__INTERNET_SPEED_60,
+.rt-icon__INTERNET_SPEED_100,
+.rt-icon__INTERNET_SPEED_200,
+.rt-icon__INTERNET_SPEED_NIGHT,
+.rt-icon__MOBILE_CALL,
+.rt-icon__MOBILE_INTERNET,
+.rt-icon__MOBILE_MAIN,
+.rt-icon__MOBILE_MESSAGE,
+.rt-icon__MOBILE_RTK_APP,
+.rt-icon__MOBILE_SIM,
+.rt-icon__OTHER_BONUS_1,
+.rt-icon__OTHER_BONUS_2,
+.rt-icon__OTHER_DEFAULT,
+.rt-icon__OTHER_GIFT_1,
+.rt-icon__OTHER_GIFT_2,
+.rt-icon__OTHER_INSURANCE,
+.rt-icon__SMART_HOME_CLOUD,
+.rt-icon__SMART_HOME_DOOR_SENSOR,
+.rt-icon__SMART_HOME_FLAME_SENSOR,
+.rt-icon__SMART_HOME_INDOOR_VIDEO,
+.rt-icon__SMART_HOME_LED,
+.rt-icon__SMART_HOME_MAIN,
+.rt-icon__SMART_HOME_MOVE_SENSOR,
+.rt-icon__SMART_HOME_OUTDOOR_VIDEO,
+.rt-icon__SMART_HOME_POW_SOCKET,
+.rt-icon__SMART_HOME_WATER_SENSOR,
+.rt-icon__TELEPHONE_MAIN,
+.rt-icon__TELEPHONE_MOBILE,
+.rt-icon__TELEPHONE_TELEPHONES,
+.rt-icon__TV_CHANNEL_1,
+.rt-icon__TV_CHANNEL_2,
+.rt-icon__TV_CHANNEL_3,
+.rt-icon__TV_CHANNEL_4,
+.rt-icon__TV_CHANNEL_5,
+.rt-icon__TV_CHANNEL_6,
+.rt-icon__TV_CLOUD,
+.rt-icon__TV_CLOUD_ARH,
+.rt-icon__TV_CONTROL,
+.rt-icon__TV_HD,
+.rt-icon__TV_KARAOKE,
+.rt-icon__TV_MAIN,
+.rt-icon__TV_MEDIABOX,
+.rt-icon__TV_MULTIROOM,
+.rt-icon__TV_MULTISCREEN,
+.rt-icon__TV_ONLINE,
+.rt-icon__TV_ONLINE_STAR,
+.rt-icon__TV_PULT,
+.rt-icon__YA_DISK {
+    border: none;
+    fill: transparent;
+    stroke: #fff;
+    padding: 0
+}
+
+.rt-icon__INTERNET_ANTIVIRUS *,
+.rt-icon__INTERNET_ANTIVIRUS_K *,
+.rt-icon__INTERNET_GAMES *,
+.rt-icon__INTERNET_GAMES_FIFA *,
+.rt-icon__INTERNET_GAMES_WOT *,
+.rt-icon__INTERNET_GAMES_WOW *,
+.rt-icon__INTERNET_IP *,
+.rt-icon__INTERNET_MAIN *,
+.rt-icon__INTERNET_OFICE_365 *,
+.rt-icon__INTERNET_PARENT_CONTROL *,
+.rt-icon__INTERNET_ROUTER *,
+.rt-icon__INTERNET_SPEED_0 *,
+.rt-icon__INTERNET_SPEED_2 *,
+.rt-icon__INTERNET_SPEED_3 *,
+.rt-icon__INTERNET_SPEED_20 *,
+.rt-icon__INTERNET_SPEED_60 *,
+.rt-icon__INTERNET_SPEED_100 *,
+.rt-icon__INTERNET_SPEED_200 *,
+.rt-icon__INTERNET_SPEED_NIGHT *,
+.rt-icon__MOBILE_CALL *,
+.rt-icon__MOBILE_INTERNET *,
+.rt-icon__MOBILE_MAIN *,
+.rt-icon__MOBILE_MESSAGE *,
+.rt-icon__MOBILE_RTK_APP *,
+.rt-icon__MOBILE_SIM *,
+.rt-icon__OTHER_BONUS_1 *,
+.rt-icon__OTHER_BONUS_2 *,
+.rt-icon__OTHER_DEFAULT *,
+.rt-icon__OTHER_GIFT_1 *,
+.rt-icon__OTHER_GIFT_2 *,
+.rt-icon__OTHER_INSURANCE *,
+.rt-icon__SMART_HOME_CLOUD *,
+.rt-icon__SMART_HOME_DOOR_SENSOR *,
+.rt-icon__SMART_HOME_FLAME_SENSOR *,
+.rt-icon__SMART_HOME_INDOOR_VIDEO *,
+.rt-icon__SMART_HOME_LED *,
+.rt-icon__SMART_HOME_MAIN *,
+.rt-icon__SMART_HOME_MOVE_SENSOR *,
+.rt-icon__SMART_HOME_OUTDOOR_VIDEO *,
+.rt-icon__SMART_HOME_POW_SOCKET *,
+.rt-icon__SMART_HOME_WATER_SENSOR *,
+.rt-icon__TELEPHONE_MAIN *,
+.rt-icon__TELEPHONE_MOBILE *,
+.rt-icon__TELEPHONE_TELEPHONES *,
+.rt-icon__TV_CHANNEL_1 *,
+.rt-icon__TV_CHANNEL_2 *,
+.rt-icon__TV_CHANNEL_3 *,
+.rt-icon__TV_CHANNEL_4 *,
+.rt-icon__TV_CHANNEL_5 *,
+.rt-icon__TV_CHANNEL_6 *,
+.rt-icon__TV_CLOUD *,
+.rt-icon__TV_CLOUD_ARH *,
+.rt-icon__TV_CONTROL *,
+.rt-icon__TV_HD *,
+.rt-icon__TV_KARAOKE *,
+.rt-icon__TV_MAIN *,
+.rt-icon__TV_MEDIABOX *,
+.rt-icon__TV_MULTIROOM *,
+.rt-icon__TV_MULTISCREEN *,
+.rt-icon__TV_ONLINE *,
+.rt-icon__TV_ONLINE_STAR *,
+.rt-icon__TV_PULT *,
+.rt-icon__YA_DISK * {
+    fill: inherit;
+    stroke: inherit
+}
+
+.rt-icon__INTERNET_ANTIVIRUS_K g,
+.rt-icon__INTERNET_ANTIVIRUS g,
+.rt-icon__INTERNET_GAMES_FIFA g,
+.rt-icon__INTERNET_GAMES_WOT g,
+.rt-icon__INTERNET_GAMES_WOW g,
+.rt-icon__INTERNET_GAMES g,
+.rt-icon__INTERNET_IP g,
+.rt-icon__INTERNET_MAIN g,
+.rt-icon__INTERNET_OFICE_365 g,
+.rt-icon__INTERNET_PARENT_CONTROL g,
+.rt-icon__INTERNET_ROUTER g,
+.rt-icon__INTERNET_SPEED_0 g,
+.rt-icon__INTERNET_SPEED_2 g,
+.rt-icon__INTERNET_SPEED_3 g,
+.rt-icon__INTERNET_SPEED_20 g,
+.rt-icon__INTERNET_SPEED_60 g,
+.rt-icon__INTERNET_SPEED_100 g,
+.rt-icon__INTERNET_SPEED_200 g,
+.rt-icon__INTERNET_SPEED_NIGHT g,
+.rt-icon__MOBILE_CALL g,
+.rt-icon__MOBILE_INTERNET g,
+.rt-icon__MOBILE_MAIN g,
+.rt-icon__MOBILE_MESSAGE g,
+.rt-icon__MOBILE_RTK_APP g,
+.rt-icon__MOBILE_SIM g,
+.rt-icon__OTHER_BONUS_1 g,
+.rt-icon__OTHER_BONUS_2 g,
+.rt-icon__OTHER_DEFAULT g,
+.rt-icon__OTHER_GIFT_1 g,
+.rt-icon__OTHER_GIFT_2 g,
+.rt-icon__OTHER_INSURANCE g,
+.rt-icon__SMART_HOME_CLOUD g,
+.rt-icon__SMART_HOME_DOOR_SENSOR g,
+.rt-icon__SMART_HOME_FLAME_SENSOR g,
+.rt-icon__SMART_HOME_INDOOR_VIDEO g,
+.rt-icon__SMART_HOME_LED g,
+.rt-icon__SMART_HOME_MAIN g,
+.rt-icon__SMART_HOME_MOVE_SENSOR g,
+.rt-icon__SMART_HOME_OUTDOOR_VIDEO g,
+.rt-icon__SMART_HOME_POW_SOCKET g,
+.rt-icon__SMART_HOME_WATER_SENSOR g,
+.rt-icon__TELEPHONE_MAIN g,
+.rt-icon__TELEPHONE_MOBILE g,
+.rt-icon__TELEPHONE_TELEPHONES g,
+.rt-icon__TV_CHANNEL_1 g,
+.rt-icon__TV_CHANNEL_2 g,
+.rt-icon__TV_CHANNEL_3 g,
+.rt-icon__TV_CHANNEL_4 g,
+.rt-icon__TV_CHANNEL_5 g,
+.rt-icon__TV_CHANNEL_6 g,
+.rt-icon__TV_CLOUD_ARH g,
+.rt-icon__TV_CLOUD g,
+.rt-icon__TV_CONTROL g,
+.rt-icon__TV_HD g,
+.rt-icon__TV_KARAOKE g,
+.rt-icon__TV_MAIN g,
+.rt-icon__TV_MEDIABOX g,
+.rt-icon__TV_MULTIROOM g,
+.rt-icon__TV_MULTISCREEN g,
+.rt-icon__TV_ONLINE_STAR g,
+.rt-icon__TV_ONLINE g,
+.rt-icon__TV_PULT g,
+.rt-icon__YA_DISK g {
+    opacity: 1
+}
+
+.rt-icon__INTERNET_ANTIVIRUS [pid="0"],
+.rt-icon__INTERNET_ANTIVIRUS_K [pid="0"],
+.rt-icon__INTERNET_GAMES [pid="0"],
+.rt-icon__INTERNET_GAMES_FIFA [pid="0"],
+.rt-icon__INTERNET_GAMES_WOT [pid="0"],
+.rt-icon__INTERNET_GAMES_WOW [pid="0"],
+.rt-icon__INTERNET_IP [pid="0"],
+.rt-icon__INTERNET_MAIN [pid="0"],
+.rt-icon__INTERNET_OFICE_365 [pid="0"],
+.rt-icon__INTERNET_PARENT_CONTROL [pid="0"],
+.rt-icon__INTERNET_ROUTER [pid="0"],
+.rt-icon__INTERNET_SPEED_0 [pid="0"],
+.rt-icon__INTERNET_SPEED_2 [pid="0"],
+.rt-icon__INTERNET_SPEED_3 [pid="0"],
+.rt-icon__INTERNET_SPEED_20 [pid="0"],
+.rt-icon__INTERNET_SPEED_60 [pid="0"],
+.rt-icon__INTERNET_SPEED_100 [pid="0"],
+.rt-icon__INTERNET_SPEED_200 [pid="0"],
+.rt-icon__INTERNET_SPEED_NIGHT [pid="0"],
+.rt-icon__MOBILE_CALL [pid="0"],
+.rt-icon__MOBILE_INTERNET [pid="0"],
+.rt-icon__MOBILE_MAIN [pid="0"],
+.rt-icon__MOBILE_MESSAGE [pid="0"],
+.rt-icon__MOBILE_RTK_APP [pid="0"],
+.rt-icon__MOBILE_SIM [pid="0"],
+.rt-icon__OTHER_BONUS_1 [pid="0"],
+.rt-icon__OTHER_BONUS_2 [pid="0"],
+.rt-icon__OTHER_DEFAULT [pid="0"],
+.rt-icon__OTHER_GIFT_1 [pid="0"],
+.rt-icon__OTHER_GIFT_2 [pid="0"],
+.rt-icon__OTHER_INSURANCE [pid="0"],
+.rt-icon__SMART_HOME_CLOUD [pid="0"],
+.rt-icon__SMART_HOME_DOOR_SENSOR [pid="0"],
+.rt-icon__SMART_HOME_FLAME_SENSOR [pid="0"],
+.rt-icon__SMART_HOME_INDOOR_VIDEO [pid="0"],
+.rt-icon__SMART_HOME_LED [pid="0"],
+.rt-icon__SMART_HOME_MAIN [pid="0"],
+.rt-icon__SMART_HOME_MOVE_SENSOR [pid="0"],
+.rt-icon__SMART_HOME_OUTDOOR_VIDEO [pid="0"],
+.rt-icon__SMART_HOME_POW_SOCKET [pid="0"],
+.rt-icon__SMART_HOME_WATER_SENSOR [pid="0"],
+.rt-icon__TELEPHONE_MAIN [pid="0"],
+.rt-icon__TELEPHONE_MOBILE [pid="0"],
+.rt-icon__TELEPHONE_TELEPHONES [pid="0"],
+.rt-icon__TV_CHANNEL_1 [pid="0"],
+.rt-icon__TV_CHANNEL_2 [pid="0"],
+.rt-icon__TV_CHANNEL_3 [pid="0"],
+.rt-icon__TV_CHANNEL_4 [pid="0"],
+.rt-icon__TV_CHANNEL_5 [pid="0"],
+.rt-icon__TV_CHANNEL_6 [pid="0"],
+.rt-icon__TV_CLOUD [pid="0"],
+.rt-icon__TV_CLOUD_ARH [pid="0"],
+.rt-icon__TV_CONTROL [pid="0"],
+.rt-icon__TV_HD [pid="0"],
+.rt-icon__TV_KARAOKE [pid="0"],
+.rt-icon__TV_MAIN [pid="0"],
+.rt-icon__TV_MEDIABOX [pid="0"],
+.rt-icon__TV_MULTIROOM [pid="0"],
+.rt-icon__TV_MULTISCREEN [pid="0"],
+.rt-icon__TV_ONLINE [pid="0"],
+.rt-icon__TV_ONLINE_STAR [pid="0"],
+.rt-icon__TV_PULT [pid="0"],
+.rt-icon__YA_DISK [pid="0"] {
+    stroke-width: 0
+}
+
+.rt-icon__INTERNET_ANTIVIRUS {
+    background: #ff5f4b
+}
+
+.rt-icon__INTERNET_ANTIVIRUS [pid="2"] {
+    stroke-width: 1px
+}
+
+.rt-icon__INTERNET_ANTIVIRUS_K {
+    background: #efefef
+}
+
+.rt-icon__INTERNET_ANTIVIRUS_K [pid="1"] {
+    fill: #ff3c22;
+    stroke: transparent
+}
+
+.rt-icon__INTERNET_ANTIVIRUS_K [pid="2"] {
+    fill: #1f3238;
+    stroke: transparent
+}
+
+.rt-icon__INTERNET_GAMES {
+    background-image: -webkit-linear-gradient(315deg, #3023ae, #c86dd7);
+    background-image: -moz-linear-gradient(315deg, #3023ae, #c86dd7);
+    background-image: -o-linear-gradient(315deg, #3023ae, #c86dd7);
+    background-image: -ms-linear-gradient(315deg, #3023ae, #c86dd7);
+    background-image: linear-gradient(135deg, #3023ae, #c86dd7)
+}
+
+.rt-icon__INTERNET_GAMES_FIFA {
+    background: #f5f5f5
+}
+
+.rt-icon__INTERNET_GAMES_FIFA [pid="1"],
+.rt-icon__INTERNET_GAMES_FIFA [pid="3"] {
+    fill: #e79a01;
+    fill: linear-gradient(135deg, #ffd000, #e79a01);
+    stroke: transparent
+}
+
+.rt-icon__INTERNET_GAMES_FIFA [pid="2"],
+.rt-icon__INTERNET_GAMES_FIFA [pid="4"],
+.rt-icon__INTERNET_GAMES_FIFA [pid="5"] {
+    fill: #1d1d1b;
+    stroke: transparent
+}
+
+.rt-icon__INTERNET_GAMES_WOT {
+    background: #dc4428
+}
+
+.rt-icon__INTERNET_GAMES_WOT [pid="1"],
+.rt-icon__INTERNET_GAMES_WOT [pid="2"] {
+    fill: #fff;
+    stroke: transparent
+}
+
+.rt-icon__INTERNET_GAMES_WOW {
+    background: #0058b1
+}
+
+.rt-icon__INTERNET_GAMES_WOW [pid="2"] {
+    fill: #fff;
+    stroke: transparent
+}
+
+.rt-icon__INTERNET_IP {
+    background: #50e3c2
+}
+
+.rt-icon__INTERNET_IP [pid="2"] {
+    stroke-width: 1px
+}
+
+.rt-icon__INTERNET_MAIN {
+    background: #48b2f1
+}
+
+.rt-icon__INTERNET_MAIN [pid="2"] {
+    stroke-width: 1px
+}
+
+.rt-icon__INTERNET_OFICE_365 {
+    background: #efefef
+}
+
+.rt-icon__INTERNET_OFICE_365 [pid="1"] {
+    fill: #ff3f00;
+    stroke: transparent
+}
+
+.rt-icon__INTERNET_PARENT_CONTROL {
+    background-image: -webkit-linear-gradient(293deg, #e99fd0, #e6a671);
+    background-image: -moz-linear-gradient(293deg, #e99fd0, #e6a671);
+    background-image: -o-linear-gradient(293deg, #e99fd0, #e6a671);
+    background-image: -ms-linear-gradient(293deg, #e99fd0, #e6a671);
+    background-image: linear-gradient(157deg, #e99fd0, #e6a671)
+}
+
+.rt-icon__INTERNET_PARENT_CONTROL [pid="1"],
+.rt-icon__INTERNET_PARENT_CONTROL [pid="3"] {
+    stroke-width: 1px
+}
+
+.rt-icon__INTERNET_PARENT_CONTROL [pid="4"] {
+    fill: #fff;
+    stroke: transparent
+}
+
+.rt-icon__INTERNET_ROUTER {
+    background: #c9c2e7
+}
+
+.rt-icon__INTERNET_ROUTER [pid="2"] {
+    stroke-width: 1px
+}
+
+.rt-icon__INTERNET_SPEED_0 {
+    background: #48b2f1
+}
+
+.rt-icon__INTERNET_SPEED_0 path {
+    stroke-width: 1px
+}
+
+.rt-icon__INTERNET_SPEED_20 {
+    background: #48b2f1
+}
+
+.rt-icon__INTERNET_SPEED_20 path {
+    stroke-width: 1px
+}
+
+.rt-icon__INTERNET_SPEED_20 [pid="1"] {
+    stroke-width: 2px
+}
+
+.rt-icon__INTERNET_SPEED_60 {
+    background: #48b2f1
+}
+
+.rt-icon__INTERNET_SPEED_60 path {
+    stroke-width: 1px
+}
+
+.rt-icon__INTERNET_SPEED_60 [pid="1"] {
+    stroke-width: 2px
+}
+
+.rt-icon__INTERNET_SPEED_100 {
+    background: #48b2f1
+}
+
+.rt-icon__INTERNET_SPEED_100 path {
+    stroke-width: 1px
+}
+
+.rt-icon__INTERNET_SPEED_100 [pid="1"] {
+    stroke-width: 2px
+}
+
+.rt-icon__INTERNET_SPEED_200 {
+    background: #48b2f1
+}
+
+.rt-icon__INTERNET_SPEED_200 path {
+    stroke-width: 1px
+}
+
+.rt-icon__INTERNET_SPEED_200 [pid="1"] {
+    stroke-width: 2px
+}
+
+.rt-icon__INTERNET_SPEED_2 {
+    background-image: -webkit-linear-gradient(231deg, #ffbf4d, #ff475e);
+    background-image: -moz-linear-gradient(231deg, #ffbf4d, #ff475e);
+    background-image: -o-linear-gradient(231deg, #ffbf4d, #ff475e);
+    background-image: -ms-linear-gradient(231deg, #ffbf4d, #ff475e);
+    background-image: linear-gradient(219deg, #ffbf4d, #ff475e)
+}
+
+.rt-icon__INTERNET_SPEED_2 [pid="1"] {
+    stroke-width: 1px
+}
+
+.rt-icon__INTERNET_SPEED_3 {
+    background-image: -webkit-linear-gradient(231deg, #ff8d4d, #ff475e);
+    background-image: -moz-linear-gradient(231deg, #ff8d4d, #ff475e);
+    background-image: -o-linear-gradient(231deg, #ff8d4d, #ff475e);
+    background-image: -ms-linear-gradient(231deg, #ff8d4d, #ff475e);
+    background-image: linear-gradient(219deg, #ff8d4d, #ff475e)
+}
+
+.rt-icon__INTERNET_SPEED_3 [pid="2"] {
+    stroke-width: 1px
+}
+
+.rt-icon__INTERNET_SPEED_NIGHT {
+    background-image: -webkit-linear-gradient(315deg, #1900ff, #de3bf9);
+    background-image: -moz-linear-gradient(315deg, #1900ff, #de3bf9);
+    background-image: -o-linear-gradient(315deg, #1900ff, #de3bf9);
+    background-image: -ms-linear-gradient(315deg, #1900ff, #de3bf9);
+    background-image: linear-gradient(135deg, #1900ff, #de3bf9)
+}
+
+.rt-icon__MOBILE_MAIN {
+    background-color: #f56ddc
+}
+
+.rt-icon__MOBILE_MAIN [pid="2"],
+.rt-icon__MOBILE_MAIN [pid="3"] {
+    stroke-width: 1px
+}
+
+.rt-icon__MOBILE_CALL {
+    background-image: -webkit-linear-gradient(315deg, #f56ddc, #ff7640);
+    background-image: -moz-linear-gradient(315deg, #f56ddc, #ff7640);
+    background-image: -o-linear-gradient(315deg, #f56ddc, #ff7640);
+    background-image: -ms-linear-gradient(315deg, #f56ddc, #ff7640);
+    background-image: linear-gradient(135deg, #f56ddc, #ff7640)
+}
+
+.rt-icon__MOBILE_CALL [pid="1"],
+.rt-icon__MOBILE_CALL [pid="3"] {
+    stroke-width: 1px
+}
+
+.rt-icon__MOBILE_CALL [pid="4"] {
+    fill: #fff;
+    stroke: transparent
+}
+
+.rt-icon__MOBILE_INTERNET {
+    background-image: -webkit-linear-gradient(top, #74e2d0, #48b2f1);
+    background-image: -moz-linear-gradient(top, #74e2d0, #48b2f1);
+    background-image: -o-linear-gradient(top, #74e2d0, #48b2f1);
+    background-image: -ms-linear-gradient(top, #74e2d0, #48b2f1);
+    background-image: linear-gradient(180deg, #74e2d0, #48b2f1)
+}
+
+.rt-icon__MOBILE_INTERNET [pid="2"],
+.rt-icon__MOBILE_INTERNET [pid="3"],
+.rt-icon__MOBILE_INTERNET [pid="5"],
+.rt-icon__MOBILE_INTERNET [pid="6"] {
+    stroke-width: 1px
+}
+
+.rt-icon__MOBILE_MESSAGE {
+    background-image: -webkit-linear-gradient(225deg, #7ed9f9, #48b2f1);
+    background-image: -moz-linear-gradient(225deg, #7ed9f9, #48b2f1);
+    background-image: -o-linear-gradient(225deg, #7ed9f9, #48b2f1);
+    background-image: -ms-linear-gradient(225deg, #7ed9f9, #48b2f1);
+    background-image: linear-gradient(225deg, #7ed9f9, #48b2f1)
+}
+
+.rt-icon__MOBILE_MESSAGE [pid="1"],
+.rt-icon__MOBILE_MESSAGE [pid="3"],
+.rt-icon__MOBILE_MESSAGE [pid="4"] {
+    stroke-width: 1px
+}
+
+.rt-icon__MOBILE_RTK_APP {
+    background-image: -webkit-linear-gradient(311deg, #ff9b36, #ef98de);
+    background-image: -moz-linear-gradient(311deg, #ff9b36, #ef98de);
+    background-image: -o-linear-gradient(311deg, #ff9b36, #ef98de);
+    background-image: -ms-linear-gradient(311deg, #ff9b36, #ef98de);
+    background-image: linear-gradient(139deg, #ff9b36, #ef98de)
+}
+
+.rt-icon__MOBILE_RTK_APP [pid="1"],
+.rt-icon__MOBILE_RTK_APP [pid="2"] {
+    stroke-width: 1px
+}
+
+.rt-icon__MOBILE_SIM {
+    background: #b8e986
+}
+
+.rt-icon__MOBILE_SIM [pid="1"],
+.rt-icon__MOBILE_SIM [pid="2"] {
+    stroke-width: 1.5
+}
+
+.rt-icon__SMART_HOME_CLOUD {
+    background-image: -webkit-linear-gradient(232deg, #00bffe, #4decff);
+    background-image: -moz-linear-gradient(232deg, #00bffe, #4decff);
+    background-image: -o-linear-gradient(232deg, #00bffe, #4decff);
+    background-image: -ms-linear-gradient(232deg, #00bffe, #4decff);
+    background-image: linear-gradient(218deg, #00bffe, #4decff)
+}
+
+.rt-icon__SMART_HOME_DOOR_SENSOR {
+    background-image: -webkit-linear-gradient(top, #e9dac2, #cfb28f);
+    background-image: -moz-linear-gradient(top, #e9dac2, #cfb28f);
+    background-image: -o-linear-gradient(top, #e9dac2, #cfb28f);
+    background-image: -ms-linear-gradient(top, #e9dac2, #cfb28f);
+    background-image: linear-gradient(180deg, #e9dac2, #cfb28f)
+}
+
+.rt-icon__SMART_HOME_DOOR_SENSOR [pid="5"] {
+    stroke-width: 1px
+}
+
+.rt-icon__SMART_HOME_FLAME_SENSOR {
+    background-image: -webkit-linear-gradient(top, #ffe4ad, #ff7e74);
+    background-image: -moz-linear-gradient(top, #ffe4ad, #ff7e74);
+    background-image: -o-linear-gradient(top, #ffe4ad, #ff7e74);
+    background-image: -ms-linear-gradient(top, #ffe4ad, #ff7e74);
+    background-image: linear-gradient(180deg, #ffe4ad, #ff7e74)
+}
+
+.rt-icon__SMART_HOME_INDOOR_VIDEO {
+    background: #00c8f9
+}
+
+.rt-icon__SMART_HOME_INDOOR_VIDEO [pid="4"],
+.rt-icon__SMART_HOME_INDOOR_VIDEO [pid="5"],
+.rt-icon__SMART_HOME_INDOOR_VIDEO [pid="6"] {
+    stroke-width: 1px
+}
+
+.rt-icon__SMART_HOME_LED {
+    background: #ffd800
+}
+
+.rt-icon__SMART_HOME_LED [pid="1"],
+.rt-icon__SMART_HOME_LED [pid="2"] {
+    stroke-width: 1.5
+}
+
+.rt-icon__SMART_HOME_MAIN {
+    background: #b6de4e
+}
+
+.rt-icon__SMART_HOME_OUTDOOR_VIDEO {
+    background: #00c8f9
+}
+
+.rt-icon__SMART_HOME_POW_SOCKET {
+    background: #3bbc9e
+}
+
+.rt-icon__SMART_HOME_POW_SOCKET [pid="2"],
+.rt-icon__SMART_HOME_POW_SOCKET [pid="3"] {
+    stroke-width: 1.5
+}
+
+.rt-icon__SMART_HOME_MOVE_SENSOR {
+    background-image: -webkit-linear-gradient(45deg, #00d8d0, #00d6df);
+    background-image: -moz-linear-gradient(45deg, #00d8d0, #00d6df);
+    background-image: -o-linear-gradient(45deg, #00d8d0, #00d6df);
+    background-image: -ms-linear-gradient(45deg, #00d8d0, #00d6df);
+    background-image: linear-gradient(45deg, #00d8d0, #00d6df)
+}
+
+.rt-icon__SMART_HOME_MOVE_SENSOR [pid="1"] {
+    stroke: transparent
+}
+
+.rt-icon__SMART_HOME_WATER_SENSOR {
+    background-image: -webkit-linear-gradient(top, #3677eb, #0c8cd1);
+    background-image: -moz-linear-gradient(top, #3677eb, #0c8cd1);
+    background-image: -o-linear-gradient(top, #3677eb, #0c8cd1);
+    background-image: -ms-linear-gradient(top, #3677eb, #0c8cd1);
+    background-image: linear-gradient(180deg, #3677eb, #0c8cd1)
+}
+
+.rt-icon__TELEPHONE_MAIN {
+    background: #ff7640
+}
+
+.rt-icon__TELEPHONE_MAIN [pid="2"] {
+    stroke-width: 1px
+}
+
+.rt-icon__TELEPHONE_MOBILE {
+    background: #7cbfff
+}
+
+.rt-icon__TELEPHONE_MOBILE [pid="2"],
+.rt-icon__TELEPHONE_MOBILE [pid="3"] {
+    stroke-width: 1px
+}
+
+.rt-icon__TELEPHONE_TELEPHONES {
+    background-image: -webkit-linear-gradient(312deg, #f56ddc, #ff7640);
+    background-image: -moz-linear-gradient(312deg, #f56ddc, #ff7640);
+    background-image: -o-linear-gradient(312deg, #f56ddc, #ff7640);
+    background-image: -ms-linear-gradient(312deg, #f56ddc, #ff7640);
+    background-image: linear-gradient(138deg, #f56ddc, #ff7640)
+}
+
+.rt-icon__TELEPHONE_TELEPHONES [pid="2"] {
+    stroke-width: 1px
+}
+
+.rt-icon__TELEPHONE_UNLIM [pid="0"] {
+    stroke: none
+}
+
+.rt-icon__TV_MAIN {
+    background: #9a85fc
+}
+
+.rt-icon__TV_MAIN [pid="2"] {
+    fill: #fff;
+    stroke: none
+}
+
+.rt-icon__TV_HD {
+    background: #9a85fc
+}
+
+.rt-icon__TV_HD [pid="2"] {
+    fill: #fff
+}
+
+.rt-icon__TV_HD [pid="3"],
+.rt-icon__TV_HD [pid="4"] {
+    stroke-width: 1px
+}
+
+.rt-icon__TV_CHANNEL_1 {
+    background-image: -webkit-linear-gradient(top, #ffd95f, #e49f4e);
+    background-image: -moz-linear-gradient(top, #ffd95f, #e49f4e);
+    background-image: -o-linear-gradient(top, #ffd95f, #e49f4e);
+    background-image: -ms-linear-gradient(top, #ffd95f, #e49f4e);
+    background-image: linear-gradient(180deg, #ffd95f, #e49f4e)
+}
+
+.rt-icon__TV_CHANNEL_2 {
+    background: #efefef
+}
+
+.rt-icon__TV_CHANNEL_2 [pid="1"] {
+    fill: #424242;
+    stroke: transparent
+}
+
+.rt-icon__TV_CHANNEL_3 {
+    background: #efefef
+}
+
+.rt-icon__TV_CHANNEL_3 [pid="1"],
+.rt-icon__TV_CHANNEL_3 [pid="2"],
+.rt-icon__TV_CHANNEL_3 [pid="3"] {
+    fill: #dc4428;
+    stroke: transparent
+}
+
+.rt-icon__TV_CHANNEL_4 {
+    background-image: -webkit-linear-gradient(top, #f5515f, #9f041b);
+    background-image: -moz-linear-gradient(top, #f5515f, #9f041b);
+    background-image: -o-linear-gradient(top, #f5515f, #9f041b);
+    background-image: -ms-linear-gradient(top, #f5515f, #9f041b);
+    background-image: linear-gradient(180deg, #f5515f, #9f041b)
+}
+
+.rt-icon__TV_CHANNEL_4 [pid="2"] {
+    fill: #fff
+}
+
+.rt-icon__TV_CHANNEL_4 [pid="3"] {
+    stroke-width: 1px
+}
+
+.rt-icon__TV_CHANNEL_5 {
+    background: #50e3c2
+}
+
+.rt-icon__TV_CHANNEL_5 [pid="2"] {
+    fill: #fff
+}
+
+.rt-icon__TV_CHANNEL_5 [pid="4"] {
+    stroke-width: 1px
+}
+
+.rt-icon__TV_CHANNEL_6 {
+    background: #efefef
+}
+
+.rt-icon__TV_CHANNEL_6 [pid="1"] {
+    fill: #5c79bb;
+    fill: linear-gradient(180deg, #5c79bb, #6e84b4);
+    stroke: transparent
+}
+
+.rt-icon__TV_CLOUD,
+.rt-icon__TV_CLOUD_ARH {
+    background-image: -webkit-linear-gradient(232deg, #00bffe, #4decff);
+    background-image: -moz-linear-gradient(232deg, #00bffe, #4decff);
+    background-image: -o-linear-gradient(232deg, #00bffe, #4decff);
+    background-image: -ms-linear-gradient(232deg, #00bffe, #4decff);
+    background-image: linear-gradient(218deg, #00bffe, #4decff)
+}
+
+.rt-icon__TV_CLOUD_ARH [pid="2"] {
+    fill: #fff
+}
+
+.rt-icon__TV_CONTROL {
+    background-image: -webkit-linear-gradient(222deg, #85ffcf, #31abde);
+    background-image: -moz-linear-gradient(222deg, #85ffcf, #31abde);
+    background-image: -o-linear-gradient(222deg, #85ffcf, #31abde);
+    background-image: -ms-linear-gradient(222deg, #85ffcf, #31abde);
+    background-image: linear-gradient(228deg, #85ffcf, #31abde)
+}
+
+.rt-icon__TV_CONTROL [pid="2"] {
+    fill: #fff
+}
+
+.rt-icon__TV_KARAOKE {
+    background: #ffc232
+}
+
+.rt-icon__TV_KARAOKE [pid="3"] {
+    stroke-width: 1px
+}
+
+.rt-icon__TV_MEDIABOX {
+    background: #c9c2e7
+}
+
+.rt-icon__TV_MULTIROOM {
+    background-image: -webkit-linear-gradient(225deg, #fad961, #fbb0ff);
+    background-image: -moz-linear-gradient(225deg, #fad961, #fbb0ff);
+    background-image: -o-linear-gradient(225deg, #fad961, #fbb0ff);
+    background-image: -ms-linear-gradient(225deg, #fad961, #fbb0ff);
+    background-image: linear-gradient(225deg, #fad961, #fbb0ff)
+}
+
+.rt-icon__TV_MULTISCREEN {
+    background-image: -webkit-linear-gradient(222deg, #d3ff85, #21938a);
+    background-image: -moz-linear-gradient(222deg, #d3ff85, #21938a);
+    background-image: -o-linear-gradient(222deg, #d3ff85, #21938a);
+    background-image: -ms-linear-gradient(222deg, #d3ff85, #21938a);
+    background-image: linear-gradient(228deg, #d3ff85, #21938a)
+}
+
+.rt-icon__TV_MULTISCREEN [pid="2"] {
+    stroke-width: 1px
+}
+
+.rt-icon__TV_MULTISCREEN [pid="3"],
+.rt-icon__TV_MULTISCREEN [pid="5"] {
+    fill: #fff;
+    stroke: transparent
+}
+
+.rt-icon__TV_ONLINE {
+    background: #ff4f12
+}
+
+.rt-icon__TV_ONLINE [pid="0"] {
+    stroke: transparent
+}
+
+.rt-icon__TV_ONLINE [pid="1"] {
+    fill: #fff;
+    stroke: transparent
+}
+
+.rt-icon__TV_ONLINE_STAR {
+    background: #6b68e7
+}
+
+.rt-icon__TV_ONLINE_STAR [pid="1"] {
+    stroke-width: 1.5
+}
+
+.rt-icon__TV_ONLINE_STAR [pid="2"] {
+    fill: #fff;
+    stroke: transparent
+}
+
+.rt-icon__TV_ONLINE_STAR [pid="3"] {
+    stroke-width: 1
+}
+
+.rt-icon__TV_PULT {
+    background: #c9c2e7
+}
+
+.rt-icon__OTHER_DEFAULT {
+    background: #a8bae7
+}
+
+.rt-icon__OTHER_DEFAULT [pid="1"],
+.rt-icon__OTHER_DEFAULT [pid="2"],
+.rt-icon__OTHER_DEFAULT [pid="3"],
+.rt-icon__OTHER_DEFAULT [pid="4"],
+.rt-icon__OTHER_DEFAULT [pid="5"],
+.rt-icon__OTHER_DEFAULT [pid="6"] {
+    stroke-width: 1px
+}
+
+.rt-icon__OTHER_BONUS_1 {
+    background-image: -webkit-linear-gradient(225deg, #d1cdff, #71e7ff 54%, #d8caff);
+    background-image: -moz-linear-gradient(225deg, #d1cdff, #71e7ff 54%, #d8caff);
+    background-image: -o-linear-gradient(225deg, #d1cdff, #71e7ff 54%, #d8caff);
+    background-image: -ms-linear-gradient(225deg, #d1cdff, #71e7ff 54%, #d8caff);
+    background-image: linear-gradient(225deg, #d1cdff, #71e7ff 54%, #d8caff)
+}
+
+.rt-icon__OTHER_BONUS_1 [pid="1"],
+.rt-icon__OTHER_BONUS_1 [pid="2"],
+.rt-icon__OTHER_BONUS_1 [pid="3"] {
+    stroke-width: 1px
+}
+
+.rt-icon__OTHER_BONUS_2 {
+    background-image: -webkit-linear-gradient(225deg, #ffdab1, #ffa99a 51%, #ffd8ac);
+    background-image: -moz-linear-gradient(225deg, #ffdab1, #ffa99a 51%, #ffd8ac);
+    background-image: -o-linear-gradient(225deg, #ffdab1, #ffa99a 51%, #ffd8ac);
+    background-image: -ms-linear-gradient(225deg, #ffdab1, #ffa99a 51%, #ffd8ac);
+    background-image: linear-gradient(225deg, #ffdab1, #ffa99a 51%, #ffd8ac)
+}
+
+.rt-icon__OTHER_BONUS_2 [pid="1"],
+.rt-icon__OTHER_BONUS_2 [pid="2"],
+.rt-icon__OTHER_BONUS_2 [pid="3"] {
+    stroke-width: 1px
+}
+
+.rt-icon__OTHER_GIFT_1 {
+    background: #ff7e74
+}
+
+.rt-icon__OTHER_GIFT_1 [pid="2"],
+.rt-icon__OTHER_GIFT_1 [pid="3"] {
+    stroke-width: 1px
+}
+
+.rt-icon__OTHER_GIFT_2 {
+    background: #ff7e74
+}
+
+.rt-icon__OTHER_INSURANCE {
+    background: #ffc232
+}
+
+.rt-icon__YA_DISK {
+    background: #f5f5f5
+}
+
+.rt-icon__YA_DISK [pid="0"] {
+    fill: none
+}
+
+.rt-icon__YA_DISK [pid="1"] {
+    stroke-width: 0px;
+    fill: #07f
+}
+
+.rt-icon__YA_DISK [pid="2"] {
+    stroke-width: 0px;
+    fill: #0d1114
+}
+
+.rt-icon__icon_24,
+.rt-icon__icon_25,
+.rt-icon__icon_26,
+.rt-icon__icon_110,
+.rt-icon__icon_111,
+.rt-icon__icon_112,
+.rt-icon__icon_127,
+.rt-icon__icon_131,
+.rt-icon__icon_146,
+.rt-icon__icon_160,
+.rt-icon__icon_239,
+.rt-icon__icon_243,
+.rt-icon__icon_244,
+.rt-icon__icon_245,
+.rt-icon__icon_246,
+.rt-icon__icon_291,
+.rt-icon__icon_402,
+.rt-icon__icon_403,
+.rt-icon__icon_404,
+.rt-icon__icon_405,
+.rt-icon__icon_406,
+.rt-icon__icon_407,
+.rt-icon__icon_408,
+.rt-icon__icon_409,
+.rt-icon__icon_410,
+.rt-icon__icon_411,
+.rt-icon__icon_417,
+.rt-icon__icon_418,
+.rt-icon__icon_419 {
+    border: none;
+    fill: transparent;
+    stroke: #fff;
+    padding: 10px
+}
+
+.rt-icon__icon_24 *,
+.rt-icon__icon_25 *,
+.rt-icon__icon_26 *,
+.rt-icon__icon_110 *,
+.rt-icon__icon_111 *,
+.rt-icon__icon_112 *,
+.rt-icon__icon_127 *,
+.rt-icon__icon_131 *,
+.rt-icon__icon_146 *,
+.rt-icon__icon_160 *,
+.rt-icon__icon_239 *,
+.rt-icon__icon_243 *,
+.rt-icon__icon_244 *,
+.rt-icon__icon_245 *,
+.rt-icon__icon_246 *,
+.rt-icon__icon_291 *,
+.rt-icon__icon_402 *,
+.rt-icon__icon_403 *,
+.rt-icon__icon_404 *,
+.rt-icon__icon_405 *,
+.rt-icon__icon_406 *,
+.rt-icon__icon_407 *,
+.rt-icon__icon_408 *,
+.rt-icon__icon_409 *,
+.rt-icon__icon_410 *,
+.rt-icon__icon_411 *,
+.rt-icon__icon_417 *,
+.rt-icon__icon_418 *,
+.rt-icon__icon_419 * {
+    fill: inherit;
+    stroke: inherit
+}
+
+.rt-icon__icon_24 g,
+.rt-icon__icon_25 g,
+.rt-icon__icon_26 g,
+.rt-icon__icon_110 g,
+.rt-icon__icon_111 g,
+.rt-icon__icon_112 g,
+.rt-icon__icon_127 g,
+.rt-icon__icon_131 g,
+.rt-icon__icon_146 g,
+.rt-icon__icon_160 g,
+.rt-icon__icon_239 g,
+.rt-icon__icon_243 g,
+.rt-icon__icon_244 g,
+.rt-icon__icon_245 g,
+.rt-icon__icon_246 g,
+.rt-icon__icon_291 g,
+.rt-icon__icon_402 g,
+.rt-icon__icon_403 g,
+.rt-icon__icon_404 g,
+.rt-icon__icon_405 g,
+.rt-icon__icon_406 g,
+.rt-icon__icon_407 g,
+.rt-icon__icon_408 g,
+.rt-icon__icon_409 g,
+.rt-icon__icon_410 g,
+.rt-icon__icon_411 g,
+.rt-icon__icon_417 g,
+.rt-icon__icon_418 g,
+.rt-icon__icon_419 g {
+    opacity: 1
+}
+
+.rt-icon__icon_24,
+.rt-icon__icon_127 {
+    background: #c9c2e7
+}
+
+.rt-icon__icon_25 {
+    background: #7800ff
+}
+
+.rt-icon__icon_26 {
+    background: #ff5f4b
+}
+
+.rt-icon__icon_110,
+.rt-icon__icon_111,
+.rt-icon__icon_403,
+.rt-icon__icon_404,
+.rt-icon__icon_405,
+.rt-icon__icon_406 {
+    background: #48b2f1
+}
+
+.rt-icon__icon_112,
+.rt-icon__icon_243,
+.rt-icon__icon_244,
+.rt-icon__icon_245,
+.rt-icon__icon_246 {
+    background-image: -webkit-linear-gradient(top, #ffd95f, #a46d2c);
+    background-image: -moz-linear-gradient(top, #ffd95f, #a46d2c);
+    background-image: -o-linear-gradient(top, #ffd95f, #a46d2c);
+    background-image: -ms-linear-gradient(top, #ffd95f, #a46d2c);
+    background-image: linear-gradient(180deg, #ffd95f, #a46d2c)
+}
+
+.rt-icon__icon_131 {
+    background-image: -webkit-linear-gradient(225deg, #fad961, #fbb0ff);
+    background-image: -moz-linear-gradient(225deg, #fad961, #fbb0ff);
+    background-image: -o-linear-gradient(225deg, #fad961, #fbb0ff);
+    background-image: -ms-linear-gradient(225deg, #fad961, #fbb0ff);
+    background-image: linear-gradient(225deg, #fad961, #fbb0ff)
+}
+
+.rt-icon__icon_146 {
+    background-image: -webkit-linear-gradient(315deg, #1900ff, #de3bf9);
+    background-image: -moz-linear-gradient(315deg, #1900ff, #de3bf9);
+    background-image: -o-linear-gradient(315deg, #1900ff, #de3bf9);
+    background-image: -ms-linear-gradient(315deg, #1900ff, #de3bf9);
+    background-image: linear-gradient(135deg, #1900ff, #de3bf9)
+}
+
+.rt-icon__icon_160 {
+    background: #b6de4e
+}
+
+.rt-icon__icon_239 {
+    background: #50e3c2
+}
+
+.rt-icon__icon_291 {
+    background-image: -webkit-linear-gradient(225deg, #d1cdff, #71e7ff 54%, #d8caff);
+    background-image: -moz-linear-gradient(225deg, #d1cdff, #71e7ff 54%, #d8caff);
+    background-image: -o-linear-gradient(225deg, #d1cdff, #71e7ff 54%, #d8caff);
+    background-image: -ms-linear-gradient(225deg, #d1cdff, #71e7ff 54%, #d8caff);
+    background-image: linear-gradient(225deg, #d1cdff, #71e7ff 54%, #d8caff)
+}
+
+.rt-icon__icon_402 {
+    background: #ff7640
+}
+
+.rt-icon__icon_403 {
+    padding: 2px;
+    position: relative
+}
+
+.rt-icon__icon_403 [pid="2"],
+.rt-icon__icon_403 [pid="3"],
+.rt-icon__icon_403 [pid="4"] {
+    stroke-width: 1px
+}
+
+.rt-icon__icon_403 [pid="0"],
+.rt-icon__icon_403 [pid="1"],
+.rt-icon__icon_403 [pid="5"] {
+    stroke-width: 0
+}
+
+.rt-icon__icon_404,
+.rt-icon__icon_405,
+.rt-icon__icon_406 {
+    padding: 2px;
+    position: relative
+}
+
+.rt-icon__icon_404 [pid="3"],
+.rt-icon__icon_404 [pid="4"],
+.rt-icon__icon_404 [pid="5"],
+.rt-icon__icon_405 [pid="3"],
+.rt-icon__icon_405 [pid="4"],
+.rt-icon__icon_405 [pid="5"],
+.rt-icon__icon_406 [pid="3"],
+.rt-icon__icon_406 [pid="4"],
+.rt-icon__icon_406 [pid="5"] {
+    stroke-width: 1px
+}
+
+.rt-icon__icon_404 [pid="0"],
+.rt-icon__icon_404 [pid="1"],
+.rt-icon__icon_404 [pid="2"],
+.rt-icon__icon_404 [pid="6"],
+.rt-icon__icon_405 [pid="0"],
+.rt-icon__icon_405 [pid="1"],
+.rt-icon__icon_405 [pid="2"],
+.rt-icon__icon_405 [pid="6"],
+.rt-icon__icon_406 [pid="0"],
+.rt-icon__icon_406 [pid="1"],
+.rt-icon__icon_406 [pid="2"],
+.rt-icon__icon_406 [pid="6"] {
+    stroke-width: 0
+}
+
+.rt-icon__icon_405 {
+    padding: 2px;
+    position: relative
+}
+
+.rt-icon__icon_405 [pid="3"],
+.rt-icon__icon_405 [pid="4"],
+.rt-icon__icon_405 [pid="5"] {
+    stroke-width: 1px
+}
+
+.rt-icon__icon_405 [pid="0"],
+.rt-icon__icon_405 [pid="1"],
+.rt-icon__icon_405 [pid="2"],
+.rt-icon__icon_405 [pid="6"] {
+    stroke-width: 0
+}
+
+.rt-icon__icon_407 {
+    background-image: -webkit-linear-gradient(top, #74e2d0, #48b2f1);
+    background-image: -moz-linear-gradient(top, #74e2d0, #48b2f1);
+    background-image: -o-linear-gradient(top, #74e2d0, #48b2f1);
+    background-image: -ms-linear-gradient(top, #74e2d0, #48b2f1);
+    background-image: linear-gradient(180deg, #74e2d0, #48b2f1)
+}
+
+.rt-icon__icon_407 [pid="0"],
+.rt-icon__icon_407 [pid="1"],
+.rt-icon__icon_407 [pid="2"],
+.rt-icon__icon_407 svg>* {
+    stroke-width: 1
+}
+
+.rt-icon__icon_407 [pid="3"],
+.rt-icon__icon_407 [pid="6"] {
+    stroke-width: 1.5
+}
+
+.rt-icon__icon_407 [pid="5"] {
+    fill: #fff;
+    stroke: transparent
+}
+
+.rt-icon__icon_408 {
+    background-image: -webkit-linear-gradient(225deg, #7ed9f9, #48b2f1);
+    background-image: -moz-linear-gradient(225deg, #7ed9f9, #48b2f1);
+    background-image: -o-linear-gradient(225deg, #7ed9f9, #48b2f1);
+    background-image: -ms-linear-gradient(225deg, #7ed9f9, #48b2f1);
+    background-image: linear-gradient(225deg, #7ed9f9, #48b2f1)
+}
+
+.rt-icon__icon_408 svg>* {
+    stroke-width: 1
+}
+
+.rt-icon__icon_408 [pid="1"],
+.rt-icon__icon_408 [pid="4"] {
+    stroke-width: 1.5
+}
+
+.rt-icon__icon_408 [pid="3"] {
+    fill: #fff;
+    stroke: transparent
+}
+
+.rt-icon__icon_409 {
+    background-image: -webkit-linear-gradient(315deg, #f56ddc, #ff7640);
+    background-image: -moz-linear-gradient(315deg, #f56ddc, #ff7640);
+    background-image: -o-linear-gradient(315deg, #f56ddc, #ff7640);
+    background-image: -ms-linear-gradient(315deg, #f56ddc, #ff7640);
+    background-image: linear-gradient(135deg, #f56ddc, #ff7640)
+}
+
+.rt-icon__icon_409 [pid="1"],
+.rt-icon__icon_409 [pid="4"] {
+    stroke-width: 1.5
+}
+
+.rt-icon__icon_409 [pid="3"] {
+    fill: #fff;
+    stroke: transparent
+}
+
+.rt-icon__icon_409_fixed {
+    background-image: -webkit-linear-gradient(top, #6cdf7f, #43c376);
+    background-image: -moz-linear-gradient(top, #6cdf7f, #43c376);
+    background-image: -o-linear-gradient(top, #6cdf7f, #43c376);
+    background-image: -ms-linear-gradient(top, #6cdf7f, #43c376);
+    background-image: linear-gradient(180deg, #6cdf7f, #43c376)
+}
+
+.rt-icon__icon_409_mobile {
+    background-image: -webkit-linear-gradient(top, #74e2d0, #48b2f1);
+    background-image: -moz-linear-gradient(top, #74e2d0, #48b2f1);
+    background-image: -o-linear-gradient(top, #74e2d0, #48b2f1);
+    background-image: -ms-linear-gradient(top, #74e2d0, #48b2f1);
+    background-image: linear-gradient(180deg, #74e2d0, #48b2f1)
+}
+
+.rt-icon__icon_410 {
+    background: #9a85fc
+}
+
+.rt-icon__icon_410 [pid="1"] {
+    fill: transparent;
+    stroke: #fff
+}
+
+.rt-icon__icon_410 [pid="2"] {
+    fill: #fff;
+    stroke: transparent
+}
+
+.rt-icon__icon_411 {
+    background: #9a85fc
+}
+
+.rt-icon__icon_411 [pid="1"] {
+    fill: #fff;
+    stroke: transparent
+}
+
+.rt-icon__icon_417 {
+    background-image: -webkit-linear-gradient(222deg, #85ffcf, #31abde);
+    background-image: -moz-linear-gradient(222deg, #85ffcf, #31abde);
+    background-image: -o-linear-gradient(222deg, #85ffcf, #31abde);
+    background-image: -ms-linear-gradient(222deg, #85ffcf, #31abde);
+    background-image: linear-gradient(228deg, #85ffcf, #31abde)
+}
+
+.rt-icon__icon_418 {
+    background-image: -webkit-linear-gradient(top, #ff7e6c, #ff483a);
+    background-image: -moz-linear-gradient(top, #ff7e6c, #ff483a);
+    background-image: -o-linear-gradient(top, #ff7e6c, #ff483a);
+    background-image: -ms-linear-gradient(top, #ff7e6c, #ff483a);
+    background-image: linear-gradient(180deg, #ff7e6c, #ff483a)
+}
+
+.rt-icon__icon_418 [pid="0"] {
+    stroke-width: 0
+}
+
+.rt-icon__icon_419 {
+    background-image: -webkit-linear-gradient(349deg, #28add7, #9f8bff);
+    background-image: -moz-linear-gradient(349deg, #28add7, #9f8bff);
+    background-image: -o-linear-gradient(349deg, #28add7, #9f8bff);
+    background-image: -ms-linear-gradient(349deg, #28add7, #9f8bff);
+    background-image: linear-gradient(101deg, #28add7, #9f8bff)
+}
+
+.rt-icon__icon_419 [pid="0"] {
+    stroke-width: 0
+}
+
+.rt-icon--not-active {
+    opacity: .3
+}
+
+.themed__047C {
+    stroke-width: 0
+}
+
+.themed__047C [pid="0"] {
+    fill: #ff4f12
+}
+
+.themed__047C [pid="1"] {
+    fill: #70f
+}
+
+.themed__047C [pid="2"] {
+    fill: #273a64
+}
+
+.themed__047C [pid="3"] {
+    fill: #bc104b
+}
+
+.themed__048C {
+    stroke-width: 0
+}
+
+.themed__048C [pid="0"] {
+    fill: #ff4f12
+}
+
+.themed__048C [pid="1"] {
+    fill: #70f
+}
+
+.themed__048C [pid="2"] {
+    fill: #273a64
+}
+
+.themed__048C [pid="3"],
+.themed__048C [pid="4"],
+.themed__048C [pid="6"] {
+    fill: #ffbe08
+}
+
+.themed__048C [pid="5"] {
+    fill: #ff4f12
+}
+
+.themed__049C {
+    stroke-width: 0
+}
+
+.themed__049C [pid="0"] {
+    fill: #70f
+}
+
+.themed__049C [pid="1"] {
+    fill: #bc104b
+}
+
+.themed__049C [pid="2"] {
+    fill: #ff4f12
+}
+
+.themed__049C [pid="3"] {
+    fill: #bc104b
+}
+
+.rtb-icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.rtb-icon+.ripple {
+    text-indent: 36px
+}
+
+.rt-dark-theme .rtb-icon-image {
+    fill: #637493
+}
+
+.rt-validation-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 15px;
+    text-align: center;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.input-wrapper .rt-validation-icon {
+    position: absolute;
+    left: 100%;
+    margin-left: 15px
+}
+
+@media (max-width:767px) {
+    .input-wrapper .rt-validation-icon {
+        margin-left: -20px
+    }
+}
+
+.rt-validation-icon--error {
+    background-color: #ff0c0c
+}
+
+.rt-validation-icon--success {
+    background-color: #57d9b7
+}
