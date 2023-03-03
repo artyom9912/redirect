@@ -232,6 +232,12 @@ body {
     cursor: pointer;
     text-decoration: none;
 }
+.button_success:hover{
+    background-color: #D33706 !important;
+}
+.button_cancel:hover{
+    background-color: #586167 !important;
+}
 
 .button_success {
     background: #FF4F12;
