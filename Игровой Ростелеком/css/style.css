@@ -236,12 +236,19 @@ h3 { font-size: 28px; margin-top: 0; margin-bottom: 0; font-weight: 500;line-hei
     transition: all .24s ease;
     margin: 0 30px 10px 30px;
 }
-
+a{ text-decoration: none}
 .a_button a:hover {
     background-color: #D33706 !important;
 }
 .c_button a:hover{
     background-color: #586167 !important;
+}
+.bottom{
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
 }
 
 @media (max-width: 1200px) {
