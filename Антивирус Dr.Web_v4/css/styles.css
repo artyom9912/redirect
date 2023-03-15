@@ -25,8 +25,21 @@ body {
 .redirect{
     background-color: #fdfdfd;
 }
+
 .red{
+    flex-grow: 1;
+    height: 90%;
+    overflow: hidden;
+}
+.helper {
+    display: inline-block;
     height: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.helper img {
+    vertical-align: middle;
 }
 .container {
     width: 100%;
@@ -399,7 +412,7 @@ a{
         margin-bottom: 20px;
     }
     .content_description{
-        margin-top: 1px;
+        margin-top: 30px;
     }
     .footer{ font-size: 14px}
 }

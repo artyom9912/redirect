@@ -6,6 +6,11 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
     <link href="./css/fonts.css" rel="stylesheet"/>
     <link href="./css/styles.css" rel="stylesheet"/>
+    <style>html, body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;}
+    </style>
     <script src="./customScript.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -25,14 +30,14 @@
     <title>Антивирус</title>
 
 </head>
-<body>
+<body style="overflow: hidden">
 <div class="wrapper redirect">
     <div class="header">
         <div class="container">
             <img src="logo.png">
         </div>
     </div>
-    <div class="content">
+    <div class="content red">
         <div class="container">
             <div class="content__wrapper">
                 <div class="content__text">
