@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    <link href="./css/fonts.css" rel="stylesheet"/>
+    <link href="./css/styles.css" rel="stylesheet"/>
+    <script src="./customScript.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elements = document.querySelectorAll('.button');
+            for(var index = 0; index < elements.length; index++) {
+                var el = elements[index];
+                var elMeta = el.getAttribute("data-meta");
+                var buttonAction = clickHandlers.find(function(item) {
+                    return item && item.meta === elMeta && typeof item.callback === 'function';
+                });
+                if(el && elMeta && buttonAction) {
+                    el.addEventListener('click', buttonAction.callback);
+                }
+            }
+        });
+    </script>
+    <title>Антивирус</title>
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="container">
+            <img src="logo.png">
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="content__wrapper">
+                <div class="content__text">
+                    <p class="title_name">АНТИВИРУС</p>
+                    <h1 class="title_head">
+                        Подпишитесь на безопасность всей семьей!
+                    </h1>
+                    <div class="gift">
+                        <img src="Shape.png" width="50px" height="50px"/>
+                        <p class="gift_text">Выгодный вариант подписки Dr.Web для активных пользователей Интернета на 4 устройства.<br>Первый месяц — 0 рублей, далее  всего 149 рублей в месяц за 4 устройства.
+                        </p>
+                    </div>
+                </div>
+                <div class="content__buttons">
+                    <a href="redirect1.html" style="text-decoration: none">
+                        <button class="button button_success" type="button" data-meta="Смена ТП">Подключить</button>
+                    </a>
+                    <a href="redirect2.html" style="text-decoration: none">
+                        <button class="button button_cancel" type="button" data-meta="Отказаться">Отказаться</button>
+                    </a>
+                </div>
+                <p class="disclaimer">
+                    Нажимая кнопку "Подключить", Вы соглашаетесь на предоставление услуги Антивирус Dr.Web Премиум на 4 устройства. Первые 30 дней бесплатно, c 31 дня - 149 рублей в месяц.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">       
+            <div class="content_description">
+                <div class="col" >
+                    <div>
+                        <img src="Vector1.png" class="description_img">
+                    </div>
+                    <div class="description_text">
+                        <h4></h4>
+                        Защитите данные от потери
+                    </div>
+                </div>
+                <div class="col" >
+                    <div>
+                        <img src="Vector2.png" class="description_img">
+                    </div>
+                    <div class="description_text">
+                        <h4></h4>
+                        Ограничьте доступ третьим лицам к веб-камерам ваших устройств
+                    </div>
+                </div>
+                <div class="col" >
+                    <div>
+                        <img src="Vector3.png" class="description_img">
+                    </div>
+                    <div class="description_text">
+                        <h4></h4>
+                        Защитите детей от посещения нежелательных веб-ресурсов (функция Родительский контроль)
+                    </div>
+                </div>
+                <div class="col" >
+                    <div style="text-align: center;">
+                        <span class="helper"></span><img src="Vector4.png" class="description_img">
+                    </div>
+                    <div class="description_text">
+                        <h4></h4>
+                        Обеспечьте проверку веб-страниц в режиме реального времени и блокировку ненадежных интернет-ресурсов
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="footer" >
+        <div class="container">
+            <div class="footer__container">                
+                <p class="footer__text footer__text_last">
+                    Подробнее о других антивирусных решениях на сайте 
+                    <a class="footer__link" href="http://www.rt.ru/" target="_blank" rel="noopener noreferrer" style="color: #FF4F12; text-decoration: none">
+                        www.rt.ru
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
