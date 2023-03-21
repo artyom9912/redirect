@@ -237,8 +237,8 @@ a{
         max-width: 50%;
     }
     .target_box{
-         margin-left: 70px;
-        padding-right: 70px;
+        /* margin-left: 70px;*/
+        /*padding-right: 70px;*/
     }
 }
 
@@ -452,16 +452,19 @@ a{
 }
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
+.target_box{margin-top: 55px}
 input{
     font-family: RostelecomBasis;
     width: 80%;
     font-size: 18px;
     border: none;
     border-bottom: rgba(16, 24, 40, 0.12) 2px solid;
-    background-color: rgba(16, 24, 40, 0.0);
+    background-color: rgba(255, 255, 255, 0.0);
     padding-bottom: 8px;
+    padding-top: 10px;
+    padding-left: 8px;
     /*line-height: 18px;*/
 }
 input:focus-visible{
