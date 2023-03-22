@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    <link href="./css/fonts.css" rel="stylesheet"/>
+    <link href="./css/styles.css" rel="stylesheet"/>
+    <script src="./customScript.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elements = document.querySelectorAll('.button');
+            for(var index = 0; index < elements.length; index++) {
+                var el = elements[index];
+                var elMeta = el.getAttribute("data-meta");
+                var buttonAction = clickHandlers.find(function(item) {
+                    return item && item.meta === elMeta && typeof item.callback === 'function';
+                });
+                if(el && elMeta && buttonAction) {
+                    el.addEventListener('click', buttonAction.callback);
+                }
+            }
+        });
+    </script>
+    <title>Ростелеком</title>
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="container">
+            <img src="logo_lyceum.png">
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="content__wrapper">
+                <div class="content__text">
+                    <p class="title_name">РОСТЕЛЕКОМ ЛИЦЕЙ</p>
+                    <h1 class="title_head">
+                        Идеальное дополнение к школьной программе
+                    </h1>
+                    <div style="font-size: 22px">
+                        <p>Мы сделали онлайн-обучение качественным и доступным
+                        </p>
+
+                    </div>
+                     <div class="gift">
+                        <img src="price.png" />
+
+                    </div>
+                </div>
+
+                <div class="target_box">
+                <form>
+                    <input placeholder="Введите номер телефона">
+                    <div class="content__buttons grid-buttons">
+                        <a href="redirect1.html" style="text-decoration: none">
+                            <button class="button button_success" type="button" data-meta="Смена ТП">Начать учиться</button>
+                        </a>
+                        <a href="redirect2.html" style="text-decoration: none">
+                            <button class="button button_cancel" type="button" data-meta="Отказаться">Отказаться</button>
+                        </a>
+                    </div>
+                    <div class="disclaimer">Нажимая кнопку «Начать учиться», Вы соглашаетесь на подключение тарифной опции «Лицей Плюс».Подробнее на <a href="http://www.rt.ru/lc/" style="color: #ff4f12">rt.ru/lc</a></div>
+                </form>
+
+            </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">       
+            <div class="content_description">
+                <div class="col" >
+                    <div>
+                        <img src="Vector.png" class="description_img">
+                    </div>
+                    <div class="description_text">
+                        <h4></h4>
+                        <div class="description_title">Опытные преподаватели</div>
+                        Доступным языком объясним самые сложные темы учебной программы
+                    </div>
+                </div>
+                <div class="col" >
+                    <div>
+                        <img src="Vector-1.png" class="description_img">
+                    </div>
+                    <div class="description_text">
+                        <h4></h4>
+                        <div class="description_title">Все школьные предметы</div>
+                        Видеоуроки в увлекательной форме, тесты и конспекты для учеников с 1 по 11 класс
+                    </div>
+                </div>
+                <div class="col" >
+                    <div>
+                        <img src="Vector-2.png" class="description_img">
+                    </div>
+                    <div class="description_text">
+                        <h4></h4>
+                        <div class="description_title">Дополнительные знания</div>
+                        Английский язык, авторские курсы по современным цифровым профессиям, финансовой грамотности и многое другое
+                    </div>
+                </div>
+                <div class="col" >
+                    <div style="text-align: center;">
+                        <span class="helper"></span><img src="Vector-3.png" class="description_img">
+                    </div>
+                    <div class="description_text">
+                        <h4></h4>
+                        <div class="description_title">Занятия в удобное время</div>
+                        Занимайтесь без привязки ко времени и месту — потребуется только интернет
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" >
+        <div class="container">
+            <div class="footer__container">                
+                <p class="footer__text footer__text_last">
+                    Подробнее о других антивирусных решениях на сайте 
+                    <a class="footer__link" href="http://www.rt.ru/" target="_blank" rel="noopener noreferrer" style="color: #FF4F12; text-decoration: none">
+                        www.rt.ru
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
