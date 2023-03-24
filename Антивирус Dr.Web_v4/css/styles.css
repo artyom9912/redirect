@@ -173,19 +173,19 @@ a{
 /* START CONTENT */
 @media (max-width: 599px) {
     .content:before {
-        background-image: url('../background_600.jpg');
+        background-image: url('../img/background_600.jpg');
     }
 }
 @media (min-width: 600px) and (max-width: 959px) {
     .content:before {
-        background-image: url('../background_960.jpg');
+        background-image: url('../img/background_960.jpg');
     }
 }
 @media (min-width: 960px) {
     .content:before {
         background-image:
                 linear-gradient(90deg, rgb(227, 232, 236) 1%, rgba(255,255,255,0) 21%, rgba(255,255,255,0) 100%),
-                url('../background.jpg');
+                url('../img/background.jpg');
     }
 }
 @media (max-width: 959px) {
@@ -415,7 +415,23 @@ a{
         margin-top: 30px;
     }
     .footer{ font-size: 14px}
+    .button{ width: 100%}
+    h4{font-size: 8px}
+    .description_title{margin-bottom: 8px !important;}
+    .grid-buttons{
+        display: grid !important;
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+    }
 }
+@media (max-width: 436px) {
+    .title_head{font-size: 36px; line-height: 36px}
+    .gift img{display: none}
+    .gift_text {padding-left: 0 !important;}
+    .footer{font-size: 12px}
+    .logo1 img{ width: 300px}
+}
+
 .gift {
     display: flex; 
     flex-direction: row; 
