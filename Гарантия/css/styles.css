@@ -173,19 +173,19 @@ a{
 /* START CONTENT */
 @media (max-width: 599px) {
     .content:before {
-        background-image: url('../image.png');
+        background-image: url('../img/image.png');
     }
 }
 @media (min-width: 600px) and (max-width: 959px) {
     .content:before {
-        background-image: url('../image.png');
+        background-image: url('../img/image.png');
     }
 }
 @media (min-width: 960px) {
     .content:before {
         background-image:
                 linear-gradient(90deg, rgb(227, 232, 236) 1%, rgba(255,255,255,0) 21%, rgba(255,255,255,0) 100%),
-                url('../image.png');
+                url('../img/image.png');
     }
 }
 @media (max-width: 959px) {
