@@ -78,18 +78,18 @@ body {
     margin-bottom: 24px;
 }
 .title_name {
-    letter-spacing: 1.5px; 
+    letter-spacing: 1.5px;
     font-size:14px;
     color: #70747E;
 }
 .title_head {
-    font-size: 50px; 
-    line-height: 60px; 
+    font-size: 50px;
+    line-height: 60px;
     font-weight: 600;
     padding-right: 20px;
 }
 .title_sub {
-    font-size: 18px; 
+    font-size: 18px;
     line-height: 28px;
 }
 /* END TITLE */
@@ -149,7 +149,7 @@ a{
     display: flex;
     flex-direction: column;
     padding: 18px 0;
-    
+
 }
 
 .footer__text {
@@ -173,19 +173,19 @@ a{
 /* START CONTENT */
 @media (max-width: 599px) {
     .content:before {
-        background-image: url('../img/image.png');
+        background-image: url('../img/image.jpg');
     }
 }
 @media (min-width: 600px) and (max-width: 959px) {
     .content:before {
-        background-image: url('../img/image.png');
+        background-image: url('../img/image.jpg');
     }
 }
 @media (min-width: 960px) {
     .content:before {
         background-image:
                 linear-gradient(90deg, rgb(227, 232, 236) 1%, rgba(255,255,255,0) 21%, rgba(255,255,255,0) 100%),
-                url('../img/image.png');
+                url('../img/image.jpg');
     }
 }
 @media (max-width: 959px) {
@@ -227,7 +227,7 @@ a{
         left: 50%;
         top: 0;
         bottom: 0;
-        
+
         z-index: 2;
     }
     .content__text {
@@ -285,7 +285,7 @@ a{
     .button:first-child {
         margin-top: 0;
     }
-    
+
     .button:last-child {
         margin-bottom: 0;
     }
@@ -298,7 +298,7 @@ a{
     .button:first-child {
         margin-left: 0;
     }
-    
+
     .button:last-child {
         margin-right: 0;
     }
@@ -363,8 +363,8 @@ a{
 }
 
 .col {
-    -webkit-box-flex: 0; 
-    flex: 0 0 25%; 
+    -webkit-box-flex: 0;
+    flex: 0 0 25%;
     max-width: 25%;
     padding-left: 10px;
     padding-top: 30px;
@@ -440,14 +440,14 @@ a{
     .footer{font-size: 12px}
 }
 .gift {
-    display: flex; 
-    flex-direction: row; 
-    align-items: center; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     /*justify-content: center;*/
 }
 .gift_text {
-    padding-left: 20px; 
-    padding-right: 20px; 
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 20px;
 }
 .description_title{
