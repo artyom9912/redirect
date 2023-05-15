@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    <link href="./css/fonts.css" rel="stylesheet"/>
+    <link href="./css/styles.css" rel="stylesheet"/>
+    <style>html, body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;}
+    </style>
+    <script src="./customScript.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elements = document.querySelectorAll('.button');
+            for(var index = 0; index < elements.length; index++) {
+                var el = elements[index];
+                var elMeta = el.getAttribute("data-meta");
+                var buttonAction = clickHandlers.find(function(item) {
+                    return item && item.meta === elMeta && typeof item.callback === 'function';
+                });
+                if(el && elMeta && buttonAction) {
+                    el.addEventListener('click', buttonAction.callback);
+                }
+            }
+        });
+    </script>
+    <title>Ростелеком</title>
+
+</head>
+<body style="overflow: hidden">
+<div class="wrapper redirect">
+    <div class="header">
+        <div class="container">
+            <img src="img/logo.png">
+        </div>
+    </div>
+    <div class="content red">
+        <div class="container">
+            <div class="content__wrapper2">
+                <div class="content__text">
+<!--                    <p class="title_name">АНТИВИРУС</p>-->
+                    <h1 class="title_head">
+                        Спасибо за ваш выбор!
+                    </h1>
+                    <div class="text">
+                        <p class="text b" >Проверить подключение подписки вы можете  на главной странице в Личном кабинете
+                        </p>
+                    </div>
+                </div>
+
+                <p class="text" style="font-weight: 500">
+                    Войти в Личный кабинет услуги вы можете на сайте
+ <a  style="color: #ff4f12"> https://lc.rt.ru/</a>, указав логин, который был выслан вам в СМС.
+                </p>
+                 <p class="text" style="margin-top: 100px">
+                    Для продолжения сеанса, пожалуйста, откройте новую вкладку в Вашем Интернет-браузере или перезапустите его.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" >
+        <div class="container">
+            <div class="footer__container">
+                <p class="footer__text footer__text_last">
+                    Подробнее об услугах, тарифах и опциях на сайте 
+                    <a class="footer__link" href="http://www.rt.ru/" target="_blank" rel="noopener noreferrer" style="color: #FF4F12; text-decoration: none">
+                        www.rt.ru
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
