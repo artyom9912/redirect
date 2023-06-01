@@ -8,6 +8,7 @@
     <link href="./css/styles.css" rel="stylesheet"/>
     <script src="./js/jquery-3.2.1.js"></script>
     <script src="./js/jquery.maskedinput.min.js"></script>
+
     <script src="./customScript.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -30,12 +31,12 @@
 <body>
 <div class="wrapper">
     <div class="header">
-        <div class="container">
-            <img src="img/Logo.png">
+        <div class="container ">
+            <div class="logo"></div>
         </div>
     </div>
     <div class="content">
-        <div class="container">
+        <div class="container main">
             <div class="content__wrapper">
                 <div class="content__text">
 <!--                    <p class="title_name">РОСТЕЛЕКОМ ЛИЦЕЙ</p>-->
@@ -43,7 +44,7 @@
                         Романтичное, смешное и захватывающее путешествие
                     </h1>
                     <div style="font-size: 22px">
-                        <p>Любимые книги и герои в новой подписке «Жанровая»
+                        <p>Любимые книги и герои в новой подписке&nbsp;«Жанровая»
                         </p>
 
                     </div>
@@ -63,7 +64,7 @@
                             </div>
                         </div>
                     </div>
-                     <div class="gift" style="margin-top: 52px">
+                     <div class="gift" style="margin-top: 32px">
                         <img src="img/price.png" />
 
                     </div>
@@ -71,7 +72,8 @@
 
                 <div class="target_box">
                 <form>
-                    <input id="faxnum" name="faxnum" class="phone" type="tel" placeholder="+7 (___) ___-__-__" required pattern="^((\+7)[\- ]?)?(\(?9\d{2}\)?[\- ]?)?[\d\- ]{10}$" maxlength="16">
+
+                    <input id="faxnum" name="faxnum" class="phone" type="tel" placeholder="+7 (9__) ___-__-__" required pattern="^((\+7)[\- ]?)?(\(?9\d{2}\)?[\- ]?)?[\d\- ]{10}$" maxlength="16">
                     <div class="content__buttons grid-buttons">
                         <a href="redirect1.html" style="text-decoration: none">
                             <button id="butt" class="button button_success" type="button" data-meta="Смена ТП" disabled>Подключить</button>
@@ -81,7 +83,7 @@
                         </a>
                     </div>
                     <div class="disclaimer">Нажимая кнопку «Подключить», Вы соглашаетесь на подключение подписки «Жанровая».
-                        Подробнее на <a href="http://www.rt.ru/lc/" style="color: #ff4f12">rt.ru/lc</a></div>
+                        Подробнее на <a href="http://www.rt.ru/books" style="color: #ff4f12">rt.ru/books</a></div>
                 </form>
 
             </div>
@@ -89,7 +91,7 @@
         </div>
     </div>
     <div>
-        <div class="container">
+        <div class="container dets">
             <div class="content_description">
                 <div class="col" >
                     <div>
@@ -150,7 +152,7 @@
 </div>
 <script>
     $(function($) {
-        $('input[name="faxnum"]').mask("+7 (999) 999-99-99");
+        $('input[name="faxnum"]').mask("+7 (988) 888-88-88");
     });
 </script>
 <script>
