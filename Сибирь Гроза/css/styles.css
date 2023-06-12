@@ -281,6 +281,8 @@ a{
     .title_head{font-size: 36px; margin-bottom: 10px}
     .content_description{font-size: 20px; margin-top: 45px !important;}
     .content__wrapper{padding:25px 0 !important;}
+    .footer .container{ padding-left: 0; padding-right: 0}
+    .footer__container{ padding-left: 20px; padding-right: 20px}
 }
 .content {
     position: relative;
@@ -457,6 +459,7 @@ a{
         margin-top: 10px;
     }
     .footer{ font-size: 14px}
+    .footer__container{ padding-right: 20px; padding-left: 20px}
     .row{
         display: grid;
         row-gap: 30px;
