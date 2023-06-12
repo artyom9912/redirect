@@ -130,7 +130,7 @@ a{
     text-align: center;
 }
 .footer {
-    background: white;
+    /*background: #E3E8EC;*/
     font-size: 16px;
     position: absolute;
     left: 0;
@@ -139,11 +139,11 @@ a{
     bottom: 0;
     width: 100%;
 }
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+/*body {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  min-height: 100vh;*/
+/*}*/
 .f1{
     border-top: #C4C7CB 1px solid;
     /*left: 0;*/
@@ -162,10 +162,10 @@ body {
     /*margin-top: auto;*/
     padding: 18px 0;
 }
-.main{padding-bottom: 100px}
+.main{padding-bottom: 74px}
 .footer__container {
-    /*display: flex;*/
-    /*flex-direction: column;*/
+    display: flex;
+    flex-direction: column;
     padding: 18px 0;
 }
 
@@ -209,7 +209,7 @@ body {
 @media (min-width: 767px) {
     .content:before {
         background-image:
-                linear-gradient(90deg, #273A64 1%, rgba(255,255,255,0) 32%, rgba(255,255,255,0) 100%),
+                linear-gradient(90deg, #273A64 3%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%),
                 url('../img/thunder.png');
     }
 }
@@ -269,6 +269,7 @@ body {
 }
 @media (min-width: 1600px){
     .content__wrapper{height: 644px}
+    .title_head{padding-top: 65px}
 }
 @media (min-width: 1025px) and (max-width: 1599px){
     .content__wrapper{height: 520px}
@@ -481,7 +482,7 @@ body {
     .target_box{margin-top: 0 !important;}
     .care{font-size: 18px}
     .num{font-size: 22px}
-    .main{padding-bottom: 208px}
+    .main{padding-bottom: 170px}
     .logo{content: url("../img/Logo b2b2.png")}
 }
 /*@media (max-width: 436px) {*/
