@@ -277,9 +277,10 @@ a{
 }
 @media (min-width: 768px) and (max-width: 1024px){
     .content__wrapper{height: 416px}
+    .care{height: 100%}
     .maintext{font-size: 16px}
     .title_head{font-size: 36px; margin-bottom: 10px}
-    .content_description{font-size: 20px; margin-top: 45px !important;}
+    .content_description{font-size: 20px; margin-top: 16vh !important;}
     .content__wrapper{padding:25px 0 !important;}
     .footer .container{ padding-left: 0; padding-right: 0}
     .footer__container{ padding-left: 20px; padding-right: 20px}
