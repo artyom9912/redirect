@@ -64,6 +64,9 @@ html,body { height:100%; }
 .button_success:hover {
     background-color: #D33706 !important;
 }
+.button_success:active {
+    background-color: #b12f01 !important;
+}
 .button_cancel:hover{
     background-color: #586167 !important;
 }
@@ -111,6 +114,7 @@ html,body { height:100%; }
     .paragraph {
         font-size: 16px;
     }
+
 }
 @media (min-width: 960px) {
     .paragraph {
@@ -220,6 +224,7 @@ a{
     }
 }
 @media (max-width: 766px) {
+    .container{padding: 0 20px}
     .content:before {
         position: relative;
         padding-bottom: 55%;
@@ -450,6 +455,7 @@ a{
     .content_description {
         display: block;
     }
+    .content:before{height: 30px}
     .col {
         display: flex;
         max-width: 100%;
@@ -494,7 +500,7 @@ a{
         grid-template-columns: 1fr;
         column-gap: 10px;
     }
-    .title_head{font-size: 28px; margin-top: 0; margin-bottom: 0; line-height: 30px}
+    .title_head{font-size: 28px; margin-top: 0; margin-bottom: 0; line-height: 32px}
     .maintext{font-size: 16px}
     .content__wrapper{padding: 28px 0}
     .target_box{margin-top: 0 !important;}
@@ -507,7 +513,8 @@ a{
 /*    .title_head{font-size: 36px; line-height: 36px}*/
 /*    .footer{font-size: 12px}*/
 /*}*/
-.gift img{ margin: 0 0 0 20px}
+.gift img{ margin: 20px 0 0 20px;
+    align-self: start;}
 .gift {
     display: flex;
     flex-direction: row;
