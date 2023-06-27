@@ -376,7 +376,7 @@ a{
 /*        padding-right: 28px;*/
 /*    }*/
 /*}*/
-.maintext p {margin-top: 10px}
+.maintext p {margin-top: 10px; margin-bottom: 24px}
 .button {
     -webkit-appearance: none;
     padding-left: 28px;
