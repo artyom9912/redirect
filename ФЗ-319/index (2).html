@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
     <link href="./css/fonts.css" rel="stylesheet"/>
-    <link href="css/styles2.css" rel="stylesheet"/>
+    <link href="./css/styles2.css" rel="stylesheet"/>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var elements = document.querySelectorAll('.button');
-            for(var index = 0; index2 < elements.length; index2++) {
-                var el = elements[index2];
+            for(var index = 0; index < elements.length; index++) {
+                var el = elements[index];
                 var elMeta = el.getAttribute("data-meta");
                 var buttonAction = clickHandlers.find(function(item) {
                     return item && item.meta === elMeta && typeof item.callback === 'function';
@@ -26,41 +26,36 @@
 </head>
 <body>
 <div class="wrapper">
-<!--    <div class="main">-->
-        <div class="header">
-            <div class="container">
-                <a href="https://rt.ru"><img src="img/Logo b2b.png" class="logo"></a>
-            </div>
+    <div class="main">
+    <div class="header">
+        <div class="container">
+            <a href="https://rt.ru"><img src="img/Logo b2b.png" class="logo"></a>
         </div>
-        <div class="content red">
-            <div class="container">
-                <div class="content__wrapper">
-                    <div class="content__text">
-                        <h1 class="title_head">
-                            Пожалуйста, обновите ваши персональные данные
-                        </h1>
-                        <div class="maintext">
-                            <p>Согласно требованиям Федерального Закона «О Связи», без актуальной информации мы будем вынуждены приостановить оказание услуг мобильной связи.</p>
-                        </div>
-                        <div class="gift">
-                            <img src="img/Vector.png" width="40px" height="40px"/>
-                            <p class="gift_text">После авторизации в Личном кабинете сообщите специалисту в чат о необходимости актуализации данных.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="target_box">
-                        <form>
-                            <div class="content__buttons grid-buttons">
-                                    <button id="butt" class="button button_success" type="button"
-                                            >Перейти в личный кабинет</button>
-                            </div>
-                        </form>
+    </div>
+    <div class="content red">
+        <div class="container">
+            <div class="content__wrapper">
+                <div class="content__text">
+                    <h1 class="title_head">
+                        Иван Иванович,
+                    </h1>
+                    <div class="maintext">
+                        <p>По данным сервиса <a href="https://yandex.ru/pogoda/" style="text-underline: white; margin-right: 0">Яндекс Погода</a> в вашем регионе ожидается гроза. <br>Во время грозы оборудование часто выходит из строя, что приводит к&nbsp;отключению интернета.
+                        </p>
+                        <p>Советуем при наступлении грозы выключать оборудование Ростелекома из&nbsp;сети.</p>
                     </div>
                 </div>
+                <div class="target_box">
+                <form>
+                    <div class="content__buttons grid-buttons">
+                            <button id="butt" class="button button_success" type="button"  onclick="window.open('', '_self', ''); window.close();">Понятно</button>
+                    </div>
+                </form>
+            </div>
             </div>
         </div>
+    </div>
 
-<!--    </div>-->
     <div class="footer" >
         <div class="container">
             <div class="footer__container">

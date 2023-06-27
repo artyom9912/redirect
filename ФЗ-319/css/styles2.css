@@ -8,7 +8,7 @@ html {
 body {
     height: 100%;
     margin: 0;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     font-size: 18px;
     font-family: 'RostelecomBasis', sans-serif;
     font-weight: 400;
@@ -28,11 +28,12 @@ html,body { height:100%; }
 }
 .red{
     flex-grow: 1;
-    height: 93%;
-    overflow: hidden;
+    height: calc(100% - 77px - 99px);
+    /*overflow: hidden;*/
     display:flex;
+    min-height: 544px;
     align-items:center;
-    padding-bottom: 125px;
+    /*padding-bottom: 125px;*/
 }
 .helper {
     display: inline-block;
@@ -137,7 +138,7 @@ a{
 .footer {
     background: #ffffff;
     font-size: 16px;
-    position: absolute;
+    /*position: absolute;*/
     left: 0;
     /*border-top: #C4C7CB 1px solid;*/
     color: black;
@@ -233,7 +234,7 @@ a{
     .content__buttons {
         justify-content: center;
     }
-    .red{display: block}
+    .red{display: block; height: calc(100% - 64px - 243px);min-height: 753px}
 }
 @media (max-width: 1010px) {
     .content__buttons{
@@ -288,11 +289,12 @@ a{
     /*.content__wrapper{height: 416px}*/
     .care{height: 100%}
     .maintext{font-size: 16px}
-    .title_head{font-size: 36px; margin-bottom: 10px}
+    .title_head{font-size: 36px; margin-bottom: 10px; line-height: 44px}
     .content_description{font-size: 20px; margin-top: 14vh !important;}
     .content__wrapper{padding:25px 0 !important;}
     .footer .container{ padding-left: 0; padding-right: 0}
     .footer__container{ padding-left: 20px; padding-right: 20px}
+
 }
 .content {
     position: relative;
