@@ -28,11 +28,11 @@ html,body { height:100%; }
 }
 .red{
     flex-grow: 1;
-    height: 90%;
+    height: 93%;
     overflow: hidden;
     display:flex;
     align-items:center;
-    margin-bottom: 99px;
+    padding-bottom: 125px;
 }
 .helper {
     display: inline-block;
@@ -97,6 +97,7 @@ html,body { height:100%; }
     line-height: 60px;
     font-weight: 500;
     padding-right: 20px;
+    margin-bottom: 15px;
 }
 .maintext{
     font-size: 18px;
@@ -194,7 +195,7 @@ a{
 }
 .row{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 0.15fr 1fr 1fr;
 }
 .col2 p{text-align: right}
 .b{ font-size: 14px}
@@ -232,6 +233,7 @@ a{
     .content__buttons {
         justify-content: center;
     }
+    .red{display: block}
 }
 @media (max-width: 1010px) {
     .content__buttons{
@@ -239,6 +241,9 @@ a{
     }
     .disclaimer{
         margin-left: 0 !important;
+    }
+    .row{
+        grid-template-columns: 1.2fr 0fr 1fr 1fr;
     }
 }
 @media (min-width: 767px) {
@@ -296,7 +301,7 @@ a{
 }
 
 .content__wrapper {
-    padding: 48px 0;
+    padding: 38px 0 48px 0;
 }
 
 .content:before {
@@ -470,7 +475,7 @@ a{
     .footer__container{ padding-right: 20px; padding-left: 20px; padding-top: 0}
     .row{
         display: grid;
-        row-gap: 30px;
+        row-gap: 20px;
         grid-template-columns: 1fr !important;
     }
     .col1 { order: 1; }
