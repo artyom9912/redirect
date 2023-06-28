@@ -208,12 +208,12 @@ a{
 /* START CONTENT */
 @media (max-width: 599px) {
     .content:before {
-        background-image: url('../img/Img.png');
+        background-image: url('../img/img2.png');
     }
 }
 @media (min-width: 600px) and (max-width: 766px) {
     .content:before {
-        background-image: url('../img/Img.png');
+        background-image: url('../img/img2.png');
     }
 }
 @media (min-width: 767px) {
