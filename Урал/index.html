@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    <link href="./css/fonts.css" rel="stylesheet"/>
+    <link href="./css/styles2.css" rel="stylesheet"/>
+    <style>html, body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;}
+    </style>
+    <script src="./customScript.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elements = document.querySelectorAll('.button');
+            for(var index = 0; index < elements.length; index++) {
+                var el = elements[index];
+                var elMeta = el.getAttribute("data-meta");
+                var buttonAction = clickHandlers.find(function(item) {
+                    return item && item.meta === elMeta && typeof item.callback === 'function';
+                });
+                if(el && elMeta && buttonAction) {
+                    el.addEventListener('click', buttonAction.callback);
+                }
+            }
+        });
+    </script>
+    <title>Ростелеком</title>
+
+</head>
+<body style="">
+<div class="wrapper redirect">
+    <div class="header">
+        <div class="container">
+            <a href="https://rt.ru"><img src="img/Logo b2b.png" class="logo"></a>
+        </div>
+    </div>
+    <div class="content red">
+        <div class="container">
+            <div class="content__wrapper">
+                <div class="content__text">
+                        <h1 class="title_head">
+                            Уважаемый Клиент,
+                        </h1>
+                        <div class="maintext">
+                            <p>у нас есть для Вас подарок — заменим устаревший роутер на современный.</p>
+                        </div>
+                        <div class="subtext">Преимущества современного роутера:</div>
+                        <div class="gift">
+                            <img src="img/Orange1.png" width="56px" height="56px"/>
+                            <p class="gift_text">Поддерживает одновременно два диапазона связи, создавая две виртуальные беспроводные сети на 2,4 ГГц и на 5 ГГц;
+                            </p>
+                        </div>
+                        <div class="gift">
+                            <img src="img/Orange2.png" width="56px" height="56px"/>
+                            <p class="gift_text">Если канал 2,4 ГГц загружен, внешний гаджет всегда можно подключить по каналу 5 ГГц;
+                            </p>
+                        </div>
+                        <div class="gift">
+                            <img src="img/Orange3.png" width="56px" height="56px"/>
+                            <div>
+                                <p class="gift_text" style="margin-bottom: 5px">Диапазон Wi-Fi 5 ГГц позволит Вам:
+                                </p>
+                                <ul style="margin-top: 8px; margin-left: 8px">
+                                  <li>получить высокую скорость передачи данных;</li>
+                                  <li>комфортно играть в онлайн-игры;</li>
+                                  <li>смотреть видео в комфортном разрешении.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="target_box">
+                        <form>
+                            <input id="faxnum" name="faxnum" class="phone" type="tel" placeholder="Введите номер телефона" required pattern="^((\+7)[\- ]?)?(\(?9\d{2}\)?[\- ]?)?[\d\- ]{10}$" maxlength="16">
+                            <div class="content__buttons grid-buttons">
+                                <a href="redirect1.html" style="text-decoration: none">
+                                    <button id="butt" class="button button_success" type="button" data-meta="Смена ТП" disabled>Согласен</button>
+                                </a>
+                                <a href="redirect2.html" style="text-decoration: none">
+                                    <button class="button button_cancel" type="button" data-meta="Отказаться">Согласен, через месяц</button>
+                                </a>
+                                <a href="redirect2.html" style="text-decoration: none">
+                                    <button class="button button_cancel" type="button" data-meta="Отказаться">Нет, спасибо</button>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                <div class="subtext">Для нас важно, что бы Вам было комфортно!</div>
+
+            </div>
+        </div>
+    </div>
+    <div>
+
+    <div class="footer" >
+        <div class="container">
+            <div class="footer__container">
+                <div class="row">
+                    <div class="col1">
+                        <p class="footer__text footer__text_last b">
+                            © 2023 ПАО «Ростелеком». 18+
+                        </p>
+                        <p class="footer__text footer__text_last">
+                            Продолжая использовать наш сайт, вы даете согласие на обработку файлов Cookies и других пользовательских данных
+                        </p>
+                    </div>
+                    <div></div>
+
+                    <div class="col2">
+                        <p class="footer__text footer__text_last b">
+                            Служба поддержки
+                        </p>
+                        <p class="footer__text footer__text_last num">8 800 707 12 12
+                        </p>
+                    </div>
+                    <div class="col2">
+                        <p class="footer__text footer__text_last b">
+                            Подключение услуг
+                        </p>
+                        <p class="footer__text footer__text_last num">8 800 707 80 00
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
