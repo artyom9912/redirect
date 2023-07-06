@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    <link href="./css/fonts.css" rel="stylesheet"/>
+    <link href="./css/styles2.css" rel="stylesheet"/>
+    <style>html, body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;}
+    </style>
+    <script src="./customScript.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elements = document.querySelectorAll('.button');
+            for(var index = 0; index < elements.length; index++) {
+                var el = elements[index];
+                var elMeta = el.getAttribute("data-meta");
+                var buttonAction = clickHandlers.find(function(item) {
+                    return item && item.meta === elMeta && typeof item.callback === 'function';
+                });
+                if(el && elMeta && buttonAction) {
+                    el.addEventListener('click', buttonAction.callback);
+                }
+            }
+        });
+    </script>
+    <title>Ростелеком</title>
+
+</head>
+<body style="">
+<div class="wrapper redirect">
+    <div class="header">
+        <div class="container">
+            <a href="https://rt.ru"><img src="img/Logo b2b.png" class="logo"></a>
+        </div>
+    </div>
+    <div class="content red2">
+        <div class="container">
+            <div class="content__wrapper">
+                <div class="content__text">
+                        <h1 class="title_head">
+                            Мы перезвоним Вам через месяц
+                        </h1>
+
+                        <p>Для продолжения интернет-сеанса, пожалуйста откройте новую вкладку в вашем браузере или перезапустите его.</p>
+
+
+                    </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div>
+
+    <div class="footer" >
+        <div class="container">
+            <div class="footer__container">
+                <div class="row">
+                    <div class="col1">
+                        <p class="footer__text footer__text_last b">
+                            © 2023 ПАО «Ростелеком». 18+
+                        </p>
+                        <p class="footer__text footer__text_last">
+                            Продолжая использовать наш сайт, вы даете согласие на обработку файлов Cookies и других пользовательских данных
+                        </p>
+                    </div>
+                    <div></div>
+
+                    <div class="col2">
+                        <p class="footer__text footer__text_last b">
+                            Служба поддержки
+                        </p>
+                        <p class="footer__text footer__text_last num">8 800 707 12 12
+                        </p>
+                    </div>
+                    <div class="col2">
+                        <p class="footer__text footer__text_last b">
+                            Подключение услуг
+                        </p>
+                        <p class="footer__text footer__text_last num">8 800 707 80 00
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
