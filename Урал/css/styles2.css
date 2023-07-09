@@ -31,7 +31,7 @@ html,body { height:100%;  }
     height: calc(100% - 77px - 99px);
     /*overflow: hidden;*/
     display:flex;
-    min-height: 544px;
+    min-height: 940px;
     /*align-items:center;*/
     /*padding-bottom: 125px;*/
 }
@@ -420,7 +420,7 @@ a{
     font-family: inherit;
     cursor: pointer;
 }
-.button{min-width: 223px}
+.button{min-width: 223px; }
 .button_success {
     background: #FF4F12;
     /*outline: #fd4e12 2px solid;*/
@@ -451,8 +451,22 @@ a{
     min-width: 96px;
     color: white;
 }
+@media (max-width: 1355px ) and (min-width: 1024px) {
+    .button_no{
+    min-width: 223px;
+}
+}
 /* END BUTTON */
-
+.error{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FF4747;
+    margin-left: 8px;
+    margin-top: 3px;
+}
 .disclaimer {
     color: #A9A9A9;
     font-size: 12px;

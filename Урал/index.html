@@ -6,6 +6,9 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
     <link href="./css/fonts.css" rel="stylesheet"/>
     <link href="./css/styles2.css" rel="stylesheet"/>
+    <script src="./js/jquery-3.2.1.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+    <script src="./customScript.js"></script>
     <style>html, body {
         height: 100%;
         display: flex;
@@ -77,14 +80,15 @@
                     <div class="target_box">
                         <form>
                             <input id="faxnum" name="faxnum" class="phone" type="tel" placeholder="Введите номер телефона" required pattern="^((\+7)[\- ]?)?(\(?9\d{2}\)?[\- ]?)?[\d\- ]{10}$" maxlength="16">
+                            <div id="error" class="error"></div>
                             <div class="content__buttons grid-buttons">
-                                <a href="redirect1.html" style="text-decoration: none">
+                                <a id="b" href="redirect1.html" style="text-decoration: none">
                                     <button id="butt" class="button button_success" type="button" data-meta="Смена ТП" disabled>Согласен</button>
                                 </a>
-                                <a href="redirect2.html" style="text-decoration: none">
-                                    <button class="button button_later" type="button" data-meta="Отказаться">Согласен, через месяц</button>
+                                <a id="b2" href="redirect2.html" style="text-decoration: none">
+                                    <button id="butt2" class="button button_later" type="button" data-meta="Смена ТП" disabled>Согласен, через месяц</button>
                                 </a>
-                                <a href="redirect2.html" style="text-decoration: none">
+                                <a href="redirect3.html" style="text-decoration: none">
                                     <button class="button button_no" type="button" data-meta="Отказаться">Нет, спасибо</button>
                                 </a>
                             </div>
@@ -131,5 +135,44 @@
     </div>
 </div>
 </div>
+<script>
+    $(function($) {
+        $('input[name="faxnum"]').mask("+7 (988) 888-88-88");
+    });
+</script>
+<script>
+    $("#butt").on('click', function() {
+        var phone =  $('#faxnum').val().replace(/\D/g, '');
+        console.log('phone: ' + phone);
+        // Прописать id кнопки из скрипта customScript.js
+        promoClick(1403, function() {
+                    promoMakeRedirect();
+            }, JSON.stringify({data: { faxnum: phone } }))
+        $('#error').html('whatever');
+    });
+
+    // $("#b").on('mouseover', function()  {
+    //      if(($('.phone').val().replace(/\D/g, '')).length != 11){
+    //        $('#error').html('whatever');
+    //        console.log('ASD: ');
+    //      }
+    // });
+
+    $(".phone").on("keyup", function() {
+
+        if(($('.phone').val().replace(/\D/g, '')).length == 11) {
+                  $("#butt").prop("disabled", false);
+                  $("#butt2").prop("disabled", false);
+                  $('#error').html("");
+            }
+        else {
+            $("#butt").prop("disabled", true);
+            $("#butt2").prop("disabled", true);
+            $('#error').html('Введите телефон в формате +7XXXXXXXXXX\n' +
+                'или +375ХХХХХХХХХ');
+        }
+    });
+
+</script>
 </body>
 </html>
