@@ -31,7 +31,7 @@ html,body { height:100%;  }
     height: calc(100% - 77px - 99px);
     /*overflow: hidden;*/
     display:flex;
-    min-height: 940px;
+    min-height: 870px;
     /*align-items:center;*/
     /*padding-bottom: 125px;*/
 }
@@ -99,6 +99,7 @@ html,body { height:100%;  }
     font-weight: 500;
     padding-right: 20px;
     margin-bottom: 10px;
+    margin-top: 43px;
 }
 .maintext{
     font-size: 28px;
