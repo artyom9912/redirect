@@ -443,7 +443,9 @@ a{
 .button_later{
     background-color: rgba(255, 228, 181, 0);
     color: white;
-    outline: #fd4e12 2px solid;
+    /*outline: #fd4e12 2px solid;*/
+    /*box-sizing: border-box;*/
+    box-shadow:0px 0px 0px 2px #fd4e12 inset;
 }
 .button_later:hover{background: rgba(255, 79, 18, 0.05);}
 .button_later:active{background: rgba(255, 79, 18, 0.10)  !important;}
