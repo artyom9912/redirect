@@ -423,7 +423,7 @@ a{
 .button_success {
     background: #B1CA00;
     color: #000000;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 .button_cancel {
