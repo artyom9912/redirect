@@ -66,13 +66,16 @@ html,body { height:100%; }
 }
 
 .button_success:hover {
-    background-color: #9baf03 !important;
+    background-color: #a4b903 !important;
 }
 .button_success:active {
-    background-color: #788801 !important;
+    background-color: #92a402 !important;
 }
 .button_cancel:hover{
-    background-color: rgba(88, 97, 103, 0.07) !important;
+    background-color: rgba(235, 53, 54, 0.05) !important;
+}
+.button_cancel:active{
+    background-color: rgba(235, 53, 54, 0.09) !important;
 }
 
 /* START TITLE */
@@ -499,7 +502,7 @@ a{
         margin-bottom: 20px;
     }
     .content_description{
-        margin-top: 10px;
+        /*margin-top: 10px;*/
     }
     .footer{ font-size: 14px}
     .footer__container{ padding-right: 20px; padding-left: 20px; padding-top: 0}
