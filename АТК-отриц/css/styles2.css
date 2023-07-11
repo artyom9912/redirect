@@ -357,13 +357,12 @@ a{
         margin-top: 8px;
         margin-bottom: 8px;
     }
-    .button:first-child {
-        margin-top: 0;
-    }
-
-    .button:last-child {
-        margin-bottom: 0;
-    }
+    /*.button:first-child {*/
+    /*    margin-top: 0;*/
+    /*}*/
+    /*.button:last-child {*/
+    /*    margin-bottom: 0;*/
+    /*}*/
 }
 @media (min-width: 360px) {
     .button {
