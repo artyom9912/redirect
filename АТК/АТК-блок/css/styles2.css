@@ -55,7 +55,12 @@ html,body { height:100%; }
 
 }
 /*.content__text{color: white}*/
-
+.subtext{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+}
+.subtext p {margin-top: 16px}
 .container {
     width: 100%;
     margin: 0 auto;
@@ -66,16 +71,16 @@ html,body { height:100%; }
 }
 
 .button_success:hover {
-    background-color: #a4b903 !important;
+    background-color: #BFD331 !important;
 }
 .button_success:active {
-    background-color: #92a402 !important;
+    background-color: #C4E000 !important;
 }
 .button_cancel:hover{
-    background-color: rgba(235, 53, 54, 0.05) !important;
+    background-color: rgba(237, 53, 54, 0.05) !important;
 }
 .button_cancel:active{
-    background-color: rgba(235, 53, 54, 0.09) !important;
+    background-color: rgba(235, 53, 54, 0.1) !important;
 }
 
 /* START TITLE */
@@ -113,6 +118,8 @@ html,body { height:100%; }
 .maintext{
     font-size: 18px;
     font-weight: 400;
+    padding-left: 20px;
+    border-left: #979799B2 1px solid;
 }
 
 
@@ -258,6 +265,8 @@ a{
         display: block;
         /*height: calc(100% - 64px - 243px);min-height: 753px*/
     }
+    .subtext{font-size: 22px}
+    .subtext p {margin-top: 12px}
     .content_description{padding: 40px 0 !important;}
     .vidget{    height: calc(100vh - 65px - 544px - 170px); min-height: 200px}
 }
@@ -315,6 +324,8 @@ a{
     .content_description{font-size: 20px;
         padding: 64px 0 !important;
     }
+    .subtext{font-size: 24px}
+    .subtext p {margin-top: 12px}
     .vidget{min-height: 330px}
     .content__wrapper{padding:25px 0 !important;}
     .footer .container{ padding-left: 0; padding-right: 0}
