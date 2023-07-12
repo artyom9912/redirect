@@ -268,7 +268,7 @@ a{
     .subtext{font-size: 22px}
     .subtext p {margin-top: 12px}
     .content_description{padding: 40px 0 !important;}
-    .vidget{    height: calc(100vh - 65px - 544px - 170px); min-height: 200px}
+    .vidget{    height: calc(100vh - 65px - 544px - 170px); min-height: 410px}
 }
 @media (max-width: 1010px) {
     .content__buttons{
@@ -544,6 +544,7 @@ a{
     .num{font-size: 22px}
     .main{padding-bottom: 170px}
     .logo{content: url("../img/Logo b2b2.png")}
+    .vidgetPic{content: url("../img/VidgetM.png")}
 }
 /*@media (max-width: 436px) {*/
 /*    .title_head{font-size: 36px; line-height: 36px}*/

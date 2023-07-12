@@ -279,7 +279,7 @@ a{
         line-height: 32px;
     }
     .content_description{padding: 40px 0 !important;}
-    .vidget{    height: calc(100vh - 65px - 544px - 170px); min-height: 200px}
+    .vidget{    height: calc(100vh - 65px - 544px - 170px); min-height: 410px}
 }
 @media (max-width: 1010px) {
     .content__buttons{
@@ -335,7 +335,7 @@ a{
     .content_description{font-size: 20px;
         padding: 64px 0 !important;
     }
-    .vidget{min-height: 330px}
+    .vidget{min-height: 394px}
     .content__wrapper{padding:25px 0 !important;}
     .footer .container{ padding-left: 0; padding-right: 0}
     .footer__container{ padding-left: 20px; padding-right: 20px}
@@ -553,6 +553,7 @@ a{
     .num{font-size: 22px}
     .main{padding-bottom: 170px}
     .logo{content: url("../img/Logo b2b2.png")}
+    .vidgetPic{content: url("../img/VidgetM.png")}
 }
 /*@media (max-width: 436px) {*/
 /*    .title_head{font-size: 36px; line-height: 36px}*/
