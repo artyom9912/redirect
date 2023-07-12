@@ -214,7 +214,7 @@ a{
 }
 .row{
     display: grid;
-    grid-template-columns: 2fr 1fr  1fr;
+    grid-template-columns: 1.5fr 1.5fr  1fr;
 }
 .col2 p{text-align: right}
 .b{ font-size: 14px}
@@ -259,6 +259,7 @@ a{
     .content:before {
         position: relative;
         padding-bottom: 55%;
+        top:20px;
     }
     .content__wrapper {
         flex: 0 0 100%;
@@ -289,7 +290,7 @@ a{
         margin-left: 0 !important;
     }
     .row{
-        grid-template-columns: 1.2fr 0fr 1fr;
+        grid-template-columns: 1.2fr 0.4fr 1fr;
     }
 }
 @media (min-width: 767px) {
@@ -545,7 +546,7 @@ a{
         grid-template-columns: 1fr;
         column-gap: 10px;
     }
-    .title_head{font-size: 28px; margin-top: 0; margin-bottom: 0; line-height: 32px}
+    .title_head{font-size: 28px; margin-top: 15px; margin-bottom: 0; line-height: 32px}
     .maintext{font-size: 16px}
     .content__wrapper{padding: 28px 0}
     .target_box{margin-top: 0 !important;}
