@@ -38,6 +38,7 @@ html,body { height:100%; }
 .vidget{
     height: calc(100vh - 77px - 559.5px - 100px);
     min-height: 360px;
+    background-color: white;
 }
 .helper {
     display: inline-block;
