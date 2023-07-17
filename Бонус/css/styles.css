@@ -31,8 +31,9 @@ body {
     overflow: hidden;
     align-items: center;
     display: flex;
-    max-height: 590px;!important;
+    /*max-height: 590px;!important;*/
 }
+.lim{max-height: 590px !important;}
 .helper {
     display: inline-block;
     height: 100%;
