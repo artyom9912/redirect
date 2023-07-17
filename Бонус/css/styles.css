@@ -27,10 +27,11 @@ body {
 }
 .red{
     flex-grow: 1;
-    height: 90%;
+    /*height: 90%;*/
     overflow: hidden;
     align-items: center;
     display: flex;
+    max-height: 590px;!important;
 }
 .helper {
     display: inline-block;
@@ -140,7 +141,7 @@ a{
     font-size: 16px;
     position: absolute;
     left: 0;
-    border-top: #C4C7CB 1px solid;
+    border-top: #E7E7E9 1px solid;
     color: black;
     bottom: 0;
     width: 100%;
