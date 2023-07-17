@@ -285,8 +285,8 @@ a{
     }
 }
 @media (min-width: 1600px){
-    .content__wrapper{height: 644px}
-    .title_head{padding-top: 65px}
+    /*.content__wrapper{height: 644px}*/
+    /*.title_head{padding-top: 65px}*/
 }
 @media (min-width: 1025px) and (max-width: 1599px){
     /*.content__wrapper{height: 520px}*/
