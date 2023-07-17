@@ -29,11 +29,13 @@ body {
     flex-grow: 1;
     /*height: 90%;*/
     overflow: hidden;
-    align-items: center;
+    /*align-items: center;*/
     display: flex;
     /*max-height: 590px;!important;*/
 }
-.lim{max-height: 590px !important;}
+.lim{max-height: 590px !important;
+    padding-top: 13% !important;
+}
 .helper {
     display: inline-block;
     height: 100%;
@@ -116,7 +118,7 @@ body {
         font-size: 18px;
     }
 }
-.red{align-items: center}
+/*.red{align-items: center}*/
 /* END PARAGRAPH */
 
 .header {
