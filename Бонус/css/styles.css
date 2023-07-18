@@ -4,7 +4,14 @@
 html {
     height: 100%;
 }
-
+h3{ color: black;
+font-size: 22px;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+}
+li{color: black; line-height: 28px}
 body {
     height: 100%;
     margin: 0;
@@ -29,7 +36,7 @@ body {
     flex-grow: 1;
     /*height: 90%;*/
     overflow: hidden;
-    /*align-items: center;*/
+    align-items: center;
     display: flex;
     /*max-height: 590px;!important;*/
 }
@@ -39,7 +46,7 @@ body {
 .helper {
     display: inline-block;
     height: 100%;
-    height: 100%;
+    /*height: 100%;*/
     vertical-align: middle;
 }
 .care{
@@ -68,7 +75,10 @@ body {
 .button_cancel:hover{
     background-color: #586167 !important;
 }
-
+.gift_grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
 /* START TITLE */
 @media (max-width: 959px) {
     .title {
@@ -554,13 +564,34 @@ a{
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: black;
+    background-color: #F1F3F5;
+    padding: 16px 12px;
+    max-width: 269px;
+    border-radius: 12px;
+    cursor: pointer;
     /*justify-content: center;*/
 }
+.gift:hover .gift_text{color: #FF4F12}
 .gift_text {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 20px;
+    padding-left: 12px;
+    /*padding-right: 20px;*/
+    font-size: 16px;
+    font-weight: 600;
+    /*line-height: 20px;*/
+    letter-spacing: 0px;
+    text-align: left;
 }
+.gift_subtext {
+    padding-left: 12px;
+    /*padding-right: 20px;*/
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
 .description_title{
     font-weight: 600;
     margin-bottom: 14px;
@@ -594,3 +625,69 @@ input:focus-visible{
     outline: none;
     border-bottom: rgba(30, 30, 30,0.4) 2px solid;
 }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  left: 0;
+  top: 0;
+    opacity: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: opacity 1s;
+}
+.modal h3{margin-top: 0}
+/* Modal Content/Box */
+.modal-content {
+
+    background-color: #fefefe;
+    border-radius: 8px;
+    margin: 15% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 1024px;
+    padding: 40px 40px 48px 40px;
+}
+.qr{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #70747E;
+    padding-top: 32px;
+}
+/* The Close Button */
+.close {
+  color: #2a2a2a;
+  float: right;
+  font-size: 28px;
+  /*font-weight: bold;*/
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.poptext{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #70747E;
+}
+.link_grid{
+    text-align: center;
+    display: inline-block;
+    margin-top: 32px;
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+}
+.link_grid a{ max-width: 165px}

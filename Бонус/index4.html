@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    <link href="./css/fonts.css" rel="stylesheet"/>
+    <link href="./css/styles.css" rel="stylesheet"/>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elements = document.querySelectorAll('.button');
+            for(var index = 0; index < elements.length; index++) {
+                var el = elements[index];
+                var elMeta = el.getAttribute("data-meta");
+                var buttonAction = clickHandlers.find(function(item) {
+                    return item && item.meta === elMeta && typeof item.callback === 'function';
+                });
+                if(el && elMeta && buttonAction) {
+                    el.addEventListener('click', buttonAction.callback);
+                }
+            }
+        });
+    </script>
+    <title>Ростелеком</title>
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="main">
+    <div class="header">
+        <div class="container">
+            <a href="https://rt.ru"><img src="img/Logo b2b.png" class="logo"></a>
+        </div>
+    </div>
+        <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Всё в одном приложении</h3>
+            <div class="poptext">Удобный личный кабинет для мобильных устройств.
+                Вы можете управлять счетами и услугами, контролировать расходы, безопасно пополнять баланс</div>
+            <div class="qr">
+                <img src="img/qr.png">
+                <p>Отсканируйте QR-код и установите<br>мобильный личный кабинет</p>
+                <div class="link_grid">
+                <a href="https://play.google.com/store/apps/details?id=com.dartit.RTcabinet">
+                    <img src="img/google-play.svg">
+                </a>
+                <a href="https://apps.apple.com/fr/app/id561082205?l=ru">
+                    <img src="img/app-store.svg">
+                </a>
+                <a href="https://appgallery.huawei.com/#/app/C101527755">
+                    <img src="img/app-gallery.svg">
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container red">
+            <div class="content__wrapper">
+                <div class="content__text">
+                    <h1 class="title_head">
+                        Здравствуйте!
+                    </h1>
+                    <p style="font-weight: 500">Мы заметили, что Вы давно не тратили накопленные бонусы.</p>
+                    <div class="maintext">
+                        <ul>
+                            <li>Контроль баланса, начислений и платежи за услуги связи</li>
+                            <li>Оплата услуг различными способами;</li>
+                            <li>Управление тарифными планами, опциями, подписками, пакетами телеканалов;</li>
+                            <li>Управление временной блокировкой услуг;</li>
+                            <li>Консультация в чате с нашим специалистом;</li>
+                        </ul>
+                        <div id="myBtn" class="gift">
+                            <img src="img/Icon.svg" width="48px" height="48px"/>
+                            <div class="gift_grid">
+                                <div class="gift_text">Мобильное приложение
+                                </div>
+                                <div class="gift_subtext">Для iOS и Android
+                                </div>
+                            </div>
+
+                        </div>
+                        <p>Зарегистрируйтесь в программе «Бонус» и обменивайте их на скидки и подарки от Ростелеком и наших партнеров.</p>
+                    </div>
+                </div>
+                <div class="target_box">
+                <form>
+                    <div class="content__buttons grid-buttons">
+                            <a href="https://lk.rt.ru/#bonus/spend" style="text-decoration: none">
+                            <button id="butt" class="button button_success" type="button">Подключить ЛК</button>
+                            </a>
+                            <a href="redirect.html" style="text-decoration: none">
+                                <button  class="button button_later" type="button" data-meta="Смена ТП">Подключу позже</button>
+                            </a>
+                    </div>
+
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+<!--    <div>-->
+<!--        <div class="container care">-->
+<!--            <div class="content_description">-->
+<!--                <div class="">Мы заботимся о вашей безопасности!</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    </div>
+     <div class="footer" >
+        <div class="container">
+            <div class="footer__container">
+                <div class="row">
+                    <div class="col1">
+                        <p class="footer__text footer__text_last b">
+                            © 2023 ПАО «Ростелеком». 18+
+                        </p>
+                        <p class="footer__text footer__text_last">
+                            Продолжая использовать наш сайт, вы даете согласие на обработку файлов Cookies и других пользовательских данных
+                        </p>
+                    </div>
+                    <div></div>
+
+                    <div class="col2">
+                        <p class="footer__text footer__text_last b">
+                            Подключение услуг
+                        </p>
+                        <p class="footer__text footer__text_last num">8 800 707 80 00
+                        </p>
+                    </div>
+                    <div class="col2">
+                        <p class="footer__text footer__text_last b">
+                            Служба поддержки
+                        </p>
+                        <p class="footer__text footer__text_last num">8 800 707 12 12
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+  modal.style.opacity = 1;
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+  modal.style.opacity = 0;
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
