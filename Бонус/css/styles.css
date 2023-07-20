@@ -85,6 +85,9 @@ body {
     text-decoration: none;
     margin: 0;
 }
+.content__text a:hover{
+    color: #2180F0;
+}
 /* START TITLE */
 @media (max-width: 959px) {
     .title {
