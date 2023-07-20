@@ -80,6 +80,11 @@ body {
     display: grid;
     grid-template-columns: 1fr;
 }
+.content__text a{
+    color: #0466D9;
+    text-decoration: none;
+    margin: 0;
+}
 /* START TITLE */
 @media (max-width: 959px) {
     .title {
