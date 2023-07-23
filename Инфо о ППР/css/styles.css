@@ -18,7 +18,6 @@ body {
     height: 100%;
     margin: 0;
     overflow-x: hidden;
-    /*overflow-y: hidden;*/
     font-size: 18px;
     font-family: 'RostelecomBasis', sans-serif;
     font-weight: 400;
@@ -87,9 +86,6 @@ body {
     text-decoration: none;
     margin: 0;
 }
-.content__text a:hover{
-    color: #2180F0;
-}
 /* START TITLE */
 @media (max-width: 959px) {
     .title {
@@ -122,6 +118,8 @@ body {
     font-weight: 500;
     padding-right: 20px;
     color: black;
+    margin-top: 10px;
+    margin-bottom: 24px;
 }
 .maintext{
     font-size: 18px;
@@ -369,7 +367,7 @@ a{
         margin-bottom: 8px;
     }
     .button:first-child {
-        /*margin-top: 0;*/
+        margin-top: 0;
     }
 
     .button:last-child {
@@ -577,14 +575,15 @@ a{
     flex-direction: row;
     align-items: center;
     color: black;
-    background-color: #F1F3F5;
-    padding: 16px 12px;
-    max-width: 269px;
-    border-radius: 12px;
-    cursor: pointer;
+    /*background-color: #F1F3F5;*/
+    padding: 8px 12px;
+    padding-left: 0 !important;
+    /*max-width: 269px;*/
+    /*border-radius: 12px;*/
+    /*cursor: pointer;*/
     /*justify-content: center;*/
 }
-.gift:hover .gift_text{color: #FF4F12}
+/*.gift:hover .gift_text{color: #FF4F12}*/
 .gift_text {
     padding-left: 12px;
     /*padding-right: 20px;*/
@@ -619,7 +618,7 @@ a{
     display: grid;
     grid-template-columns: 1fr;
 }
-.target_box{margin-top: 25px}
+.target_box{margin-top: 20px}
 input{
     font-family: RostelecomBasis;
     width: 65%;
