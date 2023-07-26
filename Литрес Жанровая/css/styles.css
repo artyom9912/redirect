@@ -513,6 +513,14 @@ a{
     .title_head{font-size: 36px; line-height: 36px}
     .footer{font-size: 12px}
 }
+@media (max-width: 400px) {
+    .title_head{font-size: 28px; line-height: 30px}
+    .footer{font-size: 12px}
+    .main{padding: 0 30px}
+    a{margin-bottom: 6px}
+    .gift_text{font-size: 16px !important;}
+    .description_text{font-size: 14px !important;}
+}
 .gift {
     display: flex;
     flex-direction: row;
