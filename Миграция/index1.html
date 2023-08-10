@@ -40,40 +40,40 @@
             <div class="content__wrapper">
                 <div class="content__text">
                     <h1 class="title_head">
-                        Здравствуйте!
+                        Новая оптическая сеть в вашем доме!
                     </h1>
                     <div class="maintext">
-                        <p>Получайте доступ к эксклюзивному контенту с подпиской «Жанровая»
+                        <p>Переключайтесь на современную технологию и пользуйтесь привычными услугами с комфортом!
                         </p>
                     </div>
                 </div>
                 <div class="gift-grid">
                         <div class="gift">
-                            <img src="img/book.svg" width="56px" height="56px"/>
+                            <img src="img/01.svg" width="56px" height="56px"/>
                             <div class="gift-content">
-                                <div class="gift_text" style="font-weight: 500">49 000 книг</div>
-                                <div class="gift_text" style="font-weight: 500; color: #101828B2">Фантастика, фэнтези, детективы, любовные романы и не только</div>
+                                <div class="gift_text" style="font-weight: 500">Общайтесь с близкими — без неожиданных отключений</div>
+                                <div class="gift_text" style="font-weight: 500; color: #101828B2">Скорость соединения до 1 Гбит/сек</div>
                             </div>
                         </div>
                         <div class="gift">
-                            <img src="img/gift.svg" width="56px" height="56px"/>
+                            <img src="img/02.svg" width="56px" height="56px"/>
                             <div class="gift-content">
-                                <div class="gift_text" style="font-weight: 500">14 дней бесплатно</div>
-                                <div class="gift_text" style="font-weight: 500; color: #101828B2">Попробуйте все возможности подписки, прежде чем окончательно решить</div>
+                                <div class="gift_text" style="font-weight: 500">Смотрите онлайн-фильмы и новостные каналы — без долгих загрузок</div>
+                                <div class="gift_text" style="font-weight: 500; color: #101828B2">Выделенная оптическая линия для каждого абонента</div>
                             </div>
                         </div>
                         <div class="gift">
-                            <img src="img/sale.svg" width="56px" height="56px"/>
+                            <img src="img/03.svg" width="56px" height="56px"/>
                             <div class="gift-content">
-                                <div class="gift_text" style="font-weight: 500">20% скидка</div>
-                                <div class="gift_text" style="font-weight: 500; color: #101828B2">Мы предоставим вам скидку 20%, если книги не оказалось в подписке</div>
+                                <div class="gift_text" style="font-weight: 500">Учитесь, работайте, читайте и пишите в сети — без помех</div>
+                                <div class="gift_text" style="font-weight: 500; color: #101828B2">Задержка соединения (PING) ниже на 30%</div>
                             </div>
                         </div>
                         <div class="gift">
-                            <img src="img/sale.svg" width="56px" height="56px"/>
+                            <img src="img/04.svg" width="56px" height="56px"/>
                             <div class="gift-content">
-                                <div class="gift_text" style="font-weight: 500">20% скидка</div>
-                                <div class="gift_text" style="font-weight: 500; color: #101828B2">Мы предоставим вам скидку 20%, если книги не оказалось в подписке</div>
+                                <div class="gift_text" style="font-weight: 500">Подключение бесплатно</div>
+                                <div class="gift_text" style="font-weight: 500; color: #101828B2">Мастер приедет в удобное для Вас время</div>
                             </div>
                         </div>
                 </div>
@@ -83,10 +83,10 @@
 <!--                            <div id="error" class="error"></div>-->
                     <div class="content__buttons grid-buttons">
                             <a href="http://www.rt.ru/books" style="text-decoration: none">
-                            <button id="butt" class="button button_success" type="button">Подробнее</button>
+                            <button id="butt" class="button button_success" type="button" disabled>Оставить заявку</button>
                             </a>
                             <a  style="text-decoration: none">
-                                <button  class="button button_later" type="button" data-meta="Смена ТП" onclick="window.open('', '_self', ''); window.close();">Отказаться</button>
+                                <button  class="button button_later" type="button" data-meta="Смена ТП" onclick="window.open('', '_self', ''); window.close();">Нет, не интересно</button>
                             </a>
                     </div>
 
@@ -167,12 +167,12 @@
 
         if(($('.phone').val().replace(/\D/g, '')).length == 11) {
                   $("#butt").prop("disabled", false);
-                  $("#butt2").prop("disabled", false);
+                  // $("#butt2").prop("disabled", false);
                   $('#error').html("");
             }
         else {
             $("#butt").prop("disabled", true);
-            $("#butt2").prop("disabled", true);
+            // $("#butt2").prop("disabled", true);
             $('#error').html('Введите телефон в формате +7XXXXXXXXXX');
         }
     });

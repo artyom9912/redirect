@@ -270,7 +270,7 @@ a{
         order: 0;
         margin: 0 20px 5px 20px;
     }
-    input{margin-top: 15px}
+    input{margin-top: 15px; }
     .red{order: 1}
     .content{padding-top: 20px}
     .content__wrapper {
@@ -341,7 +341,7 @@ a{
     /*.content__wrapper{height: 416px}*/
     .care{height: 100%}
     .maintext{font-size: 16px}
-    .title_head{font-size: 36px; margin-bottom: 10px}
+    .title_head{font-size: 36px; margin-bottom: 10px;line-height: 44px}
     .content_description{font-size: 20px; margin-top: 14vh !important;}
     .content__wrapper{padding:25px 0 !important;}
     .footer .container{ padding-left: 0; padding-right: 0}
@@ -532,6 +532,7 @@ a{
     }
     .button{ width: 100%}
     a{margin-right: 0}
+    input{max-width: unset !important;}
 }
 @media (max-width: 1341px) {
     .content{margin-top: 63px}
@@ -598,7 +599,7 @@ a{
 .gift {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     color: black;
     /*background-color: #F1F3F5;*/
     padding: 8px 12px;
@@ -608,6 +609,7 @@ a{
     /*cursor: pointer;*/
     /*justify-content: center;*/
 }
+.gift img {top :0}
 /*.gift:hover .gift_text{color: #FF4F12}*/
 .gift_text {
     padding-left: 12px;
@@ -654,7 +656,8 @@ input{
     padding-bottom: 8px;
     padding-top: 10px;
     padding-left: 1px;
-    min-width: 406px;
+    /*min-width: 406px;*/
+    max-width: 385px;
     /*line-height: 18px;*/
 }
 input:focus-visible{
