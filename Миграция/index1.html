@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    <link href="./css/fonts.css" rel="stylesheet"/>
+    <link href="./css/styles.css" rel="stylesheet"/>
+    <script src="./js/jquery-3.2.1.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+    <script src="./customScript.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elements = document.querySelectorAll('.button');
+            for(var index = 0; index < elements.length; index++) {
+                var el = elements[index];
+                var elMeta = el.getAttribute("data-meta");
+                var buttonAction = clickHandlers.find(function(item) {
+                    return item && item.meta === elMeta && typeof item.callback === 'function';
+                });
+                if(el && elMeta && buttonAction) {
+                    el.addEventListener('click', buttonAction.callback);
+                }
+            }
+        });
+    </script>
+    <title>Ростелеком</title>
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="main">
+    <div class="header">
+        <div class="container">
+            <a href="https://rt.ru"><img src="img/Logo b2b.png" class="logo"></a>
+        </div>
+    </div>
+    <div class="content gr">
+        <div class="container red">
+            <div class="content__wrapper">
+                <div class="content__text">
+                    <h1 class="title_head">
+                        Здравствуйте!
+                    </h1>
+                    <div class="maintext">
+                        <p>Получайте доступ к эксклюзивному контенту с подпиской «Жанровая»
+                        </p>
+                    </div>
+                </div>
+                <div class="gift-grid">
+                        <div class="gift">
+                            <img src="img/book.svg" width="56px" height="56px"/>
+                            <div class="gift-content">
+                                <div class="gift_text" style="font-weight: 500">49 000 книг</div>
+                                <div class="gift_text" style="font-weight: 500; color: #101828B2">Фантастика, фэнтези, детективы, любовные романы и не только</div>
+                            </div>
+                        </div>
+                        <div class="gift">
+                            <img src="img/gift.svg" width="56px" height="56px"/>
+                            <div class="gift-content">
+                                <div class="gift_text" style="font-weight: 500">14 дней бесплатно</div>
+                                <div class="gift_text" style="font-weight: 500; color: #101828B2">Попробуйте все возможности подписки, прежде чем окончательно решить</div>
+                            </div>
+                        </div>
+                        <div class="gift">
+                            <img src="img/sale.svg" width="56px" height="56px"/>
+                            <div class="gift-content">
+                                <div class="gift_text" style="font-weight: 500">20% скидка</div>
+                                <div class="gift_text" style="font-weight: 500; color: #101828B2">Мы предоставим вам скидку 20%, если книги не оказалось в подписке</div>
+                            </div>
+                        </div>
+                        <div class="gift">
+                            <img src="img/sale.svg" width="56px" height="56px"/>
+                            <div class="gift-content">
+                                <div class="gift_text" style="font-weight: 500">20% скидка</div>
+                                <div class="gift_text" style="font-weight: 500; color: #101828B2">Мы предоставим вам скидку 20%, если книги не оказалось в подписке</div>
+                            </div>
+                        </div>
+                </div>
+                <div class="target_box">
+                <form>
+                     <input id="faxnum" name="faxnum" class="phone" type="tel" placeholder="Введите номер телефона" required pattern="^((\+7)[\- ]?)?(\(?9\d{2}\)?[\- ]?)?[\d\- ]{10}$" maxlength="16">
+<!--                            <div id="error" class="error"></div>-->
+                    <div class="content__buttons grid-buttons">
+                            <a href="http://www.rt.ru/books" style="text-decoration: none">
+                            <button id="butt" class="button button_success" type="button">Подробнее</button>
+                            </a>
+                            <a  style="text-decoration: none">
+                                <button  class="button button_later" type="button" data-meta="Смена ТП" onclick="window.open('', '_self', ''); window.close();">Отказаться</button>
+                            </a>
+                    </div>
+
+                </form>
+
+            </div>
+            </div>
+        </div>
+        <div class="video_player">
+            <iframe width="100%" height="377"
+                    src="https://frontend.vh.yandex.ru/player/v2GsnEzFF3nM?from_block=partner&from=zen&mute=0&autoplay=0&tv=0&branding=0"
+                    allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media"
+                    frameborder="0" scrolling="no" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+<!--    <div>-->
+<!--        <div class="container care">-->
+<!--            <div class="content_description">-->
+<!--                <div class="">Мы заботимся о вашей безопасности!</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    </div>
+     <div class="footer" >
+        <div class="container">
+            <div class="footer__container">
+                <div class="row">
+                    <div class="col1">
+                        <p class="footer__text footer__text_last b">
+                            © 2023 ПАО «Ростелеком». 18+
+                        </p>
+                        <p class="footer__text footer__text_last">
+                            Продолжая использовать наш сайт, вы даете согласие на обработку файлов Cookies и других пользовательских данных
+                        </p>
+                    </div>
+                    <div></div>
+
+                    <div class="col2">
+                        <p class="footer__text footer__text_last b">
+                            Подключение услуг
+                        </p>
+                        <p class="footer__text footer__text_last num">8 800 707 80 00
+                        </p>
+                    </div>
+                    <div class="col2">
+                        <p class="footer__text footer__text_last b">
+                            Служба поддержки
+                        </p>
+                        <p class="footer__text footer__text_last num">8 800 707 12 12
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    $(function($) {
+        $('input[name="faxnum"]').mask("+7 (988) 888-88-88");
+    });
+</script>
+<script>
+    $("#butt").on('click', function() {
+        var phone =  $('#faxnum').val().replace(/\D/g, '');
+        console.log('phone: ' + phone);
+        // Прописать id кнопки из скрипта customScript.js
+        promoClick(1403, function() {
+                    promoMakeRedirect();
+            }, JSON.stringify({data: { faxnum: phone } }))
+        $('#error').html('whatever');
+    });
+
+
+    $(".phone").on("keyup", function() {
+
+        if(($('.phone').val().replace(/\D/g, '')).length == 11) {
+                  $("#butt").prop("disabled", false);
+                  $("#butt2").prop("disabled", false);
+                  $('#error').html("");
+            }
+        else {
+            $("#butt").prop("disabled", true);
+            $("#butt2").prop("disabled", true);
+            $('#error').html('Введите телефон в формате +7XXXXXXXXXX');
+        }
+    });
+
+</script>
+</body>
+</html>
