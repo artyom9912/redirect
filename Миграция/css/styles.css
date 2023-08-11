@@ -231,7 +231,7 @@ a{
 }
 .row{
     display: grid;
-    grid-template-columns: 1.7fr 0.15fr 1fr 1fr;
+    grid-template-columns: 1.6fr 0.25fr 1fr 1fr;
 }
 .col2 p{text-align: right}
 .b{ font-size: 14px}
@@ -307,16 +307,16 @@ a{
     /*    top: 0;*/
     /*    bottom: 0;*/
     /*}*/
-    .content:after {
-        content: '';
-        width: 20%;
-        position: absolute;
-        left: 50%;
-        top: 0;
-        bottom: 0;
+        /*.content:after {*/
+        /*    content: '';*/
+        /*    width: 20%;*/
+        /*    position: absolute;*/
+        /*    left: 50%;*/
+        /*    top: 0;*/
+        /*    bottom: 0;*/
 
-        z-index: 2;
-    }
+        /*    z-index: 2;*/
+        /*}*/
     .content__text {
         margin-bottom: 24px;
     }
@@ -740,6 +740,16 @@ input:focus-visible{
 .modal.shown {
   display: block;
   animation: fadeIn 0.3s;
+}
+.error{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FF4747;
+    margin-left: 12px;
+    margin-top: 4px;
 }
 input{
     font-family: RostelecomBasis;
