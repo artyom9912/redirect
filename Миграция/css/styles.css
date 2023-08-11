@@ -282,7 +282,7 @@ a{
     }
     iframe{
         /*min-height: 300px !important;*/
-        height: 100% !important;
+        height: 45.3vw !important;
     }
     /*.content__buttons {*/
     /*    justify-content: center;*/
@@ -772,7 +772,7 @@ input:focus-visible{
 }
 iframe{
     border-radius: 12px;
-    min-height: 377px;
+    /*min-height: 377px;*/
     height: 50%;
 }
 @keyframes fadeIn {
