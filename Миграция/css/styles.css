@@ -256,13 +256,7 @@ a{
 /*}*/
 @media (max-width: 1341px) {
     .container{padding: 0px 20px}
-    /*.content:before {*/
-    /*    position: relative;*/
-    /*    padding-bottom: 55%;*/
-    /*    margin-top: 0px !important;*/
-    /*    margin-bottom: 0px !important;*/
-    /*    margin-right: 20px !important;*/
-    /*}*/
+    .stat{ display: block !important;}
     .gr{
         grid-template-columns: 1fr;
     }
@@ -359,7 +353,10 @@ a{
 .content__wrapper {
     padding: 48px 0;
 }
-
+.stat img {object-fit: cover;
+    width: 100%;
+}
+.dark{background-color: #1B2D41 !important;}
 /*.content:before {*/
 /*    content: '';*/
 /*    display: block;*/
@@ -762,7 +759,7 @@ input{
     padding-bottom: 10px;
     padding-top: 12px;
     padding-left: 12px;
-    min-width: 406px;
+    min-width: 380px;
     /*line-height: 18px;*/
 }
 input:focus-visible{
