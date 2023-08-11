@@ -280,6 +280,10 @@ a{
         /*max-width: 360px;*/
         /*margin-right: 24px;*/
     }
+    iframe{
+        /*min-height: 300px !important;*/
+        height: 100% !important;
+    }
     /*.content__buttons {*/
     /*    justify-content: center;*/
     /*}*/
@@ -768,6 +772,8 @@ input:focus-visible{
 }
 iframe{
     border-radius: 12px;
+    min-height: 377px;
+    height: 50%;
 }
 @keyframes fadeIn {
   from {
