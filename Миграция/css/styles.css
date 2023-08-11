@@ -256,7 +256,10 @@ a{
 /*}*/
 @media (max-width: 1341px) {
     .container{padding: 0px 20px}
-    .stat{ display: block !important;}
+    .stat{ display: block !important;
+        padding-top: 0 !important;
+    }
+    .video_player h1{font-size: 0; line-height: 0}
     .gr{
         grid-template-columns: 1fr;
     }
@@ -360,6 +363,7 @@ a{
 .stat img {object-fit: cover;
     width: 100%;
 }
+.stat{ padding-top: 35px; display: block}
 .dark{background-color: #1B2D41 !important;}
 /*.content:before {*/
 /*    content: '';*/
