@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    <link href="./css/fonts.css" rel="stylesheet"/>
+    <link href="./css/styles.css" rel="stylesheet"/>
+    <script src="./js/jquery-3.2.1.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+
+    <script src="./customScript.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elements = document.querySelectorAll('.button');
+            for(var index = 0; index < elements.length; index++) {
+                var el = elements[index];
+                var elMeta = el.getAttribute("data-meta");
+                var buttonAction = clickHandlers.find(function(item) {
+                    return item && item.meta === elMeta && typeof item.callback === 'function';
+                });
+                if(el && elMeta && buttonAction) {
+                    el.addEventListener('click', buttonAction.callback);
+                }
+            }
+        });
+    </script>
+    <title>Ростелеком</title>
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="container ">
+            <div class="logo"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container main">
+            <div class="content__wrapper">
+                <div class="content__text">
+<!--                    <p class="title_name">РОСТЕЛЕКОМ ЛИЦЕЙ</p>-->
+                    <h1 class="title_head">
+                        Здравствуйте!
+                    </h1>
+                    <div style="font-size: 22px">
+                        <p>Получайте доступ к эксклюзивному контенту с подпиской «Жанровая»
+                        </p>
+
+                    </div>
+                    <div class="gift-grid">
+                        <div class="gift">
+                            <img src="img/book.png" width="80px" height="80px"/>
+                            <div class="gift-content">
+                                <div class="gift_text" style="font-weight: 600">Библиотека любимых книг</div>
+                                <div class="gift_text" style="font-weight: 500">49 000 электронных и аудио книг</div>
+                            </div>
+                        </div>
+                        <div class="gift">
+                            <img src="img/gift.png" width="80px" height="80px"/>
+                            <div class="gift-content">
+                                <div class="gift_text" style="font-weight: 600">14 дней бесплатно</div>
+                                <div class="gift_text" style="font-weight: 500">для новых подписчиков</div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="gift" style="margin-top: 32px">
+                        <img src="img/price.png" />
+
+                    </div>
+                </div>
+
+                <div class="target_box">
+                <form>
+
+                    <input id="faxnum" name="faxnum" class="phone" type="tel" placeholder="+7 (9__) ___-__-__" required pattern="^((\+7)[\- ]?)?(\(?9\d{2}\)?[\- ]?)?[\d\- ]{10}$" maxlength="16">
+                    <div class="content__buttons grid-buttons">
+                        <a href="redirect1.html" style="text-decoration: none">
+                            <button id="butt" class="button button_success" type="button" data-meta="Смена ТП" disabled>Подключить</button>
+                        </a>
+                        <a href="redirect2.html" style="text-decoration: none">
+                            <button class="button button_cancel" type="button" data-meta="Отказаться">Отказаться</button>
+                        </a>
+                    </div>
+                    <div class="disclaimer">Нажимая кнопку «Подключить», Вы соглашаетесь на подключение подписки «Жанровая».
+                        Подробнее на <a href="http://www.rt.ru/books" style="color: #ff4f12">rt.ru/books</a></div>
+                </form>
+
+            </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container dets">
+            <div class="content_description">
+                <div class="col" >
+                    <div>
+                        <img src="img/Vector.png" class="description_img">
+                    </div>
+                    <div class="description_text">
+                        <h4></h4>
+                        <div class="description_title">20% скидка</div>
+                        Мы предоставим вам скидку 20%, если книги не оказалось в подписке
+                    </div>
+                </div>
+                <div class="col" >
+                    <div>
+                        <img src="img/Shape.png" class="description_img">
+                    </div>
+                    <div class="description_text">
+                        <h4></h4>
+                        <div class="description_title">Книга в подарок</div>
+                         Каждый месяц выбирайте себе книгу в разделе «Мои акции» на Литрес
+                    </div>
+                </div>
+                <div class="col" >
+                    <div>
+                        <img src="img/Vector.png" class="description_img">
+                    </div>
+                    <div class="description_text">
+                        <h4></h4>
+                        <div class="description_title">Синхронизация устройств</div>
+                        Продолжайте чтение с любого устройства, даже находясь вне сети
+                    </div>
+                </div>
+                <div class="col" >
+                    <div style="text-align: center;">
+                        <span class="helper"></span><img src="img/Vector-1.png" class="description_img">
+                    </div>
+                    <div class="description_text">
+                        <h4></h4>
+                        <div class="description_title">Для всей семьи</div>
+                        Подпиской могут пользоваться до 5 человек одновременно
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" >
+        <div class="container">
+            <div class="footer__container">
+                <p class="footer__text footer__text_last">
+                    Подробнее об услугах, тарифах и опциях на сайте 
+                    <a class="footer__link" href="http://www.rt.ru/" target="_blank" rel="noopener noreferrer" style="color: #FF4F12; text-decoration: none">
+                        www.rt.ru
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function($) {
+        $('input[name="faxnum"]').mask("+7 (988) 888-88-88");
+    });
+</script>
+<script>
+    $("#butt").on('click', function() {
+        var phone =  $('#faxnum').val().replace(/\D/g, '');
+        console.log('phone: ' + phone);
+        // Прописать id кнопки из скрипта customScript.js
+        promoClick(1403, function() {
+                    promoMakeRedirect();
+            }, JSON.stringify({data: { faxnum: phone } }))
+    });
+
+    $(".phone").on("keyup", function() {
+
+            if(($('.phone').val().replace(/\D/g, '')).length == 11) {
+                      $("#butt").prop("disabled", false);
+                }
+        else {$("#butt").prop("disabled", true);}
+    });
+
+</script>
+</body>
+</html>
