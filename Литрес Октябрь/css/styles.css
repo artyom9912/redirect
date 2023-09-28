@@ -481,7 +481,7 @@ a{
     column-gap: 20px;
     background-color: white;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
     padding-top: 50px;
 }
 .desc{
@@ -489,6 +489,14 @@ a{
     /*border-radius: 18px;*/
     padding: 0 8%;
     text-align: center;
+}
+.form{
+    padding: 5% 8% 5%;
+}
+.form_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
 }
 .we{
     display: block;
