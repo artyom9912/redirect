@@ -6,6 +6,9 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
     <link href="./css/fonts.css" rel="stylesheet"/>
     <link href="./css/styles.css" rel="stylesheet"/>
+    <script src="./js/jquery-3.2.1.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+    <script src="./customScript.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var elements = document.querySelectorAll('.button');
@@ -52,8 +55,8 @@
                 <div class="target_box">
                 <form>
                     <div class="content__buttons grid-buttons">
-                            <a href="redirect.html" style="text-decoration: none">
-                            <button id="butt" class="button button_success" type="button" >Понятно</button>
+                            <a href="#focus">
+                                <div class="ui-button__text">Что я получу?</div>
                             </a>
                     </div>
                 </form>
@@ -61,7 +64,7 @@
             </div>
         </div>
     </div>
-        <div class="container desc we">
+        <div id="focus" class="container desc we">
             <div class="">По окончании промо-периода пользуйтесь всеми <br>преимуществами онлайн библиотеки всего от 149 руб/мес</div>
         </div>
         <div class="container desc">
@@ -97,8 +100,8 @@
                     </div>
                 </div>
                 <div class="col" >
-                    <div style="text-align: center;">
-                        <span class="helper"></span><img src="img/Vector2.png" class="description_img">
+                    <div style="">
+                        <img src="img/Vector2.png" class="description_img">
                     </div>
                     <div class="description_text">
                         <h4></h4>
@@ -112,13 +115,14 @@
     <div>
         <div class="container form">
             <div class="form_grid">
-                <div class="">Для того, чтобы получить доступ к библиотеке Литрес,
+                <div class="form_text">Для того, чтобы получить доступ к библиотеке Литрес,
                     введите номер телефона для создания учетной записи или
                     подключения библиотеки к существующей учетной записи на данном номере телефона
                 </div>
                 <div class="target_box">
                 <form>
-                    <input id="faxnum" name="faxnum" class="phone" type="tel" placeholder="+7 (___) ___-__-__" required pattern="^((\+7)[\- ]?)?(\(?9\d{2}\)?[\- ]?)?[\d\- ]{10}$" maxlength="16">
+                    <input id="faxnum" name="faxnum" class="phone" type="tel" placeholder="Введите номер телефона" required pattern="^((\+7)[\- ]?)?(\(?9\d{2}\)?[\- ]?)?[\d\- ]{10}$" maxlength="16">
+                    <div id="error" class="error"></div>
                     <div class="content__buttons grid-buttons">
                         <a href="redirect1.html" style="text-decoration: none">
                             <button id="butt" class="button button_success" type="button" data-meta="Смена ТП" disabled>Подключить</button>
@@ -127,7 +131,7 @@
                             <button class="button button_cancel" type="button" data-meta="Отказаться">Отказаться</button>
                         </a>
                     </div>
-                    <div class="disclaimer">Отключить подписку, не переходя в платный период, можно в <a href="http://www.lk.rt.ru/" style="color: #ff4f12">Едином личном кабинете</a></div>
+                    <div class="disclaimer">Отключить подписку, не переходя в платный период, можно в <a href="http://www.lk.rt.ru/" style="color: #ff4f12">Едином&nbsp;личном&nbsp;кабинете</a></div>
                 </form>
                 </div>
             </div>
@@ -168,7 +172,38 @@
     </div>
 
 </div>
+<script>
+    $(function($) {
+        $('input[name="faxnum"]').mask("+7 (988) 888-88-88");
+    });
+</script>
+<script>
+    $("#butt").on('click', function() {
+        var phone =  $('#faxnum').val().replace(/\D/g, '');
+        console.log('phone: ' + phone);
+        // Прописать id кнопки из скрипта customScript.js
+        promoClick(1403, function() {
+                    promoMakeRedirect();
+            }, JSON.stringify({data: { faxnum: phone } }))
+        // $('#error').html('whatever');
+    });
 
+
+    $(".phone").on("keyup", function() {
+
+        if(($('.phone').val().replace(/\D/g, '')).length == 11) {
+                  $("#butt").prop("disabled", false);
+                  // $("#butt2").prop("disabled", false);
+                  $('#error').html("");
+            }
+        else {
+            $("#butt").prop("disabled", true);
+            // $("#butt2").prop("disabled", true);
+            $('#error').html('Введите телефон в формате +7XXXXXXXXXX');
+        }
+    });
+
+</script>
 
 </body>
 </html>

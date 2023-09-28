@@ -4,6 +4,7 @@
 html {
     height: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 h3{ color: black;
 font-size: 22px;
@@ -23,6 +24,7 @@ body {
     font-family: 'RostelecomBasis', sans-serif;
     font-weight: 400;
     line-height: 1.5;
+    scroll-behavior: smooth;
 }
 .b{
     font-size: 28px;
@@ -163,7 +165,7 @@ a{
 .footer {
     background: #ffffff;
     font-size: 16px;
-    position: absolute;
+    /*position: absolute;*/
     left: 0;
     border-top: #E7E7E9 1px solid;
     color: black;
@@ -193,7 +195,8 @@ a{
     /*margin-top: auto;*/
     padding: 18px 0;
 }
-.main{padding-bottom: 99px; background-color: #F3F3F4}
+/*.main{padding-bottom: 99px; background-color: #F3F3F4}*/
+.main{ background-color: #F3F3F4}
 .footer__container {
     display: flex;
     flex-direction: column;
@@ -318,7 +321,8 @@ a{
     .care{height: 100%}
     .maintext{font-size: 16px}
     .title_head{font-size: 36px; margin-bottom: 10px}
-    .content_description{font-size: 20px; margin-top: 14vh !important;}
+    /*.content_description{font-size: 20px; margin-top: 14vh !important;}*/
+    .content_description{font-size: 20px;}
     .content__wrapper{padding:25px 0 !important;}
     .footer .container{ padding-left: 0; padding-right: 0}
     .footer__container{ padding-left: 20px; padding-right: 20px}
@@ -457,6 +461,34 @@ a{
     /*margin-left: 70px;*/
 
 }
+.ui-button__text {
+    animation: arrow-animation 1s linear infinite;
+    background-image: url("../img/Arrow 1 (Stroke).png");
+    background-position: left 40%;
+    background-repeat: no-repeat;
+    /*bottom: -1.875rem;*/
+    text-align: left;
+    color: #FF4F12;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    padding-left: 1.25rem;
+    /*position: absolute;*/
+}
+@keyframes arrow-animation {
+    0% {
+    background-position-y: 40%;
+}
+25% {
+    background-position-y: 30%;
+}
+75% {
+    background-position-y: 60%;
+}
+100% {
+    background-position-y: 40%;
+}
+}
 
 .disclaimer_link {
     color: #A9A9A9;
@@ -498,6 +530,10 @@ a{
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
 }
+.form_text{
+    font-size: 20px;
+    font-weight: 600;
+}
 .we{
     display: block;
     padding-top: 110px;
@@ -505,6 +541,16 @@ a{
     font-size: 22px;
     font-weight: 600;
     /*background-color: white;*/
+}
+.error{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FF4747;
+    margin-left: 12px;
+    margin-top: 4px;
 }
 .description_text {
     padding-left: 0px;
@@ -515,12 +561,14 @@ a{
     justify-self: center;
 }
 @media (max-width: 765px) {
-    .content{margin-top: 40px!important;margin-bottom: 0}
+    .content{margin-top: 40px!important;margin-bottom: 65px}
     .row{
         display: grid;
         row-gap: 30px;
         grid-template-columns: 1fr !important;
     }
+    .col{text-align: left}
+    .description_text{padding-left: 0 !important;}
     .col1 { order: 1; }
     .col2 { order: 0; }
     .f1{padding-top: 0 !important;}
@@ -532,21 +580,37 @@ a{
         column-gap: 10px;
     }
     .button{ width: 100%}
+    .form_text{ text-align: left !important;}
     a{margin-right: 0}
+    input{width: 100% !important;}
 }
 @media (max-width: 1341px) {
     .content{margin-top: 63px}
     .content_description {
-        display: block;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
+    .form_grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 35px;
+    }
+    .form_text{order: 2; text-align: center}
+    .target_box{order: 0}
     .col {
-        display: flex;
+        /*display: flex;*/
         max-width: 100%;
         padding-left: 10px;
         padding-top: 10px;
         padding-bottom: 10px;
-        text-align: left;
+        /*text-align: left;*/
     }
+    .grid-buttons{
+        display: grid !important;
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+    }
+    .button{ width: 100%}
     .col__img {
         vertical-align: middle;
     }
@@ -562,16 +626,7 @@ a{
     .content_description{
         margin-top: 10px;
     }
-    /*.footer{ font-size: 14px}*/
-    /*.footer__container{ padding-right: 20px; padding-left: 20px; padding-top: 0}*/
-    /*.row{*/
-    /*    display: grid;*/
-    /*    row-gap: 30px;*/
-    /*    grid-template-columns: 1fr !important;*/
-    /*}*/
-    /*.col1 { order: 1; }*/
-    /*.col2 { order: 0; }*/
-    /*.f1{padding-top: 0 !important;}*/
+
     .target_box{
         margin-top: 25px;
     }
@@ -589,7 +644,7 @@ a{
     .target_box{margin-top: 0 !important;}
     .care{font-size: 18px}
     .num{font-size: 22px}
-    .main{padding-bottom: 40px}
+    /*.main{padding-bottom: 40px}*/
 
     .logo{content: url("../img/Logo b2b2.png")}
 }
@@ -645,7 +700,7 @@ a{
     display: grid;
     grid-template-columns: 1fr;
 }
-.target_box{margin-top: 20px}
+/*.target_box{margin-top: 20px}*/
 input{
     font-family: RostelecomBasis;
     width: 65%;
@@ -739,6 +794,13 @@ input:focus-visible{
 .modal.shown {
   display: block;
   animation: fadeIn 0.3s;
+}
+.redir{
+    position: absolute;
+    bottom: 0;
+}
+.long{
+    height: 100vh;
 }
 
 @keyframes fadeIn {
