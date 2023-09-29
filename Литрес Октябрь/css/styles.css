@@ -542,7 +542,7 @@ a{
 .we{
     display: block;
     padding-top: 40px;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
     font-size: 22px;
     font-weight: 600;
     /*background-color: white;*/
@@ -566,12 +566,13 @@ a{
     justify-self: center;
 }
 @media (max-width: 765px) {
-    .content{margin-top: 40px!important;margin-bottom: 65px}
+    /*.content{margin-top: 40px!important;margin-bottom: 65px}*/
     .row{
         display: grid;
         row-gap: 30px;
         grid-template-columns: 1fr !important;
     }
+    .block{margin-bottom: 40px !important;}
     .we{font-size: 16px}
     .col{text-align: left}
     .description_text{padding-left: 0 !important;}
@@ -595,12 +596,12 @@ a{
     input{width: 100% !important;}
 }
 @media (max-width: 1341px) {
-    .content{margin-top: 63px;margin-bottom: 65px;}
+    /*.content{margin-top: 63px;margin-bottom: 65px;}*/
     .content:before{background-size: contain !important;}
     .content_description {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 40px 0;
+        padding: 32px 0;
     }
     /*.form{padding-top: 65px;padding-bottom: 65px;}*/
     .form_grid{
@@ -636,9 +637,9 @@ a{
     .last {
         margin-bottom: 20px;
     }
-    .content_description{
-        margin-top: 10px;
-    }
+    /*.content_description{*/
+    /*    margin-top: 10px;*/
+    /*}*/
 
     .target_box{
         margin-top: 25px;
