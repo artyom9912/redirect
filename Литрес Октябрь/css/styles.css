@@ -26,12 +26,16 @@ body {
     line-height: 1.5;
     scroll-behavior: smooth;
 }
+.block{margin-bottom: 110px}
 .b{
     font-size: 28px;
     font-weight: 600;
 }
+.description_text{font-size: 16px}
+.description_title{font-size: 18px}
 .wrapper {
     position: relative;
+    background-color: #F3F3F4;
     min-height: 100%;
   }
 .redirect{
@@ -233,12 +237,12 @@ a{
 /* START CONTENT */
 @media (max-width: 599px) {
     .content:before {
-        background-image: url('../img/Image.png');
+        background-image: url('../img/Image2.png');
     }
 }
-@media (min-width: 600px) and (max-width: 766px) {
+@media (min-width: 600px) and (max-width: 1341px) {
     .content:before {
-        background-image: url('../img/Image.png');
+        background-image: url('../img/Image2.png') !important;
     }
 }
 @media (min-width: 767px) {
@@ -250,6 +254,7 @@ a{
 }
 @media (max-width: 1341px) {
     .container{padding: 0px 20px}
+    .block{margin-bottom: 65px}
     .content:before {
         position: relative;
         padding-bottom: 55%;
@@ -263,7 +268,7 @@ a{
         max-width: 100%;
     }
     .content__text {
-        margin-bottom: 20px;
+        margin-bottom: 32px;
     }
     /*.content__buttons {*/
     /*    justify-content: center;*/
@@ -314,7 +319,7 @@ a{
 }
 @media (min-width: 1025px) and (max-width: 1599px){
     /*.content__wrapper{height: 520px}*/
-    .content_description{font-size: 22px}
+    /*.content_description{font-size: 22px}*/
 }
 @media (min-width: 1341px) and (max-width: 1599px){
     /*.content__wrapper{height: 416px}*/
@@ -331,7 +336,7 @@ a{
     position: relative;
     background: #ffffff;
     color: black;
-    margin: 108px 5%;
+    margin: 0 5%;
     border-radius: 16px;
     /*min-height: 590px;*/
 }
@@ -372,7 +377,7 @@ a{
         margin-bottom: 8px;
     }
     .button:first-child {
-        margin-top: 0;
+        /*margin-top: 0;*/
     }
 
     .button:last-child {
@@ -523,7 +528,7 @@ a{
     text-align: center;
 }
 .form{
-    padding: 5% 8% 5%;
+    padding: 0 8% 0;
 }
 .form_grid{
     display: grid;
@@ -536,7 +541,7 @@ a{
 }
 .we{
     display: block;
-    padding-top: 110px;
+    padding-top: 40px;
     padding-bottom: 10px;
     font-size: 22px;
     font-weight: 600;
@@ -567,6 +572,7 @@ a{
         row-gap: 30px;
         grid-template-columns: 1fr !important;
     }
+    .we{font-size: 16px}
     .col{text-align: left}
     .description_text{padding-left: 0 !important;}
     .col1 { order: 1; }
@@ -580,16 +586,23 @@ a{
         column-gap: 10px;
     }
     .button{ width: 100%}
-    .form_text{ text-align: left !important;}
+    .form_text{ text-align: left !important; font-size: 16px}
+    .description_text{font-size: 14px}
+    .description_title{font-size: 16px}
+    .content_description{padding-top: 0px !important;}
+    .col img{width: 56px}
     a{margin-right: 0}
     input{width: 100% !important;}
 }
 @media (max-width: 1341px) {
-    .content{margin-top: 63px}
+    .content{margin-top: 63px;margin-bottom: 65px;}
+    .content:before{background-size: contain !important;}
     .content_description {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding: 40px 0;
     }
+    /*.form{padding-top: 65px;padding-bottom: 65px;}*/
     .form_grid{
         display: grid;
         grid-template-columns: 1fr;
@@ -632,6 +645,8 @@ a{
     }
     /*.button{ width: 100%}*/
     h4{font-size: 8px}
+    input{width: 100% !important;}
+    a{margin-right: 0}
     .description_title{margin-bottom: 8px !important;}
     /*.grid-buttons{*/
     /*    display: grid !important;*/
@@ -640,12 +655,13 @@ a{
     /*}*/
     .title_head{font-size: 28px; margin-top: 0; margin-bottom: 0; line-height: 30px}
     .maintext{font-size: 16px}
-    .content__wrapper{padding: 28px 0}
+    .content__wrapper{padding: 28px 0 40px;}
+    .content__buttons{margin-bottom: 0}
     .target_box{margin-top: 0 !important;}
     .care{font-size: 18px}
     .num{font-size: 22px}
     /*.main{padding-bottom: 40px}*/
-
+    .disclaimer{margin-top: 15px}
     .logo{content: url("../img/Logo b2b2.png")}
 }
 /*@media (max-width: 436px) {*/
@@ -711,7 +727,7 @@ input{
     padding-bottom: 8px;
     padding-top: 10px;
     padding-left: 1px;
-    min-width: 406px;
+    /*min-width: 406px;*/
     /*line-height: 18px;*/
 }
 input:focus-visible{
