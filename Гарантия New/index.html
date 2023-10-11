@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    <link href="./css/fonts.css" rel="stylesheet"/>
+    <link href="./css/styles2.css" rel="stylesheet"/>
+<!--    <script src="./js/jquery-3.2.1.js"></script>-->
+<!--    <script src="./js/jquery.maskedinput.min.js"></script>-->
+<!--    <script src="./customScript.js"></script>-->
+    <style>html, body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;}
+    </style>
+    <script src="./customScript.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elements = document.querySelectorAll('.button');
+            for(var index = 0; index < elements.length; index++) {
+                var el = elements[index];
+                var elMeta = el.getAttribute("data-meta");
+                var buttonAction = clickHandlers.find(function(item) {
+                    return item && item.meta === elMeta && typeof item.callback === 'function';
+                });
+                if(el && elMeta && buttonAction) {
+                    el.addEventListener('click', buttonAction.callback);
+                }
+            }
+        });
+    </script>
+    <title>Ростелеком</title>
+
+</head>
+<body style="">
+<div class="wrapper redirect">
+    <div class="header">
+        <div class="container">
+            <a href="https://rt.ru"><img src="img/Logo b2b.png" class="logo"></a>
+        </div>
+    </div>
+    <div class="content red">
+        <div class="container">
+            <div class="content__wrapper">
+                <div class="content__text">
+                        <h1 class="title_head">
+                            Беспокоитесь за сохранность вашего оборудования?
+                        </h1>
+                        <div style="font-size: 20px">
+                        <p>С услугой «Гарантия+» от Ростелекома Ваше оборудование под надежной защитой!
+                        </p>
+                        </div>
+                         <div class="gift">
+                            <img src="img/price.png" />
+                        </div>
+                        <div class="subtext">Мы заменим испорченное оборудование при наступлении гарантийного случая*</div>
+                        <div class="gift_grid">
+                            <div class="gift">
+                                <img src="img/Orange4.png" width="56px" height="56px"/>
+                                <div class="description_text gift_text">
+                                    <div class="description_title">Универсальная защита</div>
+                                    Привезем новый роутер или ТВ-приставку, даже если провода перегрызла собака
+                                </div>
+                            </div>
+                            <div class="gift">
+                                <img src="img/Orange2.png" width="56px" height="56px"/>
+                                <div class="description_text gift_text">
+                                    <div class="description_title">Оперативность</div>
+                                    Заменим оборудование по звонку в течение трех дней
+                                </div>
+                            </div>
+                            <div class="gift">
+                                <img src="img/Vector-2.png" width="56px" height="56px"/>
+                                <div class="description_text gift_text">
+                                    <div class="description_title">Доступная цена</div>
+                                    Вы платите всего 45 рублей в месяц, оплата с лицевого счета
+                                </div>
+                            </div>
+                            <div class="gift">
+                                <img src="img/Orange1.png" width="56px" height="56px"/>
+                                <div class="description_text gift_text">
+                                    <div class="description_title">Экономия</div>
+                                    Вам не нужно покупать новое оборудование в случае ЧП
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="target_box">
+                        <form>
+<!--                            <input id="faxnum" name="faxnum" class="phone" type="tel" placeholder="Введите номер телефона" required pattern="^((\+7)[\- ]?)?(\(?9\d{2}\)?[\- ]?)?[\d\- ]{10}$" maxlength="16">-->
+<!--                            <div id="error" class="error"></div>-->
+                            <div class="content__buttons grid-buttons">
+                                <a id="b" href="redirect1.html" style="text-decoration: none">
+                                    <button id="butt" class="button button_success" type="button" data-meta="Смена ТП">Подключить</button>
+                                </a>
+                                <a  href="redirect2.html" style="text-decoration: none">
+                                    <button id="butt2" class="button button_later" type="button" data-meta="Отказаться">Отказаться</button>
+                                </a>
+
+                            </div>
+                        </form>
+                    </div>
+                 <div class="disclaimer bottom">
+                <p>*Гарантия распространяется только на оборудование ПАО «Ростелеком»
+                </p>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <div>
+
+    <div class="footer" >
+        <div class="container">
+            <div class="footer__container">
+                <div class="row">
+                    <div class="col1">
+                        <p class="footer__text footer__text_last b">
+                            © 2023 ПАО «Ростелеком». 18+
+                        </p>
+                        <p class="footer__text footer__text_last">
+                            Продолжая использовать наш сайт, вы даете согласие на обработку файлов Cookies и других пользовательских данных
+                        </p>
+                    </div>
+                    <div></div>
+
+<!--                    <div class="col2">-->
+<!--                        <p class="footer__text footer__text_last b">-->
+<!--                            Служба поддержки-->
+<!--                        </p>-->
+<!--                        <p class="footer__text footer__text_last num">8 800 707 12 12-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                    <div class="col2">-->
+<!--                        <p class="footer__text footer__text_last b">-->
+<!--                            Подключение услуг-->
+<!--                        </p>-->
+<!--                        <p class="footer__text footer__text_last num">8 800 707 80 00-->
+<!--                        </p>-->
+<!--                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    $(function($) {
+        $('input[name="faxnum"]').mask("+7 (988) 888-88-88");
+    });
+</script>
+<script>
+    $("#butt").on('click', function() {
+        var phone =  $('#faxnum').val().replace(/\D/g, '');
+        console.log('phone: ' + phone);
+        // Прописать id кнопки из скрипта customScript.js
+        promoClick(1403, function() {
+                    promoMakeRedirect();
+            }, JSON.stringify({data: { faxnum: phone } }))
+        $('#error').html('whatever');
+    });
+
+    // $("#b").on('mouseover', function()  {
+    //      if(($('.phone').val().replace(/\D/g, '')).length != 11){
+    //        $('#error').html('whatever');
+    //        console.log('ASD: ');
+    //      }
+    // });
+
+    $(".phone").on("keyup", function() {
+
+        if(($('.phone').val().replace(/\D/g, '')).length == 11) {
+                  $("#butt").prop("disabled", false);
+                  $("#butt2").prop("disabled", false);
+                  $('#error').html("");
+            }
+        else {
+            $("#butt").prop("disabled", true);
+            $("#butt2").prop("disabled", true);
+            $('#error').html('Введите телефон в формате +7XXXXXXXXXX');
+        }
+    });
+
+</script>
+</body>
+</html>
