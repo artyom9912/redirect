@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    <link href="./css/fonts.css" rel="stylesheet"/>
+    <link href="./css/styles.css" rel="stylesheet"/>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elements = document.querySelectorAll('.button');
+            for(var index = 0; index < elements.length; index++) {
+                var el = elements[index];
+                var elMeta = el.getAttribute("data-meta");
+                var buttonAction = clickHandlers.find(function(item) {
+                    return item && item.meta === elMeta && typeof item.callback === 'function';
+                });
+                if(el && elMeta && buttonAction) {
+                    el.addEventListener('click', buttonAction.callback);
+                }
+            }
+        });
+    </script>
+    <title>Ростелеком</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="main">
+        <div class="block">
+            <div class="header">
+                <div class="container">
+                    <a href="https://rt.ru"><img src="img/Logo.png" class="logo"></a>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="content">
+                <div class="container red">
+                    <div class="content__wrapper">
+                        <div class="content__text">
+                            <h1 class="title_head">
+                                Мы стремимся стать лучше!
+                            </h1>
+                            <div class="maintext">
+                                    Как мы работаем?
+                            </div>
+                            <div class="content__buttons grid-buttons">
+                                    <a href="#focus">
+                                        <div class="ui-button__text">Поделитесь, ответив всего на 3 вопроса</div>
+                                    </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block white">
+
+            <form>
+                <div id="focus" class="feedback">
+                    <div class="maintext">Как мы работаем?</div>
+                    <div class="stars">
+                        <div class="rate">
+                          <input type="radio" id="star1_5" name="rate1" value="5" />
+                          <label for="star1_5" title="text">5 stars</label>
+                          <input type="radio" id="star1_4" name="rate1" value="4" />
+                          <label for="star1_4" title="text">4 stars</label>
+                          <input type="radio" id="star1_3" name="rate1" value="3" />
+                          <label for="star1_3" title="text">3 stars</label>
+                          <input type="radio" id="star1_2" name="rate1" value="2" />
+                          <label for="star1_2" title="text">2 stars</label>
+                          <input type="radio" id="star1_1" name="rate1" value="1" />
+                          <label for="star1_1" title="text">1 star</label>
+                        </div>
+                    </div>
+                    <textarea class="comment" placeholder="Комментарий" style="overflow:hidden" ></textarea>
+                </div>
+                <div class="feedback">
+                    <div class="maintext">Обслуживание и сервис</div>
+                    <div class="stars">
+                        <div class="rate">
+                          <input type="radio" id="star2_5" name="rate" value="5" autofocus="true"/>
+                          <label for="star2_5" title="text">5 stars</label>
+                          <input type="radio" id="star2_4" name="rate" value="4" />
+                          <label for="star2_3" title="text">4 stars</label>
+                          <input type="radio" id="star2_3" name="rate" value="3" />
+                          <label for="star2_3" title="text">3 stars</label>
+                          <input type="radio" id="star2_2" name="rate" value="2" />
+                          <label for="star2_2" title="text">2 stars</label>
+                          <input type="radio" id="star2_1" name="rate" value="1" />
+                          <label for="star2_1" title="text">1 star</label>
+                        </div>
+                    </div>
+                    <textarea class="comment" placeholder="Комментарий" style="overflow:hidden" ></textarea>
+                </div>
+                <div class="feedback">
+                    <div class="maintext">Есть ли у вас нерешенные вопросы?</div>
+                    <div class="radio">
+                        <label class="bl"><input type="radio" name="radgroup" value="Yes">Да</label>
+                        <label class="bl"><input type="radio" name="radgroup" value="No">Нет</label>
+
+                    </div>
+                    <textarea class="comment" placeholder="Комментарий" style="overflow:hidden" ></textarea>
+                    <div class="content__buttons grid-buttons">
+                        <a  style="text-decoration: none">
+                            <button id="butt" class="button button_success" type="button" data-meta="Отправить">Отправить</button>
+                        </a>
+                        <a  style="text-decoration: none">
+                            <button class="button button_cancel" type="button" data-meta="Отказаться">Не хочу участвовать в опросе</button>
+                        </a>
+                </div>
+                </div>
+
+
+
+
+            </form>
+        </div>
+
+<!--    <div class="block">-->
+<!--        <div class="container form">-->
+<!--            <div class="form_grid">-->
+<!--                <div class="form_text">Для того, чтобы получить доступ к библиотеке Литрес,-->
+<!--                    введите номер телефона для создания учетной записи или-->
+<!--                    подключения библиотеки к существующей учетной записи на данном номере телефона-->
+<!--                </div>-->
+<!--                <div class="target_box">-->
+<!--                <form>-->
+<!--                    <input id="faxnum" name="faxnum" class="phone" type="tel" placeholder="Введите номер телефона" required pattern="^((\+7)[\- ]?)?(\(?9\d{2}\)?[\- ]?)?[\d\- ]{10}$" maxlength="16">-->
+<!--                    <div id="error" class="error"></div>-->
+<!--                    <div class="content__buttons grid-buttons">-->
+<!--                        <a href="redirect1.html" style="text-decoration: none">-->
+<!--                            <button id="butt" class="button button_success" type="button" data-meta="Смена ТП" disabled>Подключить</button>-->
+<!--                        </a>-->
+<!--                        <a href="redirect2.html" style="text-decoration: none">-->
+<!--                            <button class="button button_cancel" type="button" data-meta="Отказаться">Отказаться</button>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="disclaimer">Отключить подписку, не переходя в платный период, можно в <a href="http://www.lk.rt.ru/" style="color: #ff4f12">Едином&nbsp;личном&nbsp;кабинете</a></div>-->
+<!--                </form>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    </div>
+     <div class="footer" >
+        <div class="container">
+            <div class="footer__container">
+                <div class="row">
+                    <div class="col1">
+                        <p class="footer__text footer__text_last b">
+                            © 2023 ПАО «Ростелеком». 18+
+                        </p>
+                        <p class="footer__text footer__text_last">
+                            Продолжая использовать наш сайт, вы даете согласие на обработку файлов Cookies и других пользовательских данных
+                        </p>
+                    </div>
+                    <div></div>
+
+                    <div class="col2">
+                        <p class="footer__text footer__text_last b">
+                            Подключение услуг
+                        </p>
+                        <p class="footer__text footer__text_last num">8 800 707 80 00
+                        </p>
+                    </div>
+                    <div class="col2">
+                        <p class="footer__text footer__text_last b">
+                            Служба поддержки
+                        </p>
+                        <p class="footer__text footer__text_last num">8 800 707 12 12
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    $(function($) {
+        $('input[name="faxnum"]').mask("+7 (888) 888-88-88");
+    });
+</script>
+<script>
+    const tx = document.getElementsByTagName("textarea");
+    for (let i = 0; i < tx.length; i++) {
+      tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
+      tx[i].addEventListener("input", OnInput, false);
+    }
+    const inp = document.getElementsByTagName("input");
+    for (let i = 0; i < inp.length; i++) {
+      inp[i].focus({
+        preventScroll: true,});
+    }
+
+    function OnInput() {
+      this.style.height = 0;
+      this.style.height = (this.scrollHeight) + "px";
+    }
+
+</script>
+
+</body>
+</html>

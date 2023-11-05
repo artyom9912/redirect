@@ -237,17 +237,17 @@ h3 {
     left: 7px;
 }
 
-.comment {
-    border: 1px solid #dbdbdb;
-    outline: none;
-    -moz-appearance: none;
-    background: rgba(241, 243, 245, 1.00);
-    border-radius: 3px;
-    width: 270px;
-    font-family: "Basis Grotesque Pro", "Arial", sans-serif;
-    font-size: 18px;
-    resize: none;
-}
+/*.comment {*/
+/*    border: 1px solid #dbdbdb;*/
+/*    outline: none;*/
+/*    -moz-appearance: none;*/
+/*    background: rgba(241, 243, 245, 1.00);*/
+/*    border-radius: 3px;*/
+/*    width: 270px;*/
+/*    font-family: "Basis Grotesque Pro", "Arial", sans-serif;*/
+/*    font-size: 18px;*/
+/*    resize: none;*/
+/*}*/
 
 .email {
     border: 1px solid #dbdbdb;
