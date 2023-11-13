@@ -134,7 +134,7 @@ body {
     padding-right: 20px;
     color: black;
     margin-top: 10px;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
 }
 .maintext{
     font-family: "RostelecomBasis Medium", sans-serif;
@@ -281,6 +281,7 @@ a{
     .content__text {
         margin-bottom: 32px;
     }
+    .feedback{padding-top: 36px}
     /*.content__buttons {*/
     /*    justify-content: center;*/
     /*}*/
@@ -335,7 +336,7 @@ a{
 @media (min-width: 1341px) and (max-width: 1599px){
     /*.content__wrapper{height: 416px}*/
     .care{height: 100%}
-    .maintext{font-size: 16px}
+    .maintext{font-size: 22px;padding-top: 70px}
     .title_head{font-size: 36px; margin-bottom: 10px}
     /*.content_description{font-size: 20px; margin-top: 14vh !important;}*/
     .content_description{font-size: 20px;}
@@ -359,17 +360,17 @@ a{
 .content:before {
     content: '';
     display: block;
-    background-position: center;
+    /*background-position: center;*/
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 16px;
-    margin: 60px 40px 60px 20px;
+    margin: 40px 40px 40px 20px;
 }
 .content__buttons {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 16px;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
 
 }
 /* END CONTENT */
@@ -603,12 +604,15 @@ a{
     .description_text{font-size: 14px}
     .description_title{font-size: 16px}
     .content_description{padding-top: 0px !important;}
+    .title_head{margin-bottom: 24px !important;}
+    .maintext{font-size: 18px;}
     .col img{width: 56px}
     .long{
     height: calc(100vh - 274px) !important;
     }
     a{margin-right: 0}
-    input{width: 100% !important;}
+    /*input{width: 100% !important;}*/
+    .radio{padding-left: 36px !important;}
 }
 @media (max-width: 1341px) {
     /*.content{margin-top: 63px;margin-bottom: 65px;}*/
@@ -661,7 +665,8 @@ a{
     }
     /*.button{ width: 100%}*/
     h4{font-size: 8px}
-    input{width: 100% !important;}
+    /*input{width: 100% !important;}*/
+    .radio{padding-left: 76px}
     a{margin-right: 0}
     .description_title{margin-bottom: 8px !important;}
     /*.grid-buttons{*/
@@ -669,8 +674,8 @@ a{
     /*    grid-template-columns: 1fr;*/
     /*    column-gap: 10px;*/
     /*}*/
-    .title_head{font-size: 28px; margin-top: 0; margin-bottom: 0; line-height: 30px}
-    .maintext{font-size: 16px}
+    .title_head{font-size: 28px; margin-top: 0; margin-bottom: 40px; line-height: 30px}
+    /*.maintext{font-size: 16px}*/
     .content__wrapper{padding: 28px 0 40px;}
     .content__buttons{margin-bottom: 0}
     .target_box{margin-top: 0 !important;}
@@ -679,6 +684,7 @@ a{
     /*.main{padding-bottom: 40px}*/
     .disclaimer{margin-top: 15px}
     .logo{content: url("../img/Logo b2b2.png")}
+    /*.ui-button__text{background-position: }*/
 }
 @media (max-width: 1600px) {
     .block{
