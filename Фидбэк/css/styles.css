@@ -26,12 +26,14 @@ body {
     line-height: 1.5;
     scroll-behavior: smooth;
 }
-.block{margin-bottom: 110px}
+.no-padding{padding-bottom: 0 !important; padding-top: 0 !important;}
+.block{margin-bottom: 80px}
 .bl{display: block}
 .b{
     font-size: 28px;
     font-weight: 600;
 }
+.unflex{display: block !important;}
 .radio{max-width: 250px; padding-bottom: 15px;padding-left: 100px}
 .white{background-color: white; padding-top: 20px; padding-bottom: 80px}
 .feedback{
@@ -143,6 +145,13 @@ body {
     margin-bottom: 5px !important;
     color: #0d1114;
 }
+.maintext2{
+    font-family: "RostelecomBasis Medium", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 5px !important;
+    color: #0d1114;
+}
 
 
 /* START PARAGRAPH */
@@ -165,6 +174,8 @@ body {
     z-index: 10;
     background: #ffffff;
     box-shadow: 0 3px 7px rgba(15, 24, 41, 0.2);
+    min-height: 84px;
+    margin-bottom: 80px;
 }
 .header .container{
     margin-left: 5%;
@@ -251,7 +262,7 @@ a{
         background-image: url('../img/Image2.png');
     }
 }
-@media (min-width: 600px) and (max-width: 1341px) {
+@media (min-width: 600px) and (max-width: 1199px) {
     .content:before {
         background-image: url('../img/Image2.png') !important;
     }
@@ -263,25 +274,27 @@ a{
                 url('../img/Image.png');
     }
 }
-@media (max-width: 1341px) {
+@media (max-width: 1199px) {
     .container{padding: 0px 20px}
-    .block{margin-bottom: 65px !important;}
+    .header{margin-bottom: 60px}
+    .block{margin-bottom: 65px !important;padding-bottom: 40px}
     .content:before {
         position: relative;
         padding-bottom: 55%;
         margin-top: 0px !important;
         margin-bottom: 0px !important;
-        margin-right: 20px !important;
+        margin-left: 30px !important;
+        margin-right: 30px !important;
     }
-    .content{padding-top: 20px}
+    .content{padding-top: 40px}
     .content__wrapper {
         flex: 0 0 100%;
         max-width: 100%;
     }
     .content__text {
-        margin-bottom: 32px;
+        /*margin-bottom: 32px;*/
     }
-    .feedback{padding-top: 36px}
+    .feedback{padding-top: 30px}
     /*.content__buttons {*/
     /*    justify-content: center;*/
     /*}*/
@@ -294,7 +307,7 @@ a{
         margin-left: 0 !important;
     }
 }
-@media (min-width: 1341px) {
+@media (min-width: 1199px) {
     /*.red{min-height: 590px;}*/
     .content:before {
         position: absolute;
@@ -314,7 +327,7 @@ a{
         z-index: 2;
     }
     .content__text {
-        margin-bottom: 24px;
+        /*margin-bottom: 24px;*/
     }
     .content__wrapper {
         flex: 0 0 50%;
@@ -333,7 +346,7 @@ a{
     /*.content__wrapper{height: 520px}*/
     /*.content_description{font-size: 22px}*/
 }
-@media (min-width: 1341px) and (max-width: 1599px){
+@media (min-width: 1199px) and (max-width: 1599px){
     /*.content__wrapper{height: 416px}*/
     .care{height: 100%}
     .maintext{font-size: 22px;padding-top: 70px}
@@ -425,7 +438,7 @@ a{
 /*        padding-right: 75px;*/
 /*    }*/
 /*}*/
-@media (min-width: 765px) {
+@media (min-width: 700px) {
     .button {
         padding-left: 28px;
         padding-right: 28px;
@@ -445,7 +458,7 @@ a{
     font-family: inherit;
     cursor: pointer;
 }
-
+.white{border-radius: 16px}
 .button_success {
     background: #FF4F12;
     color: #FFFFFF;
@@ -454,7 +467,7 @@ a{
 .button_cancel {
     /*background: #6C757D;*/
     background: none;
-    color: #777777;
+    color: #3b3b3b;
 }
 .button_later{
     background-color: rgba(255, 228, 181, 0);
@@ -477,7 +490,6 @@ a{
     color: #A9A9A9;
     font-size: 12px;
     /*margin-left: 70px;*/
-
 }
 .ui-button__text {
     animation: arrow-animation 1s linear infinite;
@@ -578,16 +590,24 @@ a{
     height: auto;
     justify-self: center;
 }
-@media (max-width: 765px) {
-    /*.content{margin-top: 40px!important;margin-bottom: 65px}*/
+@media (max-width: 700px) {
+
+    .content:before {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        border-radius: 16px !important;
+        background-size: cover !important;
+    }
     .row{
         display: grid;
         row-gap: 30px;
         grid-template-columns: 1fr !important;
     }
-    .block{margin-bottom: 40px !important;}
+    .header{margin-bottom: 40px}
+    .block{margin-bottom: 40px !important; padding-top: 10px}
     .we{font-size: 16px}
     .col{text-align: left}
+    .content::before{border-radius: unset}
     .description_text{padding-left: 0 !important;}
     .col1 { order: 1; }
     .col2 { order: 0; }
@@ -614,9 +634,9 @@ a{
     /*input{width: 100% !important;}*/
     .radio{padding-left: 36px !important;}
 }
-@media (max-width: 1341px) {
+@media (max-width: 1199px) {
     /*.content{margin-top: 63px;margin-bottom: 65px;}*/
-    .content:before{background-size: contain !important;}
+    .content:before{background-size: cover !important;}
     .content_description {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -688,8 +708,10 @@ a{
 }
 @media (max-width: 1600px) {
     .block{
-        margin-bottom: 90px;
+        margin-bottom: 80px;
     }
+    .header{max-height: 80px !important; min-height: 80px !important; }
+    .white{ margin: 0 5%; margin-bottom: 80px}
 }
 /*@media (max-width: 436px) {*/
 /*    .title_head{font-size: 36px; line-height: 36px}*/
@@ -913,6 +935,9 @@ input:focus-visible{
 .rate > label:hover ~ input:checked ~ label {
   color: #FF4F12;
 }
+input[type='radio'] {
+    accent-color: #ff4f12;
+}
 /*input[type='radio']:after {*/
 /*        width: 15px;*/
 /*        height: 15px;*/
@@ -926,16 +951,16 @@ input:focus-visible{
 /*        visibility: visible;*/
 /*        border: 2px solid white;*/
 /*    }*/
-    input[type='radio']:checked:after {
-        width: 12px;
-        height: 12px;
-        border-radius: 15px;
-        top: -2px;
-        left: -1px;
-        position: relative;
-        background-color: #ff4f12;
-        content: '';
-        display: inline-block;
-        visibility: visible;
-        border: 2px solid white;
-    }
+/*    input[type='radio']:checked:after {*/
+/*        width: 12px;*/
+/*        height: 12px;*/
+/*        border-radius: 15px;*/
+/*        top: -2px;*/
+/*        left: -1px;*/
+/*        position: relative;*/
+/*        background-color: #ff4f12;*/
+/*        content: '';*/
+/*        display: inline-block;*/
+/*        visibility: visible;*/
+/*        border: 2px solid white;*/
+/*    }*/
