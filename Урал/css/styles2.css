@@ -91,7 +91,7 @@ html,body { height:100%;  }
 .title_name {
     letter-spacing: 1.5px;
     font-size:14px;
-    color: #70747E;
+    color: #EFE0D2;
 }
 .title_head {
     font-size: 50px;
@@ -127,7 +127,7 @@ html,body { height:100%;  }
     padding: 14px 0;
     position: relative;
     z-index: 10;
-    background: #282E3C;
+    background: #ffffff;
     box-shadow: 0 3px 7px rgba(15, 24, 41, 0.2);
 }
 a{
@@ -137,7 +137,7 @@ a{
     text-align: center;
 }
 .footer {
-    background: #282E3C;
+    background: #ffffff;
     font-size: 16px;
     /*position: absolute;*/
     left: 0;
@@ -202,7 +202,7 @@ a{
 @media (min-width: 1371px) {
     .content:before {
         background-image:
-               linear-gradient(90deg, #404653 1%, rgba(255,255,255,0) 30%, rgba(255,255,255,0) 100%),
+               linear-gradient(90deg, #EFE0D2 1%, rgba(255,255,255,0) 30%, rgba(255,255,255,0) 100%),
                 url('../img/Img.png');
     }
 }
@@ -329,8 +329,8 @@ a{
 }
 .content {
     position: relative;
-    background: #404653;
-    color: white;
+    background: #EFE0D2;
+    color: #000000;
 }
 
 .content__wrapper {
@@ -443,7 +443,7 @@ a{
 }
 .button_later{
     background-color: rgba(255, 228, 181, 0);
-    color: white;
+    color: #000000;
     /*outline: #fd4e12 2px solid;*/
     /*box-sizing: border-box;*/
     box-shadow:0px 0px 0px 2px #fd4e12 inset;
@@ -462,7 +462,7 @@ a{
 .button_no{
     background-color: rgba(255, 228, 181, 0);
     min-width: 96px;
-    color: white;
+    color: #000000;
     padding-left: 0;
 }
 .button_no:hover{color: #ff4f12}
@@ -626,7 +626,7 @@ input{
     font-size: 16px;
     border: none;
     border-bottom: rgba(16, 24, 40, 0.12) 2px solid;
-    background-color: #E3E8EC;
+    background-color: #ffffff;
     border-radius: 4px;
     padding-bottom: 10px;
     padding-top: 12px;

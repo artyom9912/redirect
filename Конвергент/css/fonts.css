@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'RostelecomBasis';
+    font-style: normal;
+    font-weight: 500;
+    src: local('RostelecomBasis'), url('../font/RostelecomBasis-Regular.woff') format('truetype');
+}
+@font-face {
+    font-family: 'RostelecomBasis Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('RostelecomBasis'), url('../font/RostelecomBasis-Light.woff') format('truetype');
+}
+@font-face {
+    font-family: 'RostelecomBasis Medium';
+    src: local('RostelecomBasis'), url('../font/RostelecomBasis-Medium.woff') format('truetype');
+}
